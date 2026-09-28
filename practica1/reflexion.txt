@@ -1,0 +1,34 @@
+REFLEXIÓN - Mi versión de Objetos Perdidos
+
+1. ¿Qué referencias elegiste y qué te gustó de ellas?
+Elegí un estilo de SO de los 90. Me gustó que todo parece una
+computadora vieja y que los colores son pocos pero muy reconocibles.
+
+2. Menciona tres cosas de tus referencias que intentaste construir utilizando CSS.
+- Las secciones como ventanas, borde negro, fondo gris y el título en una
+  barra azul.
+- Los botones con relieve usando border: outset, que cambian de color con
+  :hover.
+- Las etiquetas de estado de colores, y el "PERDIDO" que parpadea con
+  @keyframes.
+
+3. ¿Qué parte de la página te costó más?
+Hacer que se adaptara a pantallas pequeñas, acomodar las tarjetas con grid y
+cambiar las columnas con @media para que en el celular se vean una debajo de
+otra.
+
+4. ¿Qué parte de tu página te gustó más?
+Las tarjetas de los objetos, porque cada estado se distingue fácil por su color.
+
+5. ¿Qué cambió entre tu boceto y el resultado final?
+En el boceto había más objetos, el formulario estaba a la derecha y había un
+contador de visitas y una barra de tareas abajo. En la página final dejé 4
+objetos, el formulario quedó debajo de la lista y quité el contador. También agregué 
+las etiquetas de estado de colores.
+
+6. ¿Utilizaste IA? Si la utilizaste, ¿para qué?
+Sí, utilicé IA para que me diera algunos ejemplos de cómo programar la parte del grid
+y la adaptación con @media para el sitio web en celular.
+
+7. ¿Tuviste que modificar o corregir alguna respuesta proporcionada por IA?
+No tuve que corregir ninguna respuesta pues no copié el código como tal.

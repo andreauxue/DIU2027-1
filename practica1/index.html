@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Objetos Perdidos</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <header>
+    <h1>OBJETOS PERDIDOS</h1>
+    <p>Encuentra lo que perdiste en la facultad</p>
+    <nav>
+      <a href="#buscar">Buscar</a>
+      <a href="#objetos">Objetos</a>
+      <a href="#reportar">Reportar</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section id="buscar">
+      <h2>Buscar</h2>
+      <form>
+        <label for="busqueda">¿Perdiste algo?</label>
+        <input type="text" id="busqueda" placeholder="Ej. paraguas">
+        <select>
+          <option>Todos</option>
+          <option>Perdido</option>
+          <option>Encontrado</option>
+          <option>Recuperado</option>
+        </select>
+        <button type="submit">Buscar</button>
+      </form>
+    </section>
+
+    <section id="objetos">
+      <h2>Objetos</h2>
+
+      <div class="lista">
+      <article class="objeto">
+        <img src="img/mochila.png" alt="Mochila azul marino con varios bolsillos">
+        <h3>Mochila</h3>
+        <p class="estado perdido">PERDIDA</p>
+        <p><strong>Lugar:</strong> Biblioteca</p>
+        <p><strong>Fecha:</strong> 22/09/2026</p>
+        <p><strong>Descripción:</strong> Mochila azul marino con varios bolsillos al frente.</p>
+        <button>La encontré</button>
+      </article>
+
+      <article class="objeto">
+        <img src="img/calculadora.png" alt="Calculadora de escritorio negra">
+        <h3>Calculadora</h3>
+        <p class="estado encontrado">ENCONTRADA</p>
+        <p><strong>Lugar:</strong> Salón 12</p>
+        <p><strong>Fecha:</strong> 24/09/2026</p>
+        <p><strong>Descripción:</strong> Calculadora de escritorio negra con pantalla grande.</p>
+        <button>¡Es mía!</button>
+      </article>
+
+      <article class="objeto">
+        <img src="img/termo.png" alt="Termo negro con asa y popote">
+        <h3>Termo</h3>
+        <p class="estado recuperado">RECUPERADO</p>
+        <p><strong>Lugar:</strong> Cafetería</p>
+        <p><strong>Fecha:</strong> 20/09/2026</p>
+        <p><strong>Descripción:</strong> Termo negro con asa y popote.</p>
+        <button disabled>Entregado</button>
+      </article>
+
+      <article class="objeto">
+        <img src="img/paraguas.png" alt="Paraguas negro con mango de madera">
+        <h3>Paraguas</h3>
+        <p class="estado perdido">PERDIDO</p>
+        <p><strong>Lugar:</strong> Entrada principal</p>
+        <p><strong>Fecha:</strong> 26/09/2026</p>
+        <p><strong>Descripción:</strong> Paraguas negro grande con mango de madera.</p>
+        <button>Lo encontré</button>
+      </article>
+      </div>
+    </section>
+
+    <section id="reportar">
+      <h2>Reportar un objeto</h2>
+      <form>
+        <p>
+          <label for="nombre">Tu nombre</label><br>
+          <input type="text" id="nombre">
+        </p>
+        <p>
+          <label for="objeto">Objeto</label><br>
+          <input type="text" id="objeto">
+        </p>
+        <p>
+          ¿Qué pasó?<br>
+          <input type="radio" id="perdi" name="tipo">
+          <label for="perdi">Lo perdí</label>
+          <input type="radio" id="encontre" name="tipo">
+          <label for="encontre">Lo encontré</label>
+        </p>
+        <p>
+          <label for="lugar">Lugar</label><br>
+          <input type="text" id="lugar">
+        </p>
+        <p>
+          <label for="fecha">Fecha</label><br>
+          <input type="date" id="fecha">
+        </p>
+        <p>
+          <label for="descripcion">Descripción</label><br>
+          <textarea id="descripcion" rows="4"></textarea>
+        </p>
+        <button type="reset">Borrar</button>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Reyes Medina Santiago Ivan</p>
+    <a href="#">Volver arriba</a>
+  </footer>
+
+</body>
+</html>

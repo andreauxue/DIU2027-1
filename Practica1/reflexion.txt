@@ -1,0 +1,54 @@
+1. ¿Qué referencias elegiste y qué te gustó de ellas?
+
+Elegí referencias inspiradas principalmente en interfaces de Windows 95/98, 
+pixel art y estética vaporwave. Me gustaron los bordes con efecto de relieve, 
+las barras azules de las ventanas, los iconos pixelados y el contraste entre 
+interfaces antiguas y colores más llamativos como el rosa o morado.
+
+
+2. Menciona tres cosas de tus referencias que intentaste construir utilizando CSS.
+
+Intenté reproducir los paneles tipo ventana de Windows 95 mediante bordes claros y 
+oscuros, los botones con apariencia de relieve y las barras de título azules. 
+También utilicé imágenes decorativas pixel art en el fondo para agregar la parte 
+del vaporwave en las referencias.
+
+
+3. ¿Qué parte de la página te costó más?
+
+La parte que más me costó fue encontrar un equilibrio entre la estética de Windows 95 
+y los elementos vaporwave. Al principio la página se veía demasiado simple y después 
+algunos cambios hacían que se sintiera demasiado cargada, por lo que tuve que ajustar 
+colores, bordes, imágenes y decoración varias veces. Además algunas partes se me complicó
+el centrarlas pero al final se logró.
+
+
+4. ¿Qué parte de tu página te gustó más?
+
+Lo que más me gustó fue la combinación final entre las ventanas grises con barras azules y 
+los elementos pixel art del fondo. También me gustó cómo quedaron los iconos dentro de la 
+navegación y los botones porque ayudan a mantener la estética.
+
+
+5. ¿Qué cambió entre tu boceto y el resultado final?
+
+La distribución principal se mantuvo bastante parecida al boceto con la navegación arriba, objetos a 
+la izquierda, detalles a la derecha y formulario debajo, no obstante cambié un poco la distribución de
+algunos botones. Pero lo que sí cambió totalmente por obvias razones fue el acabado visual. 
+La versión final adoptó mucho más la estética de Windows 95, agregó iconos pixel art, fotografías 
+reales de los objetos y los elementos vaporwave decorativos en el fondo.
+
+
+6. ¿Utilizaste IA? Si la utilizaste, ¿para qué?
+
+Sí. Utilicé IA como apoyo para revisar y modificar HTML y CSS, para entender algunas propiedades, mejorar 
+el diseño responsive y proponer ajustes para acercar la interfaz a mis referencias. También la utilicé 
+para generar algunos recursos gráficos pixel art e ideas para integrar la estética retro y vaporwave.
+
+
+7. ¿Tuviste que modificar o corregir alguna respuesta proporcionada por IA?
+
+Sí. Las primeras propuestas de estilo no se parecían lo suficiente a mi boceto y algunas se veían 
+demasiado genéricas. Tuve que especificar mejor la paleta, la estética de Windows 95 y el uso de mis 
+referencias. También revisé y ajusté los cambios antes de aceptarlos para que el resultado final 
+correspondiera mejor con mi idea.

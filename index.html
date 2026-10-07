@@ -1,0 +1,117 @@
+<DOCTYPE HTML>
+    <html>
+        <head>
+            <title>Objetos Perdidos</title>
+            <link rel="stylesheet" href="styles.css">
+        </head>
+        
+        <body>
+            <header>
+                <h1>Objetos Perdidos</h1>
+
+                    <nav>
+                        <a href="#">Inicio</a>
+                        <a href="#">Objetos</a>
+                        <a href="#">Reportar</a>
+                    </nav>
+            </header>
+            <main>
+                <section class="busqueda">
+                    <h2>Buscar Objetos</h2>
+                    <input type="text" placeholder="Buscar un objeto">
+                    <button>Buscar</button>
+                </section>
+
+                <section class="objeto">
+                    <div class="objeto-contenido">
+                    <h2>Objeto Encontrado</h2>
+
+                    <div class="imagen-objeto">
+                     <img src="imagenes/espada.png" alt="Espada decorativa">
+                    </div>
+                    
+                    <div>
+                    <article>
+                        <h3>Espada Decorativa</h3>
+                        <p class="estado-perdido">Estado: PERDIDO</p>
+                        <p>Lugar: Facultad de Ciencias</p>
+                        <p>Fecha: 2 de Octubre de 2026</p>
+                        <p>Descripción: Espada decorativa tipo medieval</p>
+                    </article>
+                    </div>
+                    </div>
+                </section>
+
+                <section class="objeto">
+                <div class="objeto-contenido">
+
+                <h2>Objeto Encontrado</h2>
+
+                <div class="imagen-objeto">
+                    <img src="imagenes/amuleto.png" alt="Collar con amuleto antiguo">
+                </div>
+
+                <div>
+                <article>
+                    <h3>Collar con Amuleto Antiguo</h3>
+                    <p class="estado-encontrado">Estado: ENCONTRADO</p>
+                    <p>Lugar: Facultad de Ciencias</p>
+                    <p>Fecha: 3 de Octubre de 2026</p>
+                    <p>Descripción: Collar con un antiguo amuleto de origen desconocido</p>
+                </article>
+                </div>
+
+                </div>
+                </section>
+                
+                <section class="objeto">
+                <div class="objeto-contenido">
+
+                <h2>Objeto Recuperado</h2>
+
+                <div class="imagen-objeto">
+                <img src="imagenes/kupo.png" alt="Peluche Kupo">
+                </div>
+
+                <div>
+                <article>
+                    <h3>Peluche Kupo</h3>
+                    <p class="estado-recuperado">Estado: RECUPERADO</p>
+                    <p>Lugar: Facultad de Ciencias</p>
+                    <p>Fecha: 3 de Octubre de 2026</p>
+                    <p>Descripción: Peluche de kupo de aproximadamente 30cm de alto</p>
+                </article>
+                </div>
+
+                </div>
+                </section>
+
+                <section class="reportar">
+                <h2>Reportar Objeto</h2>
+
+                <a href="#formulario" class="boton-reportar">Abrir formulario</a>
+
+                <div id="formulario" class="panel-formulario">
+                    <a href="#" class="cerrar">Cerrar</a>
+
+                <h2>Reportar un objeto</h2>
+
+                <form>
+                <label for="nombre">Nombre del objeto:</label>
+                <input type="text" id="nombre">
+                <label for="descripcion">Descripción:</label>
+                <textarea id="descripcion"></textarea>
+
+                <button type="submit">Enviar reporte</button>
+                </form>
+
+                </div>
+                </section>
+            </main>
+
+            <footer>
+                <p>Objetos Perdidos · Facultad de Ciencias · 2026</p>
+            </footer>
+        </body>
+        
+    </html>

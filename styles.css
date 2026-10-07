@@ -1,0 +1,161 @@
+:root {
+    --color-perdido: #b00020;
+    --color-encontrado: #2e7d32;
+    --color-recuperado: #7b2cbf;
+    --color-texto: #f5f5f5;
+}
+
+body {
+    background-color: black;
+    color: var(--color-texto);
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: var(--color-perdido);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a:hover {
+    color: var(--color-perdido);
+}
+
+.objeto-contenido {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.imagen-objeto {
+    height: 300px;
+    border: 2px solid var(--color-recuperado);
+    overflow: hidden;
+}
+
+.imagen-objeto img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+input:focus,
+textarea:focus {
+    outline: 2px solid var(--color-recuperado);
+}
+
+button {
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+.panel-formulario {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 70%;
+    padding: 30px;
+
+    background-color: rgba(10, 10, 20, 0.95);
+    border: 2px solid var(--color-recuperado);
+}
+
+.panel-formulario {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.panel-formulario:target {
+    opacity: 1;
+    visibility: visible;
+}
+
+.panel-formulario {
+    transition: 0.3s;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+h1 {
+    animation: aparecer 5.5s;
+}
+
+@media (max-width: 600px) {
+    .objeto-contenido {
+        grid-template-columns: 1fr;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .panel-formulario {
+        width: 80%;
+    }
+}
+
+.estado-perdido {
+    color: var(--color-perdido);
+}
+
+.estado-encontrado {
+    color: var(--color-encontrado);
+}
+
+.estado-recuperado {
+    color: var(--color-recuperado);
+}
+
+footer {
+    margin-top: 40px;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid var(--color-recuperado);
+}
+
+.busqueda {
+    margin: 30px 0;
+    padding: 20px;
+    border: 1px solid var(--color-recuperado);
+    background-color: rgba(20, 20, 30, 0.8);
+}
+
+.busqueda h2 {
+    margin-top: 0;
+}
+
+.busqueda input {
+    padding: 10px;
+    border: 1px solid var(--color-recuperado);
+    background-color: black;
+    color: var(--color-texto);
+}
+
+.busqueda button {
+    padding: 10px 15px;
+    margin-left: 5px;
+}

@@ -1,0 +1,63 @@
+REFLEXIÓN – OBJETOS PERDIDOS
+
+1. ¿Qué referencias utilicé y qué tomé de ellas?
+
+Utilicé referencias de videojuegos  como Devil May Cry 1, Shadow of the Colossus, Xenosaga, Final Fantasy y Final Fantasy XIII.
+
+De Devil May Cry 1 tomé principalmente los tonos oscuros y los contrastes de rojo y negro. De Shadow of the Colossus tomé la idea de utilizar elementos relacionados con la naturaleza y las ruinas. De Xenosaga tomé la idea de utilizar paneles transparentes y una apariencia futurista. De Final Fantasy SNES tomé como referencia las ventanas de diálogo y el estilo de las interfaces de RPG. También utilicé Final Fantasy XIII como referencia para la organización y apariencia de algunos elementos de la interfaz.
+
+
+2. ¿Qué intenté hacer con CSS?
+
+Utilicé variables CSS para manejar los colores de los estados de los objetos. También utilicé Flexbox y Grid para organizar los elementos, además de bordes, márgenes, padding y colores.
+
+Utilicé :hover y :focus para agregar interacción visual, position para crear el panel del formulario, transition para las transiciones, @keyframes para una animación del título y @media para adaptar la página a pantallas pequeñas.
+
+
+3. ¿Qué fue lo más difícil?
+
+Lo más difícil fue organizar los elementos de la página con CSS y entender cómo funcionaba Grid. También fue necesario revisar la estructura HTML para mantener correctamente organizados los objetos y sus elementos.
+
+
+4. ¿Qué parte me gustó más?
+
+La parte que más me gustó fue crear la apariencia de los objetos y combinar diferentes referencias de videojuegos para obtener un diseño propio. También me gustó crear el panel del formulario.
+
+
+5. ¿Qué cambios hice respecto al boceto?
+
+El boceto sirvió como guía para organizar los elementos principales de la página. Durante la programación hice algunos ajustes en la distribución y en la apariencia de los elementos para que funcionaran mejor con HTML y CSS.
+
+
+6. ¿Cómo utilicé la inteligencia artificial?
+
+Utilicé inteligencia artificial principalmente para resolver dudas sobre HTML y CSS, entender propiedades que no conocía y revisar algunos errores en el código.
+
+Por ejemplo, consulté cómo utilizar Grid, cómo hacer que un formulario apareciera como un panel y cómo aplicar algunas propiedades de CSS.
+
+7. ¿Qué corregí durante el desarrollo?
+
+Durante el desarrollo corregí errores en la estructura HTML, especialmente en el cierre de etiquetas y la organización de los elementos dentro de cada objeto.
+
+También corregí la distribución de los elementos con CSS, agregué el diseño responsive y ajusté los colores de los estados para que PERDIDO, ENCONTRADO y RECUPERADO fueran fáciles de distinguir.
+
+
+Prompts utilizados:
+
+Prompt 1:
+¿Cómo puedo utilizar CSS Grid para organizar una sección con una imagen y la información de un objeto? Explícame qué hace cada propiedad.
+
+Resultado:
+Se explicó el funcionamiento de display: grid, grid-template-columns y gap, y cómo estas propiedades permiten organizar los elementos de la sección.
+
+Prompt 2:
+¿Cómo puedo hacer que un formulario aparezca como un panel sobre la página utilizando HTML y CSS? Explícame qué propiedades necesito y para qué sirve cada una.
+
+Resultado:
+Se explicó el uso de position, opacity, visibility, transition y :target para mostrar y ocultar el formulario como un panel.
+
+Prompt 3:
+Revisa que mi archivo de HTML y CSS  cumplan con los siguientes requisitos, (se pasaron los requisitos que deben cumplir).
+
+Resultado:
+Se revisaron los requisitos de la actividad y se explicó brevemente como cumple con los conceptos como Flexbox, Grid, object-fit, :hover, :focus, transition, @keyframes y @media.

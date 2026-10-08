@@ -1,0 +1,47 @@
+1. ¿Qué referencias elegiste y qué te gustó de ellas?
+Las referencias las tomé de dos lugares diferentes pero relacionados entre si, la principal y más
+directa es de un video músical de una banda japonesa llamada "Phantom Siita", ellas en general tienen
+una estetica que me gusta, se basan en el "Retro Horror" que es básicamente tomar cosas 'antiguas'
+como en este caso Alice in Wonderland y retorcerlo. Me gusta que toman referencias directas del libro y 
+las plasman en el entorno, de igual manera me gusta que el entorno en general es como con tematica retro, 
+como las páginas web antiguas. Además me gusta una parte del video donde van cayendo y a su alrededor hay 
+muchas cosas que me hace recordar a objetos perdidos o abandonados en el tiempo, me gusta que es como muy 
+onirico, como de sueños. 
+La segunda referencia indirecta que tomé son cosas del libro de alicia como tal, si bien la ambientación es 
+completaente del video musical, hay textos en el html que hacen referencia al libro, como lo de la caja del
+caballero blanco o lo de la madriguera o cosas así, o lo de la poción o lo de find me en lugar de drink me.
+
+2. Menciona tres cosas de tus referencias que intentaste construir utilizando CSS.
+Intenté tomar cosas del video, principalmente los colores. También tomé cosas de alicia como los titulos que 
+hacen referencia directa, las tarjetas intenté que fueran espejos pero no sé si se entiende esa parte, por eso
+son redondas las tarjetas, otro es lo de las picas y eso que es lo muy conocido de las cartas que le ayudaban a la reyna 
+malvada. También la fuente que usé es una similar a las que usan ellas, 
+
+3. ¿Qué parte de la página te costó más?
+Sinceramente el CSS, está muy bueno pero casi nunca he trabajado con CSS y a veces me pongo a hacer cosas de más
+me dí cuenta que estaba haciendo un botón especifico para cada cosa en vez de relegarlo, o lo de root, no estoy acostumbrado
+a poner los colores así y tuve que reescribirlos después. 
+
+4. ¿Qué parte de tu página te gustó más?
+Lo que más me gust son los colores que le puse, creo que era un reto darle una distribución adecuada, sobre todo con
+el color rosa chillón que usan, en el video lo utilizan mucho y lastima la vista jajaj. Y otra cosa es que la 
+paleta de colores del video es muy rica pero siento que hay muchos colores que se pierden, como los tonos de azúl, por 
+eso me gustó, porque me gustó como quedó al final.
+
+5. ¿Qué cambió entre tu boceto y el resultado final?
+Que en vez de rombos hice circulos, para que se notara más que eran espejos. Y otra cosa que cambia es la distribución
+Si bien es la misma, en el boceto lo noto mucho mejor distribuido que ya en mi página, al igual que la nav bar.
+
+6. ¿Utilizaste IA? Si la utilizaste, ¿para qué?ç
+Si, principalmente para consultas, como por ejemplo si podía hacer las tarjetas redondas, o todo lo de los badges igual,
+eso de los badges me sirvio mucho. También otra cosa que me ayudó fue a hacer correcciones, por ejemplo le pregunté que
+como podía estructurarlo mejor porque sentía que me estaba repitiendo mucho con lo de los botones, y ya me ayudó a 
+ponerlos mejor. Otra cosa en la que me ayudó fue en el inicio, en el esqueleto del html, pero me lo hizo medio mal porque
+como no tenía contexto de nada me puso cosas genéricas que luego arrasté como los nombres de las class o los id. 
+
+7. ¿Tuviste que modificar o corregir alguna respuesta proporcionada por IA?
+Si, bastante, justo lo que puse antes, como no tenía contexto al principio me sacó cosas muy genericas que luego tuve que cambiar a mis clases o objetos. También le pregunte si había algún momento en especifico de alicia que estuviera 
+relacionado con perder objetos, y si bien me contestó más o menos bien, hubo cosas que inventó como lo del caballero que
+dijo que la caja era para guardar objetos y evitar que se le perdieran, pero no es cierto, la caja era para proteger su 
+ropa y sus sandwiches de la lluvia y por eso la llevaba boca abajo, pero pues obviamente se le caía todo y lo perdía, 
+como que ahí mezcló dos cosas. 

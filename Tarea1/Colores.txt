@@ -1,0 +1,7 @@
+Rosa #a13459
+Verde Oscuro #046c65
+Azúl oscuro #126692
+Rosa Chillon #fd357b
+Morado #9c5ee5
+
+Fuente = Bukhari Script 

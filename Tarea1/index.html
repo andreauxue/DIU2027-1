@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alice in Lostland</title>
+  
+  <link rel="stylesheet" href="styles.css">
+  
+<link rel="icon" href="imagenes/logoPhantomsiita.png" type="image/png">
+</head>
+<body>
+  <!-- La nav bar-->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Phantom Siita</div>
+      <div>
+      <ul class="nav-link">
+        <li><a href="#inicio" class="nav-link">Inicio</a></li>
+        <li><a href="#reportar" class="nav-link">Reportar</a></li>
+        <li><a href="#contacto" class="nav-link">Comunidad</a></li>
+      </ul>
+      </div>
+      <div>
+        <form role="search" class="search-form">
+          <input type="text" name="q" placeholder="Find me...">
+          <button type="submit" class="btn" href="#tarjetas">Enviar</button>
+          <img src="imagenes/searchMe.webp" alt="Buscar" class="icono-pocion">
+          <label for="q" class="visually-hidden">Pregunta al sombrerero</label>
+        </form>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Contenido principal -->
+  <main>
+    <center><h1 class="destacado">Bienvenido a la madriguera</h1></center>
+    <!-- Sección del hero -->
+    <section id="inicio" class="hero">
+      <span class="badge-hero">
+         <img src="imagenes/ttrebol.png" alt="Trébol" class="icono-badge-hero">
+     </span>
+      <div class="hero-content">
+        <h3>Explora el wonderland de los objetos perdidos</h3>
+        <p>Descubre, reporta y recupera objetos en el pais de las maravillas.</p>
+        <a href="#tarjetas" class="btn">Comienza ahora</a>
+      </div>
+    </section>
+
+    <!-- Contenedor de las tarjetas -->
+  <section id="tarjetas" class="seccion-tarjetas">
+    <center><h2>Objetos Encontrados</h2></center>
+    <div class="contenedor-grid">
+      <!-- Tarjeta 1 -->
+      <article class="tarjeta">
+  <span class="badge badge-recuperado">Recuperado</span>
+  <img src="imagenes/objetos/cuaderno.jpg" alt="Portada de proyecto 1">
+  <div class="contenido-tarjeta">
+    <h3>Objeto 1</h3>
+    <p>Este elemento fue encontrado en X.</p>
+    <a href="#objetos" class="btn boton-tarjeta">Ver más</a>
+  </div>
+</article>
+
+      <!-- Tarjeta 2 -->
+      <article class="tarjeta">
+  <span class="badge badge-encontrado">Encontrado</span>
+  <img src="imagenes/objetos/encontrado.jpeg" alt="Portada de proyecto 1">
+  <div class="contenido-tarjeta">
+    <h3>Objeto 1</h3>
+    <p>Este elemento fue encontrado en. Esto es un test para ver como se comporta con textos largos ya que cambie el cuadrado y por lo que veo se ve bastante bien.</p>
+    <a href="#objetos" class="btn boton-tarjeta">Ver más</a>
+  </div>
+</article>
+
+      <!-- Tarjeta 3 -->
+       <article class="tarjeta">
+  <span class="badge badge-perdido">Perdido</span>
+  <img src="imagenes/objetos/recuperado.jpg" alt="Portada de proyecto 1">
+  <div class="contenido-tarjeta">
+    <h3>Objeto 1</h3>
+    <p>Este elemento fue encontrado en X.</p>
+    <a href="#objetos" class="btn boton-tarjeta">Ver más</a>
+  </div>
+</article>
+    </div>
+
+    <!-- Formulario para reportar objetos -->
+  </section>
+  <section id="reportar" class="content-section">
+  <center>
+    <h2>Caja del caballero blanco</h2>
+    <p>¿Encontraste un objeto perdido? ¡Reporta aquí!</p>
+  </center>
+    <form class="formulario">
+      <span class="badge-formulario">
+        <img src="imagenes/pica-761860_1280.png" alt="As de picas" class="icono-badge">
+      </span>
+      <label for="nombre">Título de la publicación:</label>
+      <input type="text" id="nombre" name="nombre" required>
+      <label for="descripcion">Descripción:</label>
+      <textarea id="descripcion" name="descripcion" required></textarea>
+      <label for="ubicacion">Ubicación donde se encontró:</label>
+      <input type="text" id="ubicacion" name="ubicacion" required>
+      <div class="grupo-botones">
+        <input type="file" id="fotos" name="fotos" accept="image/*" style="display: none;">
+        <label for="fotos" class="btn">Adjuntar Fotos</label>
+        <button type="submit" class="btn">Enviar</button>
+      </div>
+    </form>
+  </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-links">
+      <ul class="footer-links">
+        <li><a href="#inicio" class="footer-links">Inicio</a></li>
+        <li><a href="#reportar" class="footer-links">Reportar</a></li>
+        <li><a href="#contacto" class="footer-links">Comunidad</a></li>
+      </ul>
+      <p>&copy; 2023 Phantom Siita. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

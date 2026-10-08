@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Club de Objetos Perdidos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="logo-container">
+      <img src="imagenes/flor.png" alt="Icono flor" class="icon-decor">
+      <h1>Club de Objetos Perdidos</h1>
+    </div>
+
+    <nav class="nav">
+      <ul>
+        <li>
+          <a href="#inicio" class="nav-btn">
+            <img src="imagenes/inicio.png" alt=""> Inicio
+          </a>
+        </li>
+        <li>
+          <a href="#reportar" class="nav-btn">
+            <img src="imagenes/reporte.png" alt=""> Publicar
+          </a>
+        </li>
+        <!-- Barra de búsqueda integrada en la navegación -->
+        <li>
+          <form class="nav-search-form" action="#buscar">
+            <input type="search" placeholder="Buscar..." aria-label="Buscar objeto">
+            <button type="submit" class="nav-search-btn" title="Buscar">
+              <img src="imagenes/lupa.png" alt="Buscar">
+            </button>
+          </form>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="inicio">
+
+    <!-- Sección Hero / Buscador -->
+    <section class="hero" id="buscar">
+      <div class="hero-card">
+        <h2>
+          <img src="imagenes/osodepeluche.png" alt="" class="icon-titulo">
+          ¿Perdiste o encontraste algo muy especial?
+        </h2>
+        <form class="buscador">
+          <div class="campo-grupo">
+            <label for="nombre-objeto">Nombre del objeto</label>
+            <input type="search" id="nombre-objeto" placeholder="Escribe el nombre del objeto...">
+          </div>
+
+          <div class="campo-grupo">
+            <label for="filtro-estado">Estado</label>
+            <select id="filtro-estado">
+              <option value="">Todos los estados</option>
+              <option value="perdido">Perdido</option>
+              <option value="encontrado">Encontrado</option>
+              <option value="recuperado">Recuperado</option>
+            </select>
+          </div>
+
+          <button type="submit" class="btn-primary">
+            <img src="imagenes/lupa.png" alt=""> Buscar ✨
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Sección Objetos Recientes -->
+    <section class="objetos">
+      <h2 class="titulo-seccion">
+        <img src="imagenes/objetos.png" alt="" class="icon-inline"> Objetos recientes
+      </h2>
+
+      <div class="lista-objetos">
+
+        <!-- Tarjeta 1: Perdido -->
+        <article class="tarjeta polaroid">
+          <span class="tape"></span>
+          <div class="imagen-container">
+            <img src="imagenes/Peluche.jpg" alt="Oso de peluche color beige">
+          </div>
+          <h3>Copito</h3>
+          <p class="estado perdido">
+            Perdido <img src="imagenes/corazonroto.png" alt="">
+          </p>
+          <p class="detalle"><strong><img src="imagenes/mapa.png" alt="" class="icon-detalle"> Lugar:</strong> Parque</p>
+          <p class="detalle"><strong>📅 Fecha:</strong> <time datetime="2026-07-12">12 de Julio</time></p>
+          <p class="descripcion">Oso de peluche suave color beige...</p>
+        </article>
+
+        <!-- Tarjeta 2: Encontrado -->
+        <article class="tarjeta polaroid">
+          <span class="tape"></span>
+          <div class="imagen-container">
+            <img src="imagenes/AlbumDeFotos.jpg" alt="Álbum de fotos familiar color café">
+          </div>
+          <h3>Álbum familiar</h3>
+          <p class="estado encontrado">
+            Encontrado <img src="imagenes/lupa.png" alt="">
+          </p>
+          <p class="detalle"><strong><img src="imagenes/mapa.png" alt="" class="icon-detalle"> Lugar:</strong> Cafetería</p>
+          <p class="detalle"><strong>📅 Fecha:</strong> <time datetime="2026-08-20">20 de Agosto</time></p>
+          <p class="descripcion">Álbum 10x15cm con pasta dura y fotos familiares antiguas...</p>
+        </article>
+
+        <!-- Tarjeta 3: Recuperado -->
+        <article class="tarjeta polaroid">
+          <span class="tape"></span>
+          <div class="imagen-container">
+            <img src="imagenes/Mochila.jpg" alt="Mochila rosa con un llavero de vaca">
+          </div>
+          <h3>Mochila de la Universidad</h3>
+          <p class="estado recuperado">
+            Recuperado <img src="imagenes/flor.png" alt="">
+          </p>
+          <p class="detalle"><strong><img src="imagenes/mapa.png" alt="" class="icon-detalle"> Lugar:</strong> Biblioteca</p>
+          <p class="detalle"><strong>📅 Fecha:</strong> <time datetime="2026-09-03">03 de Septiembre</time></p>
+          <p class="descripcion">Mochila escolar con libros y cuadernos de apuntes...</p>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Sección Formulario -->
+    <section class="reportar" id="reportar">
+      <div class="nota-container">
+        <h2 class="titulo-seccion">
+          <img src="imagenes/reporte.png" alt="" class="icon-inline"> Reportar un objeto perdido o encontrado
+        </h2>
+
+        <form class="formulario">
+
+          <div class="form-row">
+            <label for="nombre">Nombre del objeto:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ej. Peluche Copito" required>
+          </div>
+
+          <fieldset class="form-fieldset">
+            <legend>Estado del objeto:</legend>
+            <div class="radio-options">
+              <label class="radio-label">
+                <input type="radio" name="estado" value="perdido" checked>
+                <img src="imagenes/corazonroto.png" alt="" class="icon-radio"> Perdido
+              </label>
+              <label class="radio-label">
+                <input type="radio" name="estado" value="encontrado">
+                <img src="imagenes/lupa.png" alt="" class="icon-radio"> Encontrado
+              </label>
+              <label class="radio-label">
+                <input type="radio" name="estado" value="recuperado">
+                <img src="imagenes/flor.png" alt="" class="icon-radio"> Recuperado
+              </label>
+            </div>
+          </fieldset>
+
+          <div class="form-row">
+            <label for="lugar">Lugar de extravío:</label>
+            <input type="text" id="lugar" name="lugar" placeholder="Ej. Biblioteca central">
+          </div>
+
+          <div class="form-row">
+            <label for="fecha">Fecha:</label>
+            <input type="date" id="fecha" name="fecha">
+          </div>
+
+          <div class="form-row">
+            <label for="descripcion">Descripción:</label>
+            <textarea id="descripcion" name="descripcion" rows="4" placeholder="Describe los detalles del objeto..."></textarea>
+          </div>
+
+          <div class="form-row">
+            <label for="imagen">Imagen (archivo local):</label>
+            <input type="file" id="imagen" name="imagen" accept="image/*">
+          </div>
+
+          <div class="form-row">
+            <label for="contacto">Forma de contacto:</label>
+            <input type="text" id="contacto" name="contacto" placeholder="Tu correo o teléfono">
+          </div>
+
+          <button type="submit" class="btn-primary btn-submit">
+            <img src="imagenes/enviar.png" alt=""> Enviar reporte
+          </button>
+
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>🌸 Club de Objetos Perdidos 🌸</p>
+    <p>Hecho con ♡ por <strong>Brenda Jiménez Ruiz</strong></p>
+    <p>2026</p>
+  </footer>
+
+</body>
+</html>

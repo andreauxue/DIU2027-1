@@ -1,0 +1,56 @@
+REFLEXIÓN - Mi versión de Objetos Perdidos
+Brenda Jiménez Ruiz
+
+1. ¿Qué referencias elegiste y qué te gustó de ellas?
+Para diseñar mi pagina decidí implementar un estilo visual suave y amigable 
+("Aesthetic Warm"). La elección de este concepto fue orientada a la experiencia 
+de usuario: perder un objeto personal genera frustración o ansiedad, por lo que 
+una interfaz con tonos cálidos y pastel transmite calma, cercanía y accesibilidad.
+
+- Paleta de Colores: Usé cinco colores en tonos pastel (#EEE0D0 para el fondo,
+ #FDDCCE para perdidos, #FFE66D para encontrados, #7BF28B para recuperados 
+ y #A0C4FF para elementos interactivos).
+
+- Tipografía: Se seleccionó "Comfortaa" por sus trazos redondeados y limpios, 
+reforzando la legibilidad e identidad visual. 
+
+- Elementos UI: Las tarjetas fueron maquetadas en estilo Polaroid con cinta adhesiva 
+("washi tape") en la parte superior, logrando un aspecto de tablero de corcho o diario 
+personal. 
+
+2. Tres cosas de mis referencias que intenté construir con CSS
+- Las etiquetas de estado en forma de píldora (Perdido, Encontrado y Recuperado),
+  con border-radius: 999px y un color distinto para cada estado.
+- Las tarjetas redondeadas con borde grueso y sombra dura, con position: relative
+  para colocar encima una cinta adhesiva con position: absolute.
+- Un efecto suave en botones y tarjetas con :hover y transition, y una flor que
+  flota en el encabezado con @keyframes.
+
+3. ¿Qué parte de la página te costó más?
+Lo que más me costó fue lograr que la página fuera responsiva. Al reducir el
+tamaño de la pantalla, el encabezado con el logo y la navegación no cabía y se
+desbordaba, y los campos del buscador y del formulario quedaban muy apretados.
+Lo resolví con @media: en pantallas pequeñas el encabezado pasa a columna, la
+navegación se envuelve y se centra, y el buscador se apila. En las tarjetas usé
+grid con auto-fit y minmax para que se acomoden solas según el ancho.
+
+4. ¿Qué parte de tu página te gustó más?
+La sección de "Objetos recientes" con las tarjetas estilo Polaroid. El detalle del
+efecto de cinta adhesiva ("Washi Tape") en la parte superior, combinado con las bordes
+redondeados, las sombras suaves y el leve giro al pasar el puntero (hover), logró
+traer a la vida exactamente la idea que se había plasmado en el boceto inicial.
+
+5. ¿Qué cambió entre tu boceto y el resultado final?
+En el boceto "Buscar" era un enlace del menú y en la página final es una barra
+de búsqueda con lupa dentro del encabezado. Las tarjetas pasaron de ser cuadros
+con texto a tarjetas tipo polaroid, con cinta, foto, etiqueta de estado e icono.
+Agregué iconos en el menú, los botones y el formulario, y la versión para
+celular, que no estaba en el boceto. 
+
+6. ¿Utilizaste IA? Si la utilizaste, ¿para qué?
+Sí. La usé para construir el grid responsivo "grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr));"
+que significa "pon tantas columnas como quepan, cada una de al menos 260 px y repartiendo el espacio sobrante en partes 
+iguales". El min(260px, 100%) evita que la columna sea más ancha que la pantalla en celulares muy pequeño" 
+
+7. ¿Tuviste que modificar o corregir alguna respuesta de la IA?
+sí, fui modificando el ancho minimo de cada columna hasta que me pareciera el correcto.

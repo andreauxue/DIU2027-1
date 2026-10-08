@@ -1,0 +1,569 @@
+:root {
+  --color-fondo: #EEE0D0;
+  --color-perdido: #FDDCCE;
+  --color-encontrado: #FFE66D;
+  --color-recuperado: #7BF28B;
+  --color-boton: #A0C4FF;
+  --color-texto: #4a3b32;
+  --color-tarjeta: #FFFFFF;
+  --fuente: "Comfortaa", "Quicksand", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  font-family: var(--fuente);
+  line-height: 1.5;
+}
+
+/* --- ICONOS Y MEDIOS --- */
+nav img,
+button img {
+  width: 1.4rem;
+  height: 1.4rem;
+  vertical-align: middle;
+}
+
+/* --- ENCABEZADO Y NAVEGACIÓN --- */
+header.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: var(--color-perdido);
+  border-bottom: 4px solid var(--color-texto);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo-container h1 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+nav ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.6rem 1.2rem;
+  border-radius: 999px;
+  background-color: var(--color-boton);
+  color: var(--color-texto);
+  text-decoration: none;
+  font-weight: 700;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+.nav-btn:hover {
+  transform: translateY(-3px) scale(1.03);
+  background-color: #8bb3f7;
+}
+
+/* --- SECCIÓN HERO / BUSCADOR --- */
+.hero {
+  padding: 2.5rem 2rem 1rem 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-card {
+  background-color: #FFF8F0;
+  border: 3px solid var(--color-texto);
+  border-radius: 2rem;
+  padding: 2rem;
+  width: 100%;
+  max-width: 900px;
+  text-align: center;
+  box-shadow: 6px 6px 0px var(--color-texto);
+}
+
+.hero-card h2 {
+  margin-top: 0;
+  font-size: 1.4rem;
+}
+
+.buscador {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: flex-end;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.campo-grupo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.campo-grupo label {
+  font-size: 0.85rem;
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+}
+
+.buscador input,
+.buscador select {
+  padding: 0.6rem 1rem;
+  border: 2px solid var(--color-texto);
+  border-radius: 999px;
+  font-family: var(--fuente);
+  outline: none;
+  transition: box-shadow 0.2s ease;
+}
+
+/* --- BOTÓN PRINCIPAL (CON TRANSITION) --- */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--color-boton);
+  color: var(--color-texto);
+  border: 2px solid var(--color-texto);
+  border-radius: 999px;
+  padding: 0.6rem 1.4rem;
+  font-family: var(--fuente);
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 3px 3px 0px var(--color-texto);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 5px 5px 0px var(--color-texto);
+  background-color: #90b8ff;
+}
+
+/* --- GALERÍA DE TARJETAS (POLAROID CON WASHI TAPE) --- */
+.objetos {
+  padding: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.titulo-seccion {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.6rem;
+}
+
+.lista-objetos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr));
+  gap: 2.5rem;
+}
+
+.tarjeta.polaroid {
+  position: relative;
+  padding: 1.2rem;
+  background-color: var(--color-tarjeta);
+  border: 3px solid var(--color-texto);
+  border-radius: 1.5rem;
+  box-shadow: 5px 5px 0px rgba(74, 59, 50, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta.polaroid:hover {
+  transform: translateY(-6px) rotate(1deg);
+  box-shadow: 8px 8px 0px rgba(74, 59, 50, 0.4);
+}
+
+/* Cinta adhesiva (Washi Tape) */
+.tape {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-2deg);
+  width: 90px;
+  height: 22px;
+  background-color: rgba(255, 230, 109, 0.85);
+  border: 1px dashed rgba(74, 59, 50, 0.4);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  z-index: 2;
+}
+
+.imagen-container {
+  width: 100%;
+  height: 200px;
+  border-radius: 1rem;
+  overflow: hidden;
+  border: 2px solid var(--color-texto);
+  margin-bottom: 1rem;
+}
+
+.imagen-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.tarjeta h3 {
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+}
+
+/* Badges de estado */
+.estado {
+  display: inline-block;
+  padding: 0.3rem 0.8rem;
+  border-radius: 999px;
+  font-weight: bold;
+  font-size: 0.85rem;
+  border: 2px solid var(--color-texto);
+  margin-bottom: 0.8rem;
+}
+
+.estado.perdido {
+  background-color: var(--color-perdido);
+}
+
+.estado.encontrado {
+  background-color: var(--color-encontrado);
+}
+
+.estado.recuperado {
+  background-color: var(--color-recuperado);
+}
+
+.detalle {
+  margin: 0.2rem 0;
+  font-size: 0.9rem;
+}
+
+.descripcion {
+  font-size: 0.85rem;
+  color: #6a574b;
+  margin-top: 0.6rem;
+  font-style: italic;
+}
+
+/* --- SECCIÓN FORMULARIO --- */
+.reportar {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.nota-container {
+  background-color: #FFF8F0;
+  border: 3px solid var(--color-texto);
+  border-radius: 2rem;
+  padding: 2.5rem;
+  width: 100%;
+  max-width: 700px;
+  box-shadow: 8px 8px 0px var(--color-texto);
+}
+
+.nota-container h2 {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  font-size: 1.4rem;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.form-row label {
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.formulario input[type="text"],
+.formulario input[type="date"],
+.formulario textarea,
+.formulario input[type="file"] {
+  padding: 0.7rem 1rem;
+  border: 2px solid var(--color-texto);
+  border-radius: 1rem;
+  font-family: var(--fuente);
+  background-color: #FFFFFF;
+  outline: none;
+  transition: box-shadow 0.2s ease;
+}
+
+.form-fieldset {
+  border: 2px dashed var(--color-texto);
+  border-radius: 1rem;
+  padding: 1.2rem;
+  background-color: #FFFFFF;
+}
+
+.form-fieldset legend {
+  font-weight: bold;
+  padding: 0 0.5rem;
+}
+
+.radio-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.radio-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.btn-submit {
+  align-self: center;
+  margin-top: 1rem;
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+}
+
+/* --- KEYFRAMES (ANIMACIÓN EXIGIDA) --- */
+@keyframes flotar {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-6px); }
+  100% { transform: translateY(0px); }
+}
+
+/* --- PIE DE PÁGINA --- */
+footer.footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: var(--color-perdido);
+  border-top: 4px solid var(--color-texto);
+  margin-top: 3rem;
+}
+
+footer p {
+  margin: 0.3rem 0;
+  font-size: 0.95rem;
+}
+
+/* Iconos dentro de estados y botones */
+.estado img,
+.btn-primary img {
+  width: 1.2rem;
+  height: 1.2rem;
+  vertical-align: middle;
+  object-fit: contain;
+}
+
+/* Iconos grandes junto a los títulos */
+.icon-titulo,
+.icon-inline {
+  width: 3rem;
+  height: 3rem;
+  vertical-align: middle;
+  object-fit: contain;
+}
+
+/* Icono pequeño de "Lugar" en las tarjetas */
+.icon-detalle {
+  width: 1.1rem;
+  height: 1.1rem;
+  vertical-align: middle;
+  object-fit: contain;
+}
+
+/* Flor del logo, con animación */
+.icon-decor {
+  width: 1.8rem;
+  height: 1.8rem;
+  vertical-align: middle;
+  animation: flotar 3s ease-in-out infinite;
+}
+
+/* --- BARRA DE BÚSQUEDA EN EL HEADER --- */
+.nav-search-form {
+  display: flex;
+  align-items: center;
+  background-color: #FFFFFF;
+  border: 2px solid var(--color-texto);
+  border-radius: 999px;
+  padding: 0.2rem 0.3rem 0.2rem 0.8rem;
+  box-shadow: 2px 2px 0px var(--color-texto);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.nav-search-form:focus-within {
+  transform: translateY(-2px);
+  box-shadow: 3px 3px 0px var(--color-texto);
+}
+
+.nav-search-form input[type="search"] {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-family: var(--fuente);
+  font-size: 0.85rem;
+  color: var(--color-texto);
+  width: 110px; /* Tamaño compacto para no saturar la barra de navegación */
+  transition: width 0.3s ease;
+}
+
+/* Al hacer clic en el input, la barra se expande ligeramente */
+.nav-search-form input[type="search"]:focus {
+  width: 150px;
+}
+
+.nav-search-btn {
+  background-color: var(--color-boton);
+  border: 1.5px solid var(--color-texto);
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 0;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.nav-search-btn:hover {
+  transform: scale(1.1);
+  background-color: #8bb3f7;
+}
+
+.nav-search-btn img {
+  width: 0.9rem;
+  height: 0.9rem;
+}
+
+/* --- ICONOS EN LOS RADIO BUTTONS DEL FORMULARIO --- */
+/* Forzar tamaño y alineación de la imagen en el radio button */
+.icon-radio {
+  width: 1.3rem;
+  height: 1.3rem;
+  object-fit: contain;
+  vertical-align: middle;
+  transition: transform 0.2s ease; /* Pequeño efecto al pasar el mouse */
+}
+
+/* Efecto hover sobre la imagen al pasar el mouse por la etiqueta */
+.radio-label:hover .icon-radio {
+  transform: scale(1.1);
+}
+
+/* --- FOCO VISIBLE (teclado) --- */
+.buscador input:focus,
+.buscador select:focus,
+.formulario input[type="text"]:focus,
+.formulario input[type="date"]:focus,
+.formulario input[type="file"]:focus,
+.formulario textarea:focus {
+  box-shadow: 0 0 0 4px var(--color-boton);
+}
+
+.btn-primary:focus-visible,
+.nav-btn:focus-visible,
+.nav-search-btn:focus-visible,
+.radio-label input:focus-visible {
+  outline: 3px solid var(--color-texto);
+  outline-offset: 3px;
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 768px) {
+  header.header {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero {
+    padding: 1.5rem 1rem 0.5rem 1rem;
+  }
+
+  .hero-card {
+    padding: 1.5rem 1rem;
+    box-shadow: 4px 4px 0px var(--color-texto);
+  }
+
+  .buscador {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .campo-grupo {
+    align-items: stretch;
+    width: 100%;
+  }
+
+  .buscador input,
+  .buscador select,
+  .buscador .btn-primary {
+    width: 100%;
+  }
+
+  .buscador .btn-primary {
+    justify-content: center;
+  }
+
+  .objetos,
+  .reportar {
+    padding: 1.5rem 1rem;
+  }
+
+  .nota-container {
+    padding: 1.5rem 1rem;
+    box-shadow: 5px 5px 0px var(--color-texto);
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-container h1 {
+    font-size: 1.25rem;
+  }
+
+  .titulo-seccion {
+    font-size: 1.3rem;
+  }
+
+  .icon-titulo,
+  .icon-inline {
+    width: 2.2rem;
+    height: 2.2rem;
+  }
+
+  .nav-btn {
+    padding: 0.5rem 0.9rem;
+  }
+
+  .radio-options {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+}

@@ -1,0 +1,22 @@
+1. ¿Qué referencias elegiste y qué te gustó de ellas?
+Elegí referencias con estilo retro, tambien de interfaces de sistemas operativos antiguos. Me gustó la paleta de colores beige con azul, creo que hacen que la pagina se vea limpia.
+
+2. Menciona tres cosas de tus referencias que intentaste construir utilizando CSS.
+- La paleta de colores.
+- La estructura ordenada de las tarjetas.
+- La barra de navegacion de la pagina de facebook.
+
+3. ¿Qué parte de la página te costó más?
+Adaptar el tamaño de las imágenes para que no se deformaran ni se recortaran en las tarjetas, y lograr que los márgenes a los lados se vieran equilibrados.
+
+4. ¿Qué parte de tu página te gustó más?
+La sección de "Estatus de los objetos", porque es lo principal, y creo que se distingue muy bien el estatus poniendole diferentes colores a cada uno.
+
+5. ¿Qué cambió entre tu boceto y el resultado final?
+Mas que nada cambio el color, en mi boceto fue todo sin color, y creo que mejoro mucho ya con la paleta de colores de la que me inspire. Pero la estructura de la pagina es casi identica.
+
+6. ¿Utilizaste IA? Si la utilizaste, ¿para qué?
+Sí, la utilicé para logar los colores que tenia como inspiracion, y como apoyo para adaptar las imagenes a las tarjetas y que se viera bien.
+
+7. ¿Tuviste que modificar o corregir alguna respuesta proporcionada por IA?
+No, en realidad no, ya que solo la ocupe de apoyo y no copiaba y pegaba lo que me daba.

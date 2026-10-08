@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objetos Perdidos FC</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Objetos Perdidos FC</h1>
+        <nav>
+            <a href="#buscar">Buscar</a>
+            <a href="#reportar">Reportar</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="buscar" class="seccion-buscador">
+            <h2>Consultar Objetos</h2>
+            <input type="text" placeholder="Buscar objetos..." class="buscador">
+            
+            <h3 style="margin-top: 2rem; color: #1a3c5b;">Estatus de los objetos</h3>
+            <div class="grid-objetos">
+                <article class="tarjeta perdida">
+                    <img src="imagenes/mochila.jpg" alt="Mochila LV">
+                    <div class="info">
+                        <span class="estado">PERDIDA</span>
+                        <h3>Mochila LV</h3>
+                        <p>Lugar: Edificio P</p>
+                        <p>Fecha: 1 de Octubre</p>
+                    </div>
+                </article>
+
+                <article class="tarjeta encontrada">
+                    <img src="imagenes/sudadera.jpg" alt="Sudadera cafe">
+                    <div class="info">
+                        <span class="estado">ENCONTRADA</span>
+                        <h3>Sudadera Cafe</h3>
+                        <p>Lugar: Media Luna</p>
+                        <p>Fecha: 1 de Octubre</p>
+                    </div>
+                </article>
+
+                <article class="tarjeta recuperada">
+                    <img src="imagenes/lapicera.jpg" alt="Lapicera de colores">
+                        <div class="info">
+                        <span class="estado">RECUPERADO</span>
+                        <h3>Lapicera de Colores</h3>
+                        <p>Lugar: Edificio Nuevo</p>
+                        <p>Fecha: 2 de Octubre</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="reportar" class="seccion-formulario">
+            <h2>Reportar un objeto</h2>
+            <form>
+                <button type="submit">Llenar formulario</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+    </footer>
+</body>
+</html>

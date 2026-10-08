@@ -1,0 +1,22 @@
+1. ¿Qué referencias elegiste y qué te gustó de ellas?
+Elegí referencias con un estilo Y2K, Frutiger Aero, Webcore y Kawaii. Principalmente me inspiré en las estéticas de las páginas antiguas de internet y personajes de Sanrio. De estas, me gustó la paleta de colores pastel, el uso de bordes marcados y redondeados, y la vibra amigable que transmiten.
+
+2. Menciona tres cosas de tus referencias que intentaste construir utilizando CSS.
+- La paleta de colores pastel: La implementé usando variables CSS para mantener la armonía en todo el sitio.
+- Las tarjetas con estilo retro/kawaii: Lo logré dándole a las publicaciones un borde oscuro con esquinas redondeadas.
+- Las etiquetas de estado: En mis referencias había elementos sobrepuestos, por lo que lo repliqué usando position: absolute para poner los letreritos de "Perdida", "Encontrada" y "Recuperada" flotando sobre las fotos.
+
+3. ¿Qué parte de la página te costó más?
+Lo que más me costó fue el diseño del formulario y todas las reglas de CSS que lo involucraban para que se viera uniforme. También lograr que las dimensiones del contenido que estaba dentro de cada tarjeta se comportara acorde a lo esperado en mi boceto. Ajustar los tamaños, los márgenes y hacer que la imagen, los textos y los botones encajaran perfectamente sin deformarse fue mi mayor reto.
+
+4. ¿Qué parte de tu página te gustó más?
+Me gustó cómo quedaron las tarjetas de los objetos, ya que siento que capturan a la perfección la estética que dibujé en mi boceto. También me encantó el resultado del movimiento de la mascota.
+
+5. ¿Qué cambió entre tu boceto y el resultado final?
+Pues logré ser fiel a mi boceto inicial. La estructura de dos columnas, la ubicación del buscador y el diseño de las tarjetas se mantuvieron. Lo que cambió fueron detalles como los estilos de los inputs del formulario, pero la esencia visual es exactamente la misma.
+
+6. ¿Utilizaste IA? Si la utilizaste, ¿para qué?
+Sí, utilicé IA. La utilicé como tutor interactivo, es decir, le pedí que me explicara paso a paso para qué servían algunas de las etiquetas HTML que no entendía y cómo funcionaban propiedades de CSS. También le compartí fragmentos de código para que me ayudara a entender errores puntuales que me iban surgiendo en el camino.
+
+7. ¿Tuviste que modificar o corregir alguna respuesta proporcionada por IA?
+Desde el principio le di instrucciones estrictas a la IA de que solo me explicara conceptos y no me diera código terminado ni corrigiera mis archivos directamente. Así que, en lugar de copiar y pegar su código, utilizaba sus explicaciones para entender mis errores y yo mismo aplicaba las correcciones y las adaptaba a las decisiones de mi propio diseño.

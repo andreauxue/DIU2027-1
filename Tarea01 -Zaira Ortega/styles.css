@@ -1,0 +1,501 @@
+/* DISEÑO DE INTERFAZ DE USUARIOS 2027-1 
+   ZAIRA DANIELA ORTEGA HERNÁNDEZ  */
+
+/* ==========================================================================
+   VARIABLES CSS Y RESET
+   ========================================================================== */
+:root {
+    /* Paleta de colores basada en la imagen */
+    --color-verde-lima: #C5D31E;
+    --color-teal: #00AAC1;
+    --color-rojo: #E53935;
+    --color-azul-boton: #7586BE;
+    --color-rosa-linea: #CB8AB5;
+    --color-fondo: #f4f4f4;
+    --color-blanco: #ffffff;
+    --color-negro: #1F161E;
+
+    --estado-perdido: #E53935;
+    --estado-encontrado: #4CAF50;
+    --estado-recuperado: #2196F3;
+
+    --fuente-principal: 'Unkempt', cursive;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fuente-principal);
+    background-color: var(--color-fondo);
+    color: var(--color-negro);
+    line-height: 1.4;
+}
+
+/* ==========================================================================
+   ENCABEZADO Y NAVEGACIÓN
+   ========================================================================== */
+.main-header {
+    background-color: var(--color-verde-lima);
+    border: 3px solid var(--color-negro);
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    margin: 20px;
+}
+
+.main-header h1 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.icon-flor {
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    width: 60px;
+    height: auto;
+}
+
+@keyframes flotar {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.animacion-flotar {
+    animation: flotar 3s ease-in-out infinite;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 20px;
+}
+
+.main-nav button {
+    background-color: var(--color-azul-boton);
+    border: 2px solid var(--color-negro);
+    padding: 10px 25px;
+    font-family: inherit;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.main-nav button:hover {
+    background-color: var(--color-teal);
+    color: var(--color-blanco);
+    transform: translateY(-2px);
+}
+
+/* ==========================================================================
+   DIVISORES
+   ========================================================================== */
+.divisor {
+    border-bottom: 4px solid var(--color-rosa-linea);
+    position: relative;
+    margin: 30px 40px;
+}
+
+.icon-lapices {
+    position: absolute;
+    right: 20px;
+    top: -25px;
+    width: 50px;
+}
+
+.icon-estrella {
+    position: absolute;
+    left: 20px;
+    top: -25px;
+    width: 50px;
+}
+
+/* ==========================================================================
+   CONTENEDOR Y CONTROL DE SECCIONES
+   ========================================================================== */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.oculto {
+    display: none !important;
+}
+
+.seccion-activa {
+    display: block;
+}
+
+.titulo-seccion {
+    text-align: center;
+    margin: 30px 0;
+    font-size: 2rem;
+}
+
+/* ==========================================================================
+   SECCIÓN INICIO (Grid de Objetos como la imagen)
+   ========================================================================== */
+.grid-objetos-inicio {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.tarjeta-objeto {
+    display: flex;
+    flex-direction: column;
+}
+
+.tarjeta-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.titulo-objeto {
+    background-color: var(--color-teal);
+    border: 2px solid var(--color-negro);
+    padding: 5px 15px;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.tag-estado {
+    border: 2px solid var(--color-negro);
+    padding: 5px 15px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: var(--color-negro);
+    background-color: var(--color-blanco);
+}
+
+.tag-estado.perdido {
+    background-color: var(--estado-perdido);
+    color: white;
+}
+
+.tag-estado.encontrado {
+    background-color: var(--estado-encontrado);
+    color: white;
+}
+
+.tag-estado.recuperado {
+    background-color: var(--estado-recuperado);
+    color: white;
+}
+
+.tarjeta-cuerpo {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+    flex-grow: 1;
+}
+
+.texto-descripcion {
+    flex: 1;
+    font-size: 0.95rem;
+}
+
+.imagen-objeto {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.imagen-objeto img {
+    max-width: 100%;
+    height: auto;
+}
+
+.tarjeta-footer {
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+/* ==========================================================================
+   SECCIÓN MÁS OBJETOS (Iconos y Colores)
+   ========================================================================== */
+.mas-objetos {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.titulo-mas-objetos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.titulo-mas-objetos h2 {
+    font-size: 2rem;
+}
+
+.icon-estrella-mar {
+    width: 40px;
+}
+
+.fila-iconos,
+.fila-colores {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.caja-icono {
+    border: 2px solid var(--color-negro);
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-blanco);
+
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.caja-icono:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 3px 3px 0px var(--color-negro);
+    background-color: #f0f4ff;
+}
+
+.caja-icono img {
+    max-width: 80%;
+    max-height: 80%;
+    object-fit: contain;
+}
+
+.caja-color {
+    width: 70px;
+    height: 70px;
+    border: 2px solid var(--color-negro);
+}
+
+.color-teal {
+    background-color: var(--color-teal);
+}
+
+.color-amarillo {
+    background-color: #FFE00C;
+}
+
+.color-purpura {
+    background-color: #CB8AB5;
+}
+
+.color-naranja {
+    background-color: #F0892D;
+}
+
+/* ==========================================================================
+   SECCIÓN FORMULARIO (Publicar)
+   ========================================================================== */
+.formulario-publicacion {
+    background-color: var(--color-blanco);
+    border: 3px solid var(--color-negro);
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 60px;
+    box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.8);
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.form-foto {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-foto label {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.upload-area {
+    flex-grow: 1;
+    border: 2px dashed var(--color-azul-boton);
+    border-radius: 10px;
+    background-color: #f0f4ff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    min-height: 250px;
+    transition: background-color 0.3s;
+}
+
+.upload-area:hover {
+    background-color: #e0e8ff;
+}
+
+.upload-area input[type="file"] {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.form-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.input-group input,
+.input-group select,
+.input-group textarea {
+    padding: 10px;
+    font-family: var(--fuente-principal);
+    font-size: 1rem;
+    border: 2px solid var(--color-negro);
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.input-group input:focus,
+.input-group select:focus,
+.input-group textarea:focus {
+    border-color: var(--color-teal);
+    box-shadow: 0 0 5px rgba(0, 170, 193, 0.5);
+}
+
+.descripcion-group {
+    margin-bottom: 20px;
+}
+
+.form-botones {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+.btn-peligro,
+.btn-exito {
+    padding: 10px 20px;
+    font-family: var(--fuente-principal);
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: 2px solid var(--color-negro);
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+    box-shadow: 2px 2px 0px var(--color-negro);
+}
+
+.btn-peligro {
+    background-color: var(--estado-perdido);
+    color: var(--color-blanco);
+}
+
+.btn-exito {
+    background-color: var(--estado-encontrado);
+    color: var(--color-blanco);
+}
+
+.btn-peligro:hover,
+.btn-exito:hover {
+    transform: translateY(-2px);
+    box-shadow: 4px 4px 0px var(--color-negro);
+}
+
+/* ==========================================================================
+   PIE DE PÁGINA
+   ========================================================================== */
+.main-footer {
+    background-color: var(--color-verde-lima);
+    border: 3px solid var(--color-negro);
+    text-align: center;
+    padding: 15px;
+    margin: 20px;
+    font-weight: bold;
+}
+
+/* ==========================================================================
+   MEDIA QUERIES (Responsive)
+   ========================================================================== */
+@media (max-width: 900px) {
+    .grid-objetos-inicio {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .grid-objetos-inicio {
+        grid-template-columns: 1fr;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .main-nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .main-nav button {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .form-botones {
+        flex-direction: column;
+    }
+
+    .btn-peligro,
+    .btn-exito {
+        width: 100%;
+        justify-content: center;
+    }
+}

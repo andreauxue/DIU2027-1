@@ -1,0 +1,413 @@
+<!-- DISEÑO DE INTERFAZ DE USUARIOS 2027-1 -->
+ <!-- ZAIRA DANIELA ORTEGA HERNÁNDEZ  -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objetos Perdidos</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Importa la tipografía Unkempt -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unkempt:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    
+
+   
+
+    <main class="container">
+    <!-- ENCABEZADO -->
+    <header class="main-header">
+        <img src="img/flor.png" alt="Flor" class="icon-flor animacion-flotar">
+        <h1>OBJETOS PERDIDOS</h1>
+    </header>
+
+    <!-- NAVEGACIÓN CON BOTONES  -->
+    <nav class="main-nav">
+        <button onclick="mostrarSeccion('inicio-seccion')">INICIO</button>
+        <button onclick="mostrarSeccion('publicar-seccion')">PUBLICAR</button>
+        <button onclick="mostrarSeccion('objetos-seccion')">OBJETOS</button>
+    </nav>
+
+     <!-- LÍNEA DIVISORIA SUPERIOR -->
+    <div class="divisor">
+        <img src="img/lapices.png" alt="Lápices" class="icon-lapices">
+    </div>
+        
+        <!-- ==========================================
+             SECCIÓN 1: PAGINA PRINCIPAL
+             ========================================== -->
+        <section id="inicio-seccion" class="seccion-activa">
+            
+            <!-- Grid de 3 Objetos -->
+            <div class="grid-objetos-inicio">
+                
+                <!-- Objeto 1 -->
+                <article class="tarjeta-objeto">
+                    <div class="tarjeta-header">
+                        <div class="titulo-objeto">BOTELLA NARANJA</div>
+                        <div class="tag-estado encontrado">ENCONTRADO</div>
+                    </div>
+                    <div class="tarjeta-cuerpo">
+                        <p class="texto-descripcion">Botella narana pequeña </p>
+                        <div class="imagen-objeto">
+                            <img src="img/botella.jpeg" alt="Botella">
+                        </div>
+                    </div>
+                    <div class="tarjeta-footer">
+                        <p>Lugar: Amozcalli</p>
+                        <p>Fecha: 16/11/2024</p>
+                    </div>
+                </article>
+
+                <!-- Objeto 2 -->
+                <article class="tarjeta-objeto">
+                    <div class="tarjeta-header">
+                        <div class="titulo-objeto">PORTALAPICES</div>
+                        <div class="tag-estado recuperado">RECUPERADO</div>
+                    </div>
+                    <div class="tarjeta-cuerpo">
+                        <p class="texto-descripcion">Portalapices con forma de cinamonroll.</p>
+                        <div class="imagen-objeto">
+                            <img src="img/portalapices.jpeg" alt="Portalapices">
+                        </div>
+                    </div>
+                    <div class="tarjeta-footer">
+                        <p>Lugar: La ballena</p>
+                        <p>Fecha: 12/10/2024</p>
+                    </div>
+                </article>
+
+                <!-- Objeto 3 -->
+                <article class="tarjeta-objeto">
+                    <div class="tarjeta-header">
+                        <div class="titulo-objeto">LIBRETA</div>
+                        <div class="tag-estado perdido">PERDIDO</div>
+                    </div>
+                    <div class="tarjeta-cuerpo">
+                        <p class="texto-descripcion">Libreta roja con stickers de one piece.</p>
+                        <div class="imagen-objeto">
+                            <img src="img/libreta.jpeg" alt="Libreta">
+                        </div>
+                    </div>
+                    <div class="tarjeta-footer">
+                        <p>Lugar: Nuevo Edificio</p>
+                        <p>Fecha: 12/09/2025</p>
+                    </div>
+                </article>
+
+            </div>
+
+            <!-- LÍNEA DIVISORIA MEDIA -->
+            <div class="divisor">
+                <img src="img/estrella.png" alt="Estrella" class="icon-estrella">
+            </div>
+
+            <!-- SECCIÓN MÁS OBJETOS (Iconos y Colores) -->
+            <section class="mas-objetos">
+                <div class="titulo-mas-objetos">
+                    <h2>MÁS OBJETOS</h2>
+                    <img src="img/estrella_mar.png" alt="Estrella de mar" class="icon-estrella-mar">
+                </div>
+
+                <div class="fila-iconos">
+                    <div class="caja-icono" onclick="irAlObjeto('obj-hueso')"><img src="img/hueso.png" alt="Hueso"></div>
+                    <div class="caja-icono" onclick="irAlObjeto('obj-estrella_mar')"><img src="img/estrella_mar.png" alt="Estrella de mar"></div>
+                    <div class="caja-icono" onclick="irAlObjeto('obj-lapices')"><img src="img/lapices.png" alt="Lápices"></div>
+                    <div class="caja-icono" onclick="irAlObjeto('obj-flor')"><img src="img/flor.png" alt="Flor"></div>
+                    <div class="caja-icono" onclick="irAlObjeto('obj-estrella')"><img src="img/estrella.png" alt="Estrella"></div>
+                    <div class="caja-icono" onclick="irAlObjeto('obj-teal')"></div>
+                </div>
+
+            </section>
+        </section>
+
+        <!-- ==========================================
+             SECCIÓN 2: OBJETOS
+             ========================================== -->
+        <section id="objetos-seccion" class="oculto">
+            <h2 class="titulo-seccion">Todos los Objetos</h2>
+            <div class="grid-objetos-inicio">
+            
+                <article class="tarjeta-objeto">
+                    <div class="tarjeta-header">
+                        <div class="titulo-objeto">BOTELLA NARANJA</div>
+                        <div class="tag-estado encontrado">ENCONTRADO</div>
+                    </div>
+                    <div class="tarjeta-cuerpo">
+                        <p class="texto-descripcion">Botella narana pequeña</p>
+                        <div class="imagen-objeto">
+                            <img src="img/botella.jpeg" alt="Botella">
+                        </div>
+                    </div>
+                    <div class="tarjeta-footer">
+                        <p>Lugar: Amozcalli</p>
+                        <p>Fecha: 16/11/2024</p>
+                    </div>
+                </article>
+
+                <article class="tarjeta-objeto">
+                    <div class="tarjeta-header">
+                        <div class="titulo-objeto">PORTALAPICES</div>
+                        <div class="tag-estado recuperado">RECUPERADO</div>
+                    </div>
+                    <div class="tarjeta-cuerpo">
+                        <p class="texto-descripcion">Portalapices con forma de cinamonroll.</p>
+                        <div class="imagen-objeto">
+                            <img src="img/portalapices.jpeg" alt="Portalapices">
+                        </div>
+                    </div>
+                    <div class="tarjeta-footer">
+                        <p>Lugar: La ballena</p>
+                        <p>Fecha: 12/10/2024</p>
+                    </div>
+                </article>
+
+                <article class="tarjeta-objeto">
+                    <div class="tarjeta-header">
+                        <div class="titulo-objeto">LIBRETA</div>
+                        <div class="tag-estado perdido">PERDIDO</div>
+                    </div>
+                    <div class="tarjeta-cuerpo">
+                        <p class="texto-descripcion">Libreta roja con stickers de one piece.</p>
+                        <div class="imagen-objeto">
+                            <img src="img/libreta.jpeg" alt="Libreta">
+                        </div>
+                    </div>
+                    <div class="tarjeta-footer">
+                        <p>Lugar: Nuevo Edificio</p>
+                        <p>Fecha: 12/09/2025</p>
+                    </div>
+                </article>
+
+                 <article id="obj-hueso" class="tarjeta-objeto">
+                    <div class="tarjeta-header">
+                        <div class="titulo-objeto">TIJERAS</div>
+                        <div class="tag-estado perdido">PERDIDO</div>
+                    </div>
+                    <div class="tarjeta-cuerpo">
+                        <p class="texto-descripcion">Tijeras con forma de cinamonroll.</p>
+                        <div class="imagen-objeto">
+                            <img src="img/tijeras.jpeg" alt="Tijeras">
+                        </div>
+                    </div>
+                    <div class="tarjeta-footer">
+                        <p>Lugar: Yelizcalli</p>
+                        <p>Fecha: 09/02/2025</p>
+                    </div>
+                </article>
+
+                <article id="obj-estrella_mar" class="tarjeta-objeto">
+                    <div class="tarjeta-header">
+                        <div class="titulo-objeto">COMIDA</div>
+                        <div class="tag-estado encontrado">ENCONTRADO</div>
+                    </div>
+                    <div class="tarjeta-cuerpo">
+                        <p class="texto-descripcion">Comida parece ser de Tía Aly </p>
+                        <div class="imagen-objeto">
+                            <img src="img/comida.jpeg" alt="Comida">
+                        </div>
+                    </div>
+                    <div class="tarjeta-footer">
+                        <p>Lugar: Pasillos del Edificio A de Biología</p>
+                        <p>Fecha: 06/11/2025</p>
+                    </div>
+                </article>
+
+                <article id="obj-lapices" class="tarjeta-objeto">
+                    <div class="tarjeta-header">
+                        <div class="titulo-objeto">DIBUJO MEDUSA</div>
+                        <div class="tag-estado recuperado">RECUPERADO</div>
+                    </div>
+                    <div class="tarjeta-cuerpo">
+                        <p class="texto-descripcion">Dibujo de una medusa, muy lindo por cierto.</p>
+                        <div class="imagen-objeto">
+                            <img src="img/dibujo.jpeg" alt="Dibujo">
+                        </div>
+                    </div>
+                    <div class="tarjeta-footer">
+                        <p>Lugar: Pasillo entre edificios O Y P</p>
+                        <p>Fecha: 12/01/2026</p>
+                    </div>
+                </article>
+
+               
+
+                <article id="obj-flor" class="tarjeta-objeto">
+                    <div class="tarjeta-header">
+                        <div class="titulo-objeto">DISCO DURO</div>
+                        <div class="tag-estado perdido">PERDIDO</div>
+                    </div>
+                    <div class="tarjeta-cuerpo">
+                        <p class="texto-descripcion">Disco Duro 1 TB.</p>
+                        <div class="imagen-objeto">
+                            <img src="img/disco.jpeg" alt="Disco">
+                        </div>
+                    </div>
+                    <div class="tarjeta-footer">
+                        <p>Lugar: Nuevo Edificio</p>
+                        <p>Fecha: 19/05/2025</p>
+                    </div>
+                </article>
+
+                <article id="obj-estrella" class="tarjeta-objeto">
+                    <div class="tarjeta-header">
+                        <div class="titulo-objeto">Gorra</div>
+                        <div class="tag-estado encontrado">ENCONTRADO</div>
+                    </div>
+                    <div class="tarjeta-cuerpo">
+                        <p class="texto-descripcion">Gorra de beisbol color turquesa de los diablos </p>
+                        <div class="imagen-objeto">
+                            <img src="img/gorra.jpeg" alt="Gorra">
+                        </div>
+                    </div>
+                    <div class="tarjeta-footer">
+                        <p>Lugar: Edificio de Matemáticas</p>
+                        <p>Fecha: 26/10/2025</p>
+                    </div>
+                </article>
+
+                <article id="obj-teal" class="tarjeta-objeto">
+                    <div class="tarjeta-header">
+                        <div class="titulo-objeto">Perfume</div>
+                        <div class="tag-estado recuperado">RECUPERADO</div>
+                    </div>
+                    <div class="tarjeta-cuerpo">
+                        <p class="texto-descripcion">Perfume de cinamonroll olor a rol de canela.</p>
+                        <div class="imagen-objeto">
+                            <img src="img/perfume.jpeg" alt="Perfume">
+                        </div>
+                    </div>
+                    <div class="tarjeta-footer">
+                        <p>Lugar: Pulpo</p>
+                        <p>Fecha: 04/06/2026</p>
+                    </div>
+                </article>
+
+                
+
+            </div>
+        </section>
+
+        <!-- ==========================================
+             SECCIÓN 3: PUBLICAR 
+             ========================================== -->
+        <section id="publicar-seccion" class="oculto">
+            <h2 class="titulo-seccion">Publicar un Objeto</h2>
+            <form class="formulario-publicacion" onsubmit="event.preventDefault(); alert('Objeto guardado exitosamente');">
+                <div class="form-grid">
+                    <div class="form-foto">
+                        <label for="foto">FOTO DEL OBJETO</label>
+                        <div class="upload-area">
+                            <input type="file" id="foto" accept="image/*">
+                            <p>Haz clic o arrastra una imagen aquí</p>
+                        </div>
+                    </div>
+                    <div class="form-inputs">
+                        <div class="input-group">
+                            <label for="nombre">Nombre del objeto:</label>
+                            <input type="text" id="nombre" placeholder="Ej: Mochila, Llaves..." required>
+                        </div>
+                        <div class="input-group">
+                            <label for="estado">Estado:</label>
+                            <select id="estado" required>
+                                <option value="">Selecciona una opción</option>
+                                <option value="perdido">Perdido</option>
+                                <option value="encontrado">Encontrado</option>
+                                <option value="recuperado">Recuperado</option>
+                            </select>
+                        </div>
+                        <div class="input-group">
+                            <label for="lugar">Lugar:</label>
+                            <input type="text" id="lugar" placeholder="Ej: Aula 10..." required>
+                        </div>
+                        <div class="input-group">
+                            <label for="fecha">Fecha:</label>
+                            <input type="date" id="fecha" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="input-group descripcion-group">
+                    <label for="descripcion">Descripción:</label>
+                    <textarea id="descripcion" rows="4" placeholder="Describe el objeto..." required></textarea>
+                </div>
+                <div class="form-botones">
+                    <button type="button" class="btn-peligro" onclick="document.querySelector('.formulario-publicacion').reset()">
+                        <span class="icono"></span> Eliminar
+                    </button>
+                    <button type="submit" class="btn-exito">
+                        <span class="icono"></span> Guardar
+                    </button>
+                </div>
+            </form>
+        </section>
+    
+    <!-- PIE DE PÁGINA -->
+    <footer class="main-footer">
+        <p>copyright©</p>
+    </footer>
+    </main>
+
+    
+
+    <!-- JAVASCRIPT PARA LA NAVEGACIÓN -->
+    <script>
+        function mostrarSeccion(idSeccion) {
+            // Ocultar todas las secciones
+            const secciones = document.querySelectorAll('main > section');
+            secciones.forEach(seccion => {
+                seccion.classList.add('oculto');
+                seccion.classList.remove('seccion-activa');
+            });
+
+            // Mostrar la sección seleccionada
+            const seccionActiva = document.getElementById(idSeccion);
+            seccionActiva.classList.remove('oculto');
+            seccionActiva.classList.add('seccion-activa');
+        }
+    </script>
+
+    <script>
+    // Función existente para cambiar de pestaña
+    function mostrarSeccion(idSeccion) {
+        const secciones = document.querySelectorAll('main > section');
+        secciones.forEach(seccion => {
+            seccion.classList.add('oculto');
+            seccion.classList.remove('seccion-activa');
+        });
+
+        const seccionActiva = document.getElementById(idSeccion);
+        seccionActiva.classList.remove('oculto');
+        seccionActiva.classList.add('seccion-activa');
+    }
+
+    // Función para ir al objeto específico
+    function irAlObjeto(idObjeto) {
+        // Primero, mostramos la sección de objetos
+        mostrarSeccion('objetos-seccion');
+        
+        // Esperamos un pequeño instante para que la sección sea visible
+        // y luego hacemos scroll hasta el objeto.
+        setTimeout(() => {
+            const elemento = document.getElementById(idObjeto);
+            if (elemento) {
+                // Hace scroll suave y centra el objeto en la pantalla
+                elemento.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                
+                // Efecto visual para resaltar el objeto al que llegamos
+                elemento.style.transition = "box-shadow 0.5s ease";
+                elemento.style.boxShadow = "0 0 20px 10px #FFE00C"; // Un brillo amarillo
+                
+                // Quitamos el brillo después de 2 segundos
+                setTimeout(() => {
+                    elemento.style.boxShadow = "5px 5px 0px rgba(0,0,0,0.8)";
+                }, 2000);
+            }
+        }, 100);
+    }
+</script>
+</body>
+</html>

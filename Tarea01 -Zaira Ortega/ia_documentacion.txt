@@ -1,0 +1,209 @@
+Utilicé Deepseek con Deepthink y Search
+Prompt: como hago que estos iconos al hacer clic te lleven a donde está el objeto que le asigne pero en la sección que tengo de objetos 
+		<div class="fila-iconos">
+                    <div class="caja-icono"><img src="img/hueso.png" alt="Hueso"></div>
+                    <div class="caja-icono"><img src="img/estrella_mar.png" alt="Estrella de mar"></div>
+                    <div class="caja-icono"><img src="img/lapices.png" alt="Lápices"></div>
+                    <div class="caja-icono"><img src="img/flor.png" alt="Flor"></div>
+                    <div class="caja-icono"><img src="img/estrella.png" alt="Estrella"></div>
+                    <div class="caja-icono"></div>
+                </div>
+Le adjunté mi index.html y styles.css
+
+Resultado:
+Para lograr que al hacer clic en los íconos te lleve directamente al objeto correspondiente en la sección de "OBJETOS", necesitamos hacer tres cosas:
+
+1.  **Asignar un `id` único** a cada tarjeta de objeto dentro de la sección "OBJETOS".
+2.  **Agregar un evento `onclick`** a los íconos en la sección "MÁS OBJETOS" que llame a una función de JavaScript.
+3.  **Crear la función de JavaScript** que cambie a la sección de objetos y haga scroll suave hasta el `id` seleccionado.
+
+Aquí tienes los cambios exactos que debes realizar en tu código.
+
+### 1. Modificar el HTML (Sección "MÁS OBJETOS")
+
+Debes agregar el evento `onclick` a las cajas de los íconos. Le pasaremos como parámetro el ID del objeto al que queremos ir (por ejemplo, `'obj-hueso'`). También he corregido el lugar del cuadro de color que estaba dentro de esta fila.
+
+```html
+<!-- LÍNEA DIVISORIA MEDIA -->
+<div class="divisor">
+    <img src="img/estrella.png" alt="Estrella" class="icon-estrella">
+</div>
+
+<!-- SECCIÓN MÁS OBJETOS (Iconos y Colores) -->
+<section class="mas-objetos">
+    <div class="titulo-mas-objetos">
+        <h2>MÁS OBJETOS</h2>
+        <img src="img/estrella_mar.png" alt="Estrella de mar" class="icon-estrella-mar">
+    </div>
+
+    <!-- Fila de Íconos (Ahora con onclick) -->
+    <div class="fila-iconos">
+        <div class="caja-icono" onclick="irAlObjeto('obj-hueso')"><img src="img/hueso.png" alt="Hueso"></div>
+        <div class="caja-icono" onclick="irAlObjeto('obj-estrella_mar')"><img src="img/estrella_mar.png" alt="Estrella de mar"></div>
+        <div class="caja-icono" onclick="irAlObjeto('obj-lapices')"><img src="img/lapices.png" alt="Lápices"></div>
+        <div class="caja-icono" onclick="irAlObjeto('obj-flor')"><img src="img/flor.png" alt="Flor"></div>
+        <div class="caja-icono" onclick="irAlObjeto('obj-estrella')"><img src="img/estrella.png" alt="Estrella"></div>
+    </div>
+
+    <!-- Fila de Colores (Movido aquí, como estaba originalmente) -->
+    <div class="fila-colores">
+        <div class="caja-color color-teal"></div>
+        <div class="caja-color color-amarillo"></div>
+        <div class="caja-color color-purpura"></div>
+        <div class="caja-color color-naranja"></div>
+    </div>
+</section>
+```
+
+### 2. Modificar el HTML (Sección "OBJETOS")
+
+Ahora debes ir a la sección de objetos (la que está oculta) y asignarle a cada tarjeta el `id` que pusimos en los íconos. **Es importante que los IDs coincidan exactamente.**
+
+```html
+<!-- ==========================================
+     SECCIÓN 2: OBJETOS (Solo muestra la lista)
+     ========================================== -->
+<section id="objetos-seccion" class="oculto">
+    <h2 class="titulo-seccion">Todos los Objetos</h2>
+    <div class="grid-objetos-inicio">
+        
+        <!-- Objeto: HUESO -->
+        <article id="obj-hueso" class="tarjeta-objeto">
+            <div class="tarjeta-header">
+                <div class="titulo-objeto">JUGUETE HUESO</div>
+                <div class="tag-estado perdido">PERDIDO</div>
+            </div>
+            <div class="tarjeta-cuerpo">
+                <p class="texto-descripcion">Hueso de juguete para perro, color blanco.</p>
+                <div class="imagen-perro"><img src="img/perro.png" alt="Perro"></div>
+            </div>
+            <div class="tarjeta-footer">
+                <p>Lugar: Parque</p>
+                <p>Fecha: 10/10/2023</p>
+            </div>
+        </article>
+
+        <!-- Objeto: ESTRELLA DE MAR -->
+        <article id="obj-estrella_mar" class="tarjeta-objeto">
+            <div class="tarjeta-header">
+                <div class="titulo-objeto">ESTRELLA DE MAR</div>
+                <div class="tag-estado encontrado">ENCONTRADO</div>
+            </div>
+            <div class="tarjeta-cuerpo">
+                <p class="texto-descripcion">Estrella de mar de decoración color naranja.</p>
+                <div class="imagen-perro"><img src="img/perro.png" alt="Perro"></div>
+            </div>
+            <div class="tarjeta-footer">
+                <p>Lugar: Playa</p>
+                <p>Fecha: 05/10/2023</p>
+            </div>
+        </article>
+
+        <!-- Objeto: LAPICES -->
+        <article id="obj-lapices" class="tarjeta-objeto">
+            <div class="tarjeta-header">
+                <div class="titulo-objeto">LÁPICES DE COLORES</div>
+                <div class="tag-estado recuperado">RECUPERADO</div>
+            </div>
+            <div class="tarjeta-cuerpo">
+                <p class="texto-descripcion">Par de lápices, uno azul y uno amarillo.</p>
+                <div class="imagen-perro"><img src="img/perro.png" alt="Perro"></div>
+            </div>
+            <div class="tarjeta-footer">
+                <p>Lugar: Aula 10</p>
+                <p>Fecha: 01/10/2023</p>
+            </div>
+        </article>
+        
+        <!-- Puedes agregar los objetos de FLOR y ESTRELLA siguiendo el mismo patrón -->
+
+    </div>
+</section>
+```
+
+### 3. Agregar la función JavaScript
+
+Al final de tu archivo `index.html`, justo debajo de la función `mostrarSeccion`, agrega esta nueva función `irAlObjeto`:
+
+```javascript
+<script>
+    // Función existente para cambiar de pestaña
+    function mostrarSeccion(idSeccion) {
+        const secciones = document.querySelectorAll('main > section');
+        secciones.forEach(seccion => {
+            seccion.classList.add('oculto');
+            seccion.classList.remove('seccion-activa');
+        });
+
+        const seccionActiva = document.getElementById(idSeccion);
+        seccionActiva.classList.remove('oculto');
+        seccionActiva.classList.add('seccion-activa');
+    }
+
+    // NUEVA FUNCIÓN: Para ir al objeto específico
+    function irAlObjeto(idObjeto) {
+        // 1. Primero, mostramos la sección de objetos
+        mostrarSeccion('objetos-seccion');
+        
+        // 2. Esperamos un pequeño instante (100ms) para que la sección sea visible
+        // y luego hacemos scroll hasta el objeto.
+        setTimeout(() => {
+            const elemento = document.getElementById(idObjeto);
+            if (elemento) {
+                // Hace scroll suave y centra el objeto en la pantalla
+                elemento.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                
+                // Opcional: Efecto visual para resaltar el objeto al que llegamos
+                elemento.style.transition = "box-shadow 0.5s ease";
+                elemento.style.boxShadow = "0 0 20px 10px #FFE00C"; // Un brillo amarillo
+                
+                // Quitamos el brillo después de 2 segundos
+                setTimeout(() => {
+                    elemento.style.boxShadow = "5px 5px 0px rgba(0,0,0,0.8)";
+                }, 2000);
+            }
+        }, 100);
+    }
+</script>
+```
+
+### 4. Actualizar el CSS (para que parezcan botones)
+
+Para que el usuario sepa que los íconos son clickeables, debemos cambiar el cursor y añadir un efecto al pasar el mouse. Modifica la clase `.caja-icono` en tu `styles.css`:
+
+```css
+.caja-icono {
+    border: 2px solid var(--color-negro);
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-blanco);
+    
+    /* NUEVOS ESTILOS */
+    cursor: pointer; /* Cambia el cursor a una manito */
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease; /* Transición suave */
+}
+
+.caja-icono:hover {
+    transform: translateY(-5px) scale(1.05); /* Se levanta un poco */
+    box-shadow: 3px 3px 0px var(--color-negro); /* Sombra estilo comic */
+    background-color: #f0f4ff; /* Cambia ligeramente el fondo */
+}
+```
+
+### ¿Cómo funciona esto?
+1. El usuario hace clic en el ícono del hueso.
+2. Se ejecuta `irAlObjeto('obj-hueso')`.
+3. La función oculta el Inicio y muestra la sección Objetos.
+4. Inmediatamente después, busca la tarjeta con `id="obj-hueso"`.
+5. Hace un scroll automático y suave hasta esa tarjeta.
+6. La tarjeta brilla con un borde amarillo durante 2 segundos para que el usuario sepa exactamente cuál es el objeto que buscaba.
+
+Modificaciones
+Pues modifiqué a mi gusto que icono le tocaba a que objeto, además de modificar parte de los comentarios
+
+Analisis Critico
+Pienso que logró el objetivo e incluso añadió estilos de css que no le pedí pero me gustaron.
+Aunque tal vez para una proxima entrega habría que considerar si es óptimo el tener esos detalles de estilo.

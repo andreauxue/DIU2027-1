@@ -1,0 +1,26 @@
+1. ¿Qué referencias elegiste y qué te gustó de ellas?
+Bright Tertiaries: Los colores me encantan
+Brutalismo: Que se vea muy colorido y algo saturado 
+Fulanitos: La tipografía y el estilo de personajes además que queda bien con bright tertiaries.
+
+2. Menciona tres cosas de tus referencias que intentaste construir utilizando CSS.
+Los colores, diseñé iconos inspirados en mis referencias y la disposición de los objetos en la página.
+
+3. ¿Qué parte de la página te costó más?
+La sección para publicar objetos, no me convencio la disposicion de los objetos además de agregar la función
+que te lleva de la pagina principal a un objeto especifico dando clic en alguno de los iconos que estan en
+la sección de más objetos de la página principal
+
+4. ¿Qué parte de tu página te gustó más?
+La página inicial es muy linda me recuerda 100% a la página que había de fulanitos gg.
+
+5. ¿Qué cambió entre tu boceto y el resultado final?
+No mucho pero la pantalla para publicar un objeto no es exactamente como la dibujé
+Incluyendo el dinamismo que quería dar en la sección de objetos cambiando de que lado aparecía la imagen.
+
+6. ¿Utilizaste IA? Si la utilizaste, ¿para qué?
+Sí, para que me ayudará a crear el efecto sombreado y que se mantuviera la sombra en toda la caja
+del objeto que se selecciona desde la pagina principal.
+
+7. ¿Tuviste que modificar o corregir alguna respuesta proporcionada por IA?
+Sí, los colores más que nada y un poco la disposición de los elementos.

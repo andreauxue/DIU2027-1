@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dondequedo.net - Objetos perdidos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="pestanas">
+        <a href="#inicio" class="pestana-inicio">Inicio</a>
+        <a href="#objetos">Resultados</a>
+        <a href="#publicar">Publicar</a>
+        <span>Página</span>
+    </div>
+
+    <header id="inicio">
+        <a class="marca" href="#inicio">
+            <img class="logo" src="imagenes/logo.svg" alt="">
+            <h1>dondequedo.net</h1>
+        </a>
+        <nav aria-label="Navegación principal">
+            <a href="#inicio"><img class="icono" src="imagenes/inicio.svg" alt="">Inicio</a>
+            <a href="#buscar"><img class="icono" src="imagenes/buscar.svg" alt="">Buscar</a>
+            <a href="#publicar"><img class="icono" src="imagenes/publicar.svg" alt="">Publicar</a>
+            <span class="cuenta"><img class="icono" src="imagenes/cuenta.svg" alt="">Mi cuenta</span>
+            <a href="#ayuda"><span class="robot robot-menu" aria-hidden="true"></span>Ayuda</a>
+            <span class="idioma"><span aria-hidden="true">A↔</span> ES</span>
+        </nav>
+    </header>
+
+    <main>
+        <section id="buscar" class="principal">
+            <h2>¿Perdiste algo? Búscalo aquí...</h2>
+            <p>Ve lo que otros encontraron o publica lo que se te perdió</p>
+
+            <!--  el buscador no funciona,  solo lleva a las tarjetas -->
+            <form class="buscador" action="#objetos" method="get">
+                <label for="busqueda" class="solo-lectura">Buscar un objeto</label>
+                <div class="campo-busqueda">
+                    <img src="imagenes/buscar.svg" alt="">
+                    <input type="search" id="busqueda" name="busqueda" placeholder="Ej: Kindle con funda">
+                </div>
+                <button class="boton boton-buscar" type="submit">Buscar</button>
+            </form>
+
+            <div class="categorias" aria-label="Categorías de objetos">
+                <a class="celulares" href="#objetos">Celulares</a>
+                <a class="llaves" href="#objetos">Llaves</a>
+                <a class="mochilas" href="#objetos">Mochilas</a>
+                <a class="documentos" href="#objetos">Documentos</a>
+                <a class="mascotas" href="#objetos">Mascotas</a>
+                <a class="otros" href="#objetos">Otros</a>
+            </div>
+        </section>
+
+        <section id="objetos" aria-label="Objetos reportados">
+            <div class="tarjetas">
+                <article class="tarjeta" id="objeto-kindle">
+                    <div class="foto foto-morada">
+                        <img src="imagenes/kindle.jpg" alt="Kindle matcha">
+                    </div>
+                    <div class="contenido-tarjeta">
+                        <span class="estado perdido">⌕ Perdido</span>
+                        <h3>Kindle con funda verde</h3>
+                        <p class="ubicacion"><img src="imagenes/ubicacion.svg" alt="">Biblioteca, <time datetime="2026-10-05">05 Oct</time></p>
+                        <p class="descripcion">Kindle color MATCHA con funda color matcha también</p>
+                        <a class="boton boton-tarjeta" href="#publicar">Lo encontré</a>
+                    </div>
+                </article>
+
+                <article class="tarjeta" id="objeto-lentes">
+                    <div class="foto foto-naranja">
+                        <img src="imagenes/lentes.jpg" alt="Lentes negros">
+                    </div>
+                    <div class="contenido-tarjeta">
+                        <span class="estado encontrado">✓ Encontrados</span>
+                        <h3>Lentes de armazón negro</h3>
+                        <p class="ubicacion"><img src="imagenes/ubicacion.svg" alt="">Cafetería, <time datetime="2026-10-07">7 Oct</time></p>
+                        <p class="descripcion">Lentes negros marca "bombavista"</p>
+                        <a class="boton boton-tarjeta" href="#publicar">Es mío</a>
+                    </div>
+                </article>
+                <article class="tarjeta" id="objeto-ventilador">
+                    <div class="foto foto-rosa">
+                        <img src="imagenes/ventilador.jpg" alt="Ventilador portátil verde y amarillo con una flor en el centro">
+                    </div>
+                    <div class="contenido-tarjeta">
+                        <span class="estado recuperado">★ Recuperado</span>
+                        <h3>Ventilador portátil</h3>
+                        <p class="ubicacion"><img src="imagenes/ubicacion.svg" alt="">Salón 204, <time datetime="2026-10-08">8 Oct</time></p>
+                        <p class="descripcion">Ventilador verde y amarillo con una flor</p>
+                        <span class="objeto-entregado">¡Ya está en casa!</span>
+                    </div>
+                </article>
+
+                <article class="tarjeta" id="objeto-salsa">
+                    <div class="foto foto-verde">
+                        <img src="imagenes/salsa.jpg" alt="Botella de salsa valentina">
+                    </div>
+                    <div class="contenido-tarjeta">
+                        <span class="estado perdido">⌕ Perdida</span>
+                        <h3>Salsa Valentina</h3>
+                        <p class="ubicacion"><img src="imagenes/ubicacion.svg" alt="">Cafetería, <time datetime="2026-10-6">6 Oct</time></p>
+                        <p class="descripcion">Botella de salsa valentina</p>
+                        <a class="boton boton-tarjeta" href="#publicar">Lo encontré</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="publicar" class="publicacion">
+            <h2>Publicar un objeto</h2>
+            <form class="formulario" action="#publicar" method="get">
+                <div class="campo">
+                    <label for="nombre">Nombre del objeto *</label>
+                    <input type="text" id="nombre" name="objeto" placeholder="Ej: lentes negros" required>
+                </div>
+                <div class="campo">
+                    <label for="estado">Estado *</label>
+                    <select id="estado" name="estado" required>
+                        <option value="">Selecciona una opción</option>
+                        <option value="perdido">Perdido</option>
+                        <option value="encontrado">Encontrado</option>
+                        <option value="recuperado">Recuperado</option>
+                    </select>
+                </div>
+                <div class="campo">
+                    <label for="lugar">Lugar *</label>
+                    <input type="text" id="lugar" name="lugar" placeholder="Ej: Biblioteca" required>
+                </div>
+                <div class="campo">
+                    <label for="fecha">Fecha *</label>
+                    <input type="date" id="fecha" name="fecha" required>
+                </div>
+                <div class="campo campo-completo">
+                    <label for="descripcion">Descripción *</label>
+                    <textarea id="descripcion" name="descripcion" rows="3" placeholder="¿Cómo es el objeto?" required></textarea>
+                </div>
+                <div class="acciones-formulario">
+                    <button class="boton boton-publicar" type="submit">Publicar</button>
+                    <button class="boton boton-limpiar" type="reset">Limpiar</button>
+                </div>
+                <p class="aviso-formulario">El forms es solo una muestra de la interfaz, no guarda datos</p>
+            </form>
+        </section>
+
+        <!-- el robotsito es solo  parte del diseño así que no sirve -->
+        <aside id="ayuda" class="ayuda" aria-label="Ayuda decorativa">
+            <div class="saludo">
+                <span class="robot" aria-hidden="true"></span>
+                <p>¡Holisss! ¿Te ayudo?</p>
+            </div>
+            <div class="chat">
+                <input type="text" placeholder="Escribir aquí" aria-label="Chat decorativo, no disponible" disabled>
+                <button class="boton boton-enviar" type="button" disabled>Enviar</button>
+            </div>
+        </aside>
+    </main>
+
+    <footer>
+        <div class="visitas"><span>Visitantes #</span><span class="contador">004817</span></div>
+        <div class="enlaces-pie">
+            <a href="#reglas">Reglas</a>
+            <a href="#contacto">Contacto</a>
+            <a href="#ayuda">Ayuda</a>
+        </div>
+        <details id="reglas">
+            <summary>Reglas de publicación</summary>
+            <p>Describe el objeto y dónde se perdió o se encontró ¡No  publiques tus datos personales!</p>
+        </details>
+        <details id="contacto">
+            <summary>Contacto</summary>
+            <p>llama a +55 6789...!! y Dinos tus quejas!!!</p>
+        </details>
+    </footer>
+</body>
+</html>

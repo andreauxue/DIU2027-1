@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Objetos Perdidos FC — Portal de la comunidad</title>
+  <meta name="description" content="Portal comunitario de objetos perdidos y encontrados de la Facultad de Ciencias, UNAM.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=VT323&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=8">
+</head>
+<body>
+
+  <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
+
+  <!-- ══════════ VENTANA PRINCIPAL ══════════ -->
+  <div class="portal">
+
+    <!-- ── Barra de título de la ventana ── -->
+    <header class="portal-header">
+      <div class="window-bar">
+        <p class="window-bar-title">
+          <span class="window-icon" aria-hidden="true">✦</span>
+          Objetos Perdidos FC — Portal de la comunidad
+        </p>
+        <div class="window-controls" aria-hidden="true">
+          <span class="w-btn">_</span>
+          <span class="w-btn">▢</span>
+          <span class="w-btn w-btn--close">✕</span>
+        </div>
+      </div>
+
+      <!-- ── Barra de menú ── -->
+      <nav class="menu-bar" aria-label="Menú del sistema">
+        <ul>
+          <li><a href="#">Archivo</a></li>
+          <li><a href="#">Editar</a></li>
+          <li><a href="#">Ver</a></li>
+          <li><a href="#">Favoritos</a></li>
+          <li><a href="#">Herramientas</a></li>
+          <li><a href="#">Ayuda</a></li>
+        </ul>
+      </nav>
+
+      <!-- ── Título grande ── -->
+      <div class="hero-title">
+        <div>
+          <p class="hero-tag">☆ Facultad de Ciencias · UNAM ☆</p>
+          <h1 class="hero-heading">OBJETOS PERDIDOS</h1>
+        </div>
+      </div>
+
+      <!-- ── Navegación por pestañas ── -->
+      <nav class="tab-nav" aria-label="Navegación principal">
+        <ul>
+          <li><a class="tab tab--activa" href="#" aria-current="page">Inicio</a></li>
+          <li><a class="tab" href="#feed">Objetos perdidos</a></li>
+          <li><a class="tab" href="#feed">Objetos encontrados</a></li>
+          <li><a class="tab" href="#reportar">Publicar reporte</a></li>
+          <li><a class="tab" href="#">Ayuda / FAQ</a></li>
+        </ul>
+      </nav>
+
+      <!-- ── Ticker de novedades ── -->
+      <div class="ticker" aria-label="Novedades">
+        <span class="ticker-label">NOVEDADES</span>
+        <div class="ticker-viewport">
+          <div class="ticker-track">
+            <p class="ticker-text">
+              ✦ 2 reportes recientes &nbsp;|&nbsp; ¿Encontraste algo? Publícalo aquí
+              &nbsp;✦&nbsp; Termo recuperado en Cafetería — ¡gracias por reportar!
+              &nbsp;★&nbsp; Recuerda verificar al propietario antes de entregar
+              &nbsp;✦&nbsp; Llaves encontradas en Edificio Amoxcalli esperan dueño ★
+            </p>
+            <p class="ticker-text" aria-hidden="true">
+              ✦ 2 reportes recientes &nbsp;|&nbsp; ¿Encontraste algo? Publícalo aquí
+              &nbsp;✦&nbsp; Termo recuperado en Cafetería — ¡gracias por reportar!
+              &nbsp;★&nbsp; Recuerda verificar al propietario antes de entregar
+              &nbsp;✦&nbsp; Llaves encontradas en Edificio Amoxcalli esperan dueño ★
+            </p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ══════════ CUERPO: 3 COLUMNAS ══════════ -->
+    <div class="layout">
+
+      <!-- ── Columna izquierda ── -->
+      <aside class="col-izq" aria-label="Barra lateral">
+        <section class="panel">
+          <h2 class="panel-title">:: Navegación ::</h2>
+          <ul class="panel-list">
+            <li><a href="#">» Inicio</a></li>
+            <li><a href="#buscar">» Buscar objeto</a></li>
+            <li><a href="#feed">» Perdidos</a></li>
+            <li><a href="#feed">» Encontrados</a></li>
+            <li><a href="#reportar">» Publicar reporte</a></li>
+            <li><a href="#">» Preguntas frecuentes</a></li>
+          </ul>
+        </section>
+
+        <section class="panel">
+          <h2 class="panel-title">:: Categorías ::</h2>
+          <ul class="panel-list">
+            <li><a href="#feed">[+] Mochilas <span class="count">(2)</span></a></li>
+            <li><a href="#feed">[+] Electrónicos <span class="count">(4)</span></a></li>
+            <li><a href="#feed">[+] Documentos <span class="count">(1)</span></a></li>
+            <li><a href="#feed">[+] Ropa <span class="count">(3)</span></a></li>
+            <li><a href="#feed">[+] Llaves <span class="count">(2)</span></a></li>
+            <li><a href="#feed">[+] Otros objetos <span class="count">(5)</span></a></li>
+          </ul>
+        </section>
+
+        <section class="panel">
+          <h2 class="panel-title">:: Enlaces útiles ::</h2>
+          <ul class="panel-list">
+            <li><a href="#">» Biblioteca FC</a></li>
+            <li><a href="#">» Servicios escolares</a></li>
+            <li><a href="#">» Seguridad campus</a></li>
+          </ul>
+          <p class="panel-note">¡Cuida tus cosas! ♡</p>
+        </section>
+
+        <section class="panel panel--pixel">
+          <p class="pixel-box">[ FC · WEB ]</p>
+          <p class="panel-note">Todos podemos ayudar ★</p>
+        </section>
+      </aside>
+
+      <!-- ── Columna central ── -->
+      <main class="col-centro" id="contenido">
+
+        <!-- Hero / bienvenida -->
+        <section class="bienvenida panel">
+          <h2 class="panel-title">:: Bienvenida ::</h2>
+          <div class="bienvenida-body">
+            <p class="bienvenida-texto">
+              ¿Perdiste algo en la facultad? ¿Encontraste un objeto sin dueño?
+              Este es el punto de encuentro de la comunidad de Ciencias para
+              reportar, buscar y devolver objetos perdidos.
+              <span class="cursor" aria-hidden="true">▌</span>
+            </p>
+            <ul class="stats">
+              <li class="stat stat--perdido"><strong>12</strong> <span>perdidos</span></li>
+              <li class="stat stat--encontrado"><strong>8</strong> <span>encontrados</span></li>
+              <li class="stat stat--recuperado"><strong>5</strong> <span>recuperados</span></li>
+            </ul>
+            <div class="bienvenida-acciones">
+              <a class="btn btn--primario" href="#reportar">★ Publicar reporte</a>
+              <a class="btn btn--secundario" href="#buscar">Buscar objeto</a>
+            </div>
+          </div>
+        </section>
+
+        <!-- Buscador + feed -->
+        <section class="feed" id="buscar" aria-label="Buscador y reportes">
+          <h2 class="panel-title panel-title--wide">:: Buscador de objetos ::</h2>
+
+          <form class="buscador" action="#" method="get">
+            <label class="sr-only" for="q">Buscar objeto por nombre o palabra clave</label>
+            <input type="search" id="q" name="q" placeholder="Buscar objeto…">
+            <label class="sr-only" for="cat">Categoría</label>
+            <select id="cat" name="cat">
+              <option value="">Todas las categorías</option>
+              <option>Mochilas</option>
+              <option>Electrónicos</option>
+              <option>Documentos</option>
+              <option>Ropa</option>
+              <option>Llaves</option>
+              <option>Otros objetos</option>
+            </select>
+            <button class="btn btn--primario" type="submit">Buscar</button>
+          </form>
+
+          <!-- Filtros por estado (CSS puro con radios + :has) -->
+          <fieldset class="filtros">
+            <legend>Filtrar por estado:</legend>
+            <input class="sr-only" type="radio" name="estado" id="f-todos" checked>
+            <label class="chip" for="f-todos">★ Todos</label>
+            <input class="sr-only" type="radio" name="estado" id="f-perdido">
+            <label class="chip chip--perdido" for="f-perdido">! Perdido</label>
+            <input class="sr-only" type="radio" name="estado" id="f-encontrado">
+            <label class="chip chip--encontrado" for="f-encontrado">✔ Encontrado</label>
+            <input class="sr-only" type="radio" name="estado" id="f-recuperado">
+            <label class="chip chip--recuperado" for="f-recuperado">♡ Recuperado</label>
+          </fieldset>
+
+          <h3 class="feed-subtitulo">Últimos reportes</h3>
+
+          <div class="feed-grid" id="feed">
+
+            <!-- 1 · Mochila PERDIDA -->
+            <article class="post post--perdido" data-estado="perdido" style="--i:0">
+              <div class="post-bar">
+                <span>Mochila negra</span>
+                <span class="post-bar-dots" aria-hidden="true">_ ▢ ✕</span>
+              </div>
+              <div class="post-body">
+                <header class="post-autor">
+                  <span class="avatar" aria-hidden="true">MG</span>
+                  <div>
+                    <p class="autor-nombre">Mariana G. <span class="handle">@mariana.g</span></p>
+                    <p class="post-tiempo"><time datetime="2026-09-20T14:00">hace 2 h</time></p>
+                  </div>
+                  <span class="badge badge--perdido">! Perdido</span>
+                </header>
+                <figure class="post-img">
+                  <img src="imagenes/mochila.jpg" alt="Mochila azul junto a un libro y una laptop sobre un escritorio" loading="lazy" width="800" height="600">
+                </figure>
+                <h4 class="post-titulo">Mochila negra</h4>
+                <ul class="post-info">
+                  <li><strong>Lugar:</strong> Biblioteca</li>
+                  <li><strong>Fecha:</strong> <time datetime="2026-09-20">20/09/2026</time></li>
+                  <li><strong>Descripción:</strong> Compartimento frontal gris, llavero de estrella.</li>
+                </ul>
+                <footer class="post-acciones">
+                  <button class="btn btn--fantasma" type="button">♡ 24</button>
+                  <button class="btn btn--fantasma" type="button">💬 6</button>
+                  <button class="btn btn--fantasma" type="button">↗ Compartir</button>
+                  <button class="btn btn--primario" type="button">¡Es mía!</button>
+                </footer>
+              </div>
+            </article>
+
+            <!-- 2 · Calculadora ENCONTRADA -->
+            <article class="post post--encontrado" data-estado="encontrado" style="--i:1">
+              <div class="post-bar">
+                <span>Calculadora científica</span>
+                <span class="post-bar-dots" aria-hidden="true">_ ▢ ✕</span>
+              </div>
+              <div class="post-body">
+                <header class="post-autor">
+                  <span class="avatar avatar--e" aria-hidden="true">DR</span>
+                  <div>
+                    <p class="autor-nombre">Diego R. <span class="handle">@diego.rmz</span></p>
+                    <p class="post-tiempo"><time datetime="2026-09-28T10:30">hace 3 d</time></p>
+                  </div>
+                  <span class="badge badge--encontrado">✔ Encontrado</span>
+                </header>
+                <figure class="post-img">
+                  <img src="imagenes/calculadora.jpg" alt="Calculadora sobre un escritorio junto a un teclado y notas adhesivas" loading="lazy" width="800" height="450">
+                </figure>
+                <h4 class="post-titulo">Calculadora científica</h4>
+                <ul class="post-info">
+                  <li><strong>Lugar:</strong> Edificio Tlahuizcalpan, salón 204</li>
+                  <li><strong>Fecha:</strong> <time datetime="2026-09-28">28/09/2026</time></li>
+                  <li><strong>Descripción:</strong> Gris, con nombre borrado en la tapa trasera.</li>
+                </ul>
+                <footer class="post-acciones">
+                  <button class="btn btn--fantasma" type="button">♡ 11</button>
+                  <button class="btn btn--fantasma" type="button">💬 3</button>
+                  <button class="btn btn--fantasma" type="button">↗ Compartir</button>
+                  <button class="btn btn--primario" type="button">¡Es mía!</button>
+                </footer>
+              </div>
+            </article>
+
+            <!-- 3 · Termo RECUPERADO -->
+            <article class="post post--recuperado" data-estado="recuperado" style="--i:2">
+              <div class="post-bar">
+                <span>Termo verde</span>
+                <span class="post-bar-dots" aria-hidden="true">_ ▢ ✕</span>
+              </div>
+              <div class="post-body">
+                <header class="post-autor">
+                  <span class="avatar avatar--r" aria-hidden="true">LP</span>
+                  <div>
+                    <p class="autor-nombre">Luisa P. <span class="handle">@luisap</span></p>
+                    <p class="post-tiempo"><time datetime="2026-09-30T13:15">hace 5 d</time></p>
+                  </div>
+                  <span class="badge badge--recuperado">♡ Recuperado</span>
+                </header>
+                <figure class="post-img">
+                  <img src="imagenes/termo.jpg" alt="Termo verde metálico con tapa de rosca" loading="lazy" width="800" height="1067">
+                  <figcaption class="stamp">✓ Entregado</figcaption>
+                </figure>
+                <h4 class="post-titulo">Termo verde</h4>
+                <ul class="post-info">
+                  <li><strong>Lugar:</strong> Cafetería</li>
+                  <li><strong>Fecha:</strong> <time datetime="2026-09-30">30/09/2026</time></li>
+                  <li><strong>Descripción:</strong> Termo metálico verde menta; ya fue devuelto a su dueño. ¡Gracias!</li>
+                </ul>
+                <footer class="post-acciones">
+                  <button class="btn btn--fantasma" type="button">♡ 41</button>
+                  <button class="btn btn--fantasma" type="button">💬 9</button>
+                  <button class="btn btn--fantasma" type="button">↗ Compartir</button>
+                  <button class="btn btn--secundario" type="button">Ver publicación</button>
+                </footer>
+              </div>
+            </article>
+
+            <!-- 4 · Audífonos PERDIDOS -->
+            <article class="post post--perdido" data-estado="perdido" style="--i:3">
+              <div class="post-bar">
+                <span>Audífonos beige</span>
+                <span class="post-bar-dots" aria-hidden="true">_ ▢ ✕</span>
+              </div>
+              <div class="post-body">
+                <header class="post-autor">
+                  <span class="avatar" aria-hidden="true">EM</span>
+                  <div>
+                    <p class="autor-nombre">Emilio M. <span class="handle">@emiliom</span></p>
+                    <p class="post-tiempo"><time datetime="2026-10-02T18:40">hace 1 sem</time></p>
+                  </div>
+                  <span class="badge badge--perdido">! Perdido</span>
+                </header>
+                <figure class="post-img">
+                  <img src="imagenes/audifonos.jpg" alt="Audífonos de diadema color beige sobre fondo neutro" loading="lazy" width="800" height="571">
+                </figure>
+                <h4 class="post-titulo">Audífonos de diadema</h4>
+                <ul class="post-info">
+                  <li><strong>Lugar:</strong> Auditorio Alfonso Nápoles Gándara</li>
+                  <li><strong>Fecha:</strong> <time datetime="2026-10-02">02/10/2026</time></li>
+                  <li><strong>Descripción:</strong> Beige, bluetooth, con estuche de tela.</li>
+                </ul>
+                <footer class="post-acciones">
+                  <button class="btn btn--fantasma" type="button">♡ 17</button>
+                  <button class="btn btn--fantasma" type="button">💬 4</button>
+                  <button class="btn btn--fantasma" type="button">↗ Compartir</button>
+                  <button class="btn btn--primario" type="button">Lo encontré</button>
+                </footer>
+              </div>
+            </article>
+
+            <!-- 5 · Llaves ENCONTRADAS -->
+            <article class="post post--encontrado" data-estado="encontrado" style="--i:4">
+              <div class="post-bar">
+                <span>Llavero con llaves</span>
+                <span class="post-bar-dots" aria-hidden="true">_ ▢ ✕</span>
+              </div>
+              <div class="post-body">
+                <header class="post-autor">
+                  <span class="avatar avatar--e" aria-hidden="true">SC</span>
+                  <div>
+                    <p class="autor-nombre">Sofía C. <span class="handle">@sofiac</span></p>
+                    <p class="post-tiempo"><time datetime="2026-10-03T09:05">hace 1 sem</time></p>
+                  </div>
+                  <span class="badge badge--encontrado">✔ Encontrado</span>
+                </header>
+                <figure class="post-img">
+                  <img src="imagenes/llaves.jpg" alt="Llavero con varias llaves, tijeras pequeñas y dijes colgando" loading="lazy" width="800" height="1199">
+                </figure>
+                <h4 class="post-titulo">Llavero con 4 llaves</h4>
+                <ul class="post-info">
+                  <li><strong>Lugar:</strong> Edificio Amoxcalli, pasillo norte</li>
+                  <li><strong>Fecha:</strong> <time datetime="2026-10-03">03/10/2026</time></li>
+                  <li><strong>Descripción:</strong> Incluye dije metálico; se resguardan en vigilancia.</li>
+                </ul>
+                <footer class="post-acciones">
+                  <button class="btn btn--fantasma" type="button">♡ 29</button>
+                  <button class="btn btn--fantasma" type="button">💬 7</button>
+                  <button class="btn btn--fantasma" type="button">↗ Compartir</button>
+                  <button class="btn btn--primario" type="button">¡Son mías!</button>
+                </footer>
+              </div>
+            </article>
+
+            <!-- 6 · Cuaderno RECUPERADO -->
+            <article class="post post--recuperado" data-estado="recuperado" style="--i:5">
+              <div class="post-bar">
+                <span>Cuaderno de física</span>
+                <span class="post-bar-dots" aria-hidden="true">_ ▢ ✕</span>
+              </div>
+              <div class="post-body">
+                <header class="post-autor">
+                  <span class="avatar avatar--r" aria-hidden="true">AT</span>
+                  <div>
+                    <p class="autor-nombre">Andrés T. <span class="handle">@andrest</span></p>
+                    <p class="post-tiempo"><time datetime="2026-10-05T16:20">hace 2 sem</time></p>
+                  </div>
+                  <span class="badge badge--recuperado">♡ Recuperado</span>
+                </header>
+                <figure class="post-img">
+                  <img src="imagenes/cuaderno.jpg" alt="Cuaderno de espiral abierto con notas escritas y unos lentes encima" loading="lazy" width="800" height="533">
+                  <figcaption class="stamp">✓ Entregado</figcaption>
+                </figure>
+                <h4 class="post-titulo">Cuaderno de física</h4>
+                <ul class="post-info">
+                  <li><strong>Lugar:</strong> Laboratorio de Física</li>
+                  <li><strong>Fecha:</strong> <time datetime="2026-10-05">05/10/2026</time></li>
+                  <li><strong>Descripción:</strong> Espiral, portada negra; devuelto por el profesor.</li>
+                </ul>
+                <footer class="post-acciones">
+                  <button class="btn btn--fantasma" type="button">♡ 33</button>
+                  <button class="btn btn--fantasma" type="button">💬 5</button>
+                  <button class="btn btn--fantasma" type="button">↗ Compartir</button>
+                  <button class="btn btn--secundario" type="button">Ver publicación</button>
+                </footer>
+              </div>
+            </article>
+
+          </div>
+
+          <aside class="consejo">
+            <p><strong>★ Consejo de la comunidad:</strong> conserva una seña
+            particular para verificar al propietario. Acuerda la entrega en un
+            lugar público del campus.</p>
+          </aside>
+        </section>
+      </main>
+
+      <!-- ── Columna derecha: formulario ── -->
+      <aside class="col-der" id="reportar" aria-label="Publicar reporte">
+        <section class="panel panel--form">
+          <h2 class="panel-title">:: Publica tu reporte ::</h2>
+          <p class="panel-sub">Reportar un objeto</p>
+
+          <form class="reporte" action="#" method="post">
+            <fieldset class="segmented">
+              <legend class="sr-only">Tipo de reporte</legend>
+              <input class="sr-only" type="radio" name="tipo" id="t-perdi" checked>
+              <label class="seg" for="t-perdi">Perdí</label>
+              <input class="sr-only" type="radio" name="tipo" id="t-encontre">
+              <label class="seg" for="t-encontre">Encontré</label>
+            </fieldset>
+
+            <div class="campo">
+              <label for="nombre">Nombre *</label>
+              <input type="text" id="nombre" name="nombre" placeholder="Nombre del objeto" required>
+            </div>
+
+            <div class="campo">
+              <label for="categoria">Categoría *</label>
+              <select id="categoria" name="categoria" required>
+                <option value="">Selecciona una categoría</option>
+                <option>Mochilas</option>
+                <option>Electrónicos</option>
+                <option>Documentos</option>
+                <option>Ropa</option>
+                <option>Llaves</option>
+                <option>Otros objetos</option>
+              </select>
+            </div>
+
+            <div class="campo-duo">
+              <div class="campo">
+                <label for="ubicacion">Ubicación *</label>
+                <input type="text" id="ubicacion" name="ubicacion" placeholder="Última ubicación" required>
+              </div>
+              <div class="campo">
+                <label for="fecha">Fecha *</label>
+                <input type="date" id="fecha" name="fecha" required>
+              </div>
+            </div>
+
+            <div class="campo">
+              <label for="descripcion">Descripción *</label>
+              <textarea id="descripcion" name="descripcion" rows="3" placeholder="Describe el objeto…" required></textarea>
+            </div>
+
+            <div class="campo">
+              <label for="foto">Fotografía</label>
+              <input type="file" id="foto" name="foto" accept="image/*">
+            </div>
+
+            <div class="campo">
+              <label for="correo">Correo electrónico *</label>
+              <input type="email" id="correo" name="correo" placeholder="nombre@ejemplo.com" required>
+            </div>
+
+            <div class="campo campo--check">
+              <input type="checkbox" id="confirmo" name="confirmo" required>
+              <label for="confirmo">Confirmo la información.</label>
+            </div>
+
+            <div class="reporte-acciones">
+              <button class="btn btn--primario" type="submit">Publicar</button>
+              <button class="btn btn--secundario" type="reset">Limpiar</button>
+            </div>
+          </form>
+        </section>
+      </aside>
+    </div>
+
+    <!-- ── Pie ── -->
+    <footer class="portal-footer">
+      <nav class="footer-nav" aria-label="Pie de página">
+        <ul>
+          <li>[ <a href="#">Inicio</a> ]</li>
+          <li>[ <a href="#buscar">Buscar</a> ]</li>
+          <li>[ <a href="#reportar">Reportar</a> ]</li>
+          <li>[ <a href="#">Ayuda</a> ]</li>
+          <li>[ <a href="#">Contacto</a> ]</li>
+        </ul>
+        <a class="volver" href="#contenido">↑ Volver arriba</a>
+      </nav>
+      <div class="footer-meta">
+        <p>Objetos Perdidos FC · Comunidad universitaria · Datos de ejemplo</p>
+        <p class="contador">Visitas: [ 0 0 1 2 8 ]</p>
+      </div>
+      <div class="status-bar">
+        <span>Internet · FC</span>
+        <span class="status-ok">● En línea</span>
+      </div>
+      <p class="creditos">Fotografías: Unsplash (George C, Getty Images, Ubaid E. Alyafizi, Elshan Neymatov, Kovina Đurić, Lala Azizli, Matt Ragland)</p>
+    </footer>
+  </div>
+
+</body>
+</html>

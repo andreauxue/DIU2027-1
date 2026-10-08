@@ -1,0 +1,60 @@
+1. ¿Qué referencias elegiste y qué te gustó de ellas?
+Elegí las referencias Y2K porque me daba como curiosidad las gradientes que se utilizan entonces principalmente fue eso por lo que seleccioné este estilo . Lo que más me gustó es lo llamativas que son las texturas y colores.
+2. Menciona tres cosas de tus referencias que intentaste construir utilizando CSS.
+Las gradientes en los componentes.
+Las brillos y resplandores en las animaciones.
+Los efectos en las cartas al hacer hover con una sombra eléctrica.
+3. ¿Qué parte de la página te costó más?
+Lo que más me costó fue el manejar y revisar toda la estructura con css vanilla porque es como ir 10 pasos atrás de todo el tooling que tenemos hoy en día.
+4. ¿Qué parte de tu página te gustó más?
+Lo que más me gustó fue el diseño de la tarjeta de los reportes y el efecto de las animaciones.
+5. ¿Qué cambió entre tu boceto y el resultado final?
+Son muy similares pero ciertas funcionalidades o detalles que no había contemplado en el boceto necesitaron un ajuste final porque en la práctica necesitaban de otra solución.
+6. ¿Utilizaste IA? Si la utilizaste, ¿para qué?
+Lo usé para general la primera iteración siendo específico de lo que se había pedido a un modelo fusion que en mi punto de vista es el que tiene mejor rendimiento en diseño comparado con otros y posteriormente fuí haciendo cambios y ajustes tanto al HTML como al CSS . Este fue el prompt que utilicé:
+<<<
+Can you help me making a HTML and CSS webpage following this spec
+Create a social media  like page about lost objects in the science faculty of UNAM university. 
+The page must include this components :
+○ Encabezado y navegación.
+○ Sección principal.
+○ Buscador o forma de consultar objetos.
+○ Al menos tres objetos.
+○ Imágenes de los objetos.
+○ Estado del objeto.
+○ Información como lugar, fecha y descripción.
+○ Formulario para reportar un objeto.
+○ Botones.
+○ Pie de página.
+Los objetos deberán representar diferentes situaciones, por ejemplo:
+Mochila PERDIDA
+Calculadora ENCONTRADA
+Termo RECUPERADO
+Debe ser fácil distinguir visualmente cada estado.
+
+With the listed constraints : 
+- We should favor the use of css variables instead of hardcoded values
+- With these variables we should be able to generate a color palette and typography system
+- Use margins and paddings so the components we make ahve space to breath 
+- Implement grid and flexbox for organizing the cards, sidebars and rest of components of the app 
+- Handle images with object fit
+- Add nice motion design effects with hover and focus using transition and keyframes
+- Implement @media controllers so we always know we are handling at least phone, tablet and laptop sizes and layouts 
+- For images we should download them and put them under the imagenes folder 
+
+if you need visual reference for the page itself use @boceto.png as a layout inspiration and @referencias.png as an styling inspiration
+>>>
+
+7. ¿Tuviste que modificar o corregir alguna respuesta proporcionada por IA?
+
+Sí, tuve que modificar y corregir varias partes porque en estructura estaba ok pero en detalles sí le hacía falta un poco la verdad como en mis preferencias de los tipos de layouts que más me gustan o cómo yo siento que se siente menos cansada la interfaz.
+
+Estos fueron los cambios que tuve que hacer después de la primera versión:
+
+- Tarjetas que se desbordaban
+- Fondo de la página
+- Breakpoint de laptop
+- Ticker de "NOVEDADES"
+- Contadores (12 perdidos / 8 encontrados / 5 recuperados)
+- Distribución de los contadores
+- Lista de reportes muy larga

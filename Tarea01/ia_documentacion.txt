@@ -1,0 +1,50 @@
+ preguntas y respuestas sobre HTML y CSS
+
+1. ¿Cómo se inserta una imagen en HTML?
+
+Se utiliza la etiqueta <img>. En src se escribe la ruta del archivo y en alt una descripción de la imagen.
+
+Ejemplo:
+<img src="imagenes/kindle.jpg" alt="Kindle con funda verde">
+
+2. ¿Cómo se insertan iconos en HTML?
+
+Los iconos pueden guardarse como archivos SVG o PNG dentro del proyecto. Después se insertan utilizando la etiqueta <img>.
+
+Ejemplo:
+<img src="imagenes/buscar.svg" alt="Buscar">
+
+3. ¿Cómo cambio el tamaño de una imagen?
+
+Puedo asignarle una clase y establecer su ancho en CSS. Con height: auto conserva sus proporciones.
+
+Ejemplo en HTML:
+<img class="imagen-objeto" src="imagenes/kindle.jpg" alt="Kindle con funda verde">
+
+Ejemplo en CSS:
+.imagen-objeto {
+    width: 200px;
+    height: auto;
+}
+
+4. ¿Cómo hago que un botón cambie al pasar el cursor?
+
+Se utiliza :hover para definir el cambio y transition para que ocurra suavemente.
+
+Ejemplo:
+.boton {
+    transition: background-color 0.2s;
+}
+
+.boton:hover {
+    background-color: yellow;
+}
+
+5. ¿Cómo redondeo las esquinas de una tarjeta?
+
+Se utiliza border-radius. El valor indica cuánto se redondean las esquinas.
+
+Ejemplo:
+.tarjeta {
+    border-radius: 15px;
+}

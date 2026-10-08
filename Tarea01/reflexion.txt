@@ -1,0 +1,28 @@
+
+1. ¿Qué referencias elegiste y qué te gustó de ellas?
+
+referencias de ventanas de computadoras antiguas, imágenes con colores neón. Me gustó el estilo vaporwave, así que me interesó combinar ese estilo de internet antiguo tipo 2000's con una tipografía algo pixelada de videojuego
+
+2. Menciona tres cosas de tus referencias que intentaste construir utilizando CSS
+
+los botones redondeados con borde y sombra negra, las tarjetas con fondos de colores y el texto pixelado con la fuente VT323
+
+3. ¿Qué parte de la página te costó más?
+
+replicar lo que decía mi boceto, entender que si contaba como trasnsición y que no, algo que no entendí mucho fue la animación con @keyframe para ver como funcionaba, tuve que buscar mas ejemplos y hacer algo no tan dicifil
+
+4. ¿Qué parte de tu página te gustó más?
+
+la edición, ver los cambios que hacía tanto en el html con las imágenes, como los colores con CSS
+
+5. ¿Qué cambió entre tu boceto y el resultado final?
+
+el boceto tenía tres tarjetas que eran d ejemplo obvio, pero ya en la página puse cuatro cosas diferentes con fotos: un Kindle, unos lentes, ventilador portátil y la valentina. También puse el formulario de reporte y utilicé etiquetas distintas para los estados perdido, encontrado y recuperado
+
+6. ¿Utilizaste IA? Si la utilizaste, ¿para qué?
+
+Sí, utilicé ChatGPT para revisar los requisitos, para entender igual lo de Git y GitHub y hacer bien lo del fork. También para entender como agregar mis fotos, y más elementos...
+
+7. ¿Tuviste que modificar o corregir alguna respuesta proporcionada por IA?
+
+Sí. Tuve que pedir como se agregan las imagenes,eso si no lo sabía bien bien, añadir iconos, modificarles el tamaño. Y tener cuidado con lo de git, para no modificr nada que no se tuviera que moificar en la rama principal

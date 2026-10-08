@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objetos Perdidos FC</title>
+
+    <!-- Fuentes utilizadas: Fredoka (títulos) y Poppins (texto) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400..700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- DIBUJOS
+         Cada <symbol> se dibuja una sola vez aquí y después se
+         "pega" donde haga falta con <use href="#nombre">. -->
+    <svg class="sprite-svg" aria-hidden="true" focusable="false">
+
+        <!-- Florecita sencilla (separador) -->
+        <symbol id="flor" viewBox="0 0 24 24">
+            <ellipse cx="12" cy="6"  rx="2.6" ry="4" fill="var(--color-rosa)"/>
+            <ellipse cx="12" cy="18" rx="2.6" ry="4" fill="var(--color-rosa)"/>
+            <ellipse cx="6"  cy="12" rx="4" ry="2.6" fill="var(--color-rosa)"/>
+            <ellipse cx="18" cy="12" rx="4" ry="2.6" fill="var(--color-rosa)"/>
+            <circle  cx="12" cy="12" r="2.3" fill="var(--color-rosa)"/>
+        </symbol>
+
+        <!-- Hice una mascota que es la misma flor, pero con contorno y carita -->
+        <symbol id="mascota" viewBox="0 0 24 24">
+            <g fill="var(--color-rosa)" stroke="var(--color-texto)" stroke-width="0.5">
+                <ellipse cx="12" cy="6"  rx="2.6" ry="4"/>
+                <ellipse cx="12" cy="18" rx="2.6" ry="4"/>
+                <ellipse cx="6"  cy="12" rx="4" ry="2.6"/>
+                <ellipse cx="18" cy="12" rx="4" ry="2.6"/>
+            </g>
+            <circle cx="12" cy="12" r="4.4" fill="var(--color-dorado)" stroke="var(--color-texto)" stroke-width="0.5"/>
+            <circle cx="10.5" cy="11.3" r="0.65" fill="var(--color-texto)"/>
+            <circle cx="13.5" cy="11.3" r="0.65" fill="var(--color-texto)"/>
+            <circle cx="9.4"  cy="12.8" r="0.8" fill="var(--color-rosa)" fill-opacity="0.7"/>
+            <circle cx="14.6" cy="12.8" r="0.8" fill="var(--color-rosa)" fill-opacity="0.7"/>
+            <path d="M10.6 12.9 Q12 14.3 13.4 12.9" fill="none" stroke="var(--color-texto)" stroke-width="0.6" stroke-linecap="round"/>
+        </symbol>
+
+        <!-- Icono de usuario (el avatar de cada publicación) -->
+        <symbol id="icono-usuario" viewBox="0 0 24 24">
+            <g fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="8" r="4"/>
+                <path d="M4 20c0-4.4 3.6-7 8-7s8 2.6 8 7"/>
+            </g>
+        </symbol>
+    </svg>
+
+    <!-- ENCABEZADO Y NAVEGACIÓN -->
+    <header class="encabezado">
+        <div class="encabezado-marca">
+            <a href="#" class="encabezado-marca-enlace">
+                <h1>Objetos Perdidos FC</h1>
+            </a>
+            <p class="eslogan">Comunidad de la Facultad de Ciencias</p>
+        </div>
+
+        <div class="encabezado-derecha">
+            <nav class="encabezado-nav">
+                <a href="#reportar">Reportar objeto</a>
+                <a href="#objetos">Encontrar objetos</a>
+            </nav>
+
+            <div class="encabezado-iconos">
+                <a href="#" class="icono" aria-label="Mensajes">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 4h16v16H4z"/>
+                        <path d="M4 4l8 8 8-8"/>
+                    </svg>
+                </a>
+
+                <a href="#" class="icono" aria-label="Notificaciones">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 2a5 5 0 0 0-5 5v3.5c0 .8-.3 1.6-.9 2.2L4 15h16l-2.1-2.3a3 3 0 0 1-.9-2.2V7a5 5 0 0 0-5-5z"/>
+                        <path d="M9.5 18a2.5 2.5 0 0 0 5 0"/>
+                    </svg>
+                </a>
+
+                <a href="#" class="icono" aria-label="Perfil">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="8" r="4"/>
+                        <path d="M4 20c0-4.4 3.6-7 8-7s8 2.6 8 7"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- BUSCADOR -->
+        <section class="buscador-seccion">
+            <form class="buscador" role="search">
+                <label for="busqueda" class="visualmente-oculto">Buscar objeto perdido</label>
+                <input
+                    type="search"
+                    id="busqueda"
+                    name="busqueda"
+                    placeholder="Buscar objeto perdido..."
+                >
+                <button type="submit" aria-label="Buscar">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="7"/>
+                        <path d="M21 21l-4.3-4.3"/>
+                    </svg>
+                </button>
+            </form>
+        </section>
+
+        <!-- Separador decorativo: florecita - línea - florecita -->
+        <div class="separador-decorativo" aria-hidden="true">
+            <svg><use href="#flor"></use></svg>
+            <span class="separador-linea"></span>
+            <svg><use href="#flor"></use></svg>
+        </div>
+
+        <!-- OBJETOS: categorías de búsqueda (izquierda) + muro de publicaciones -->
+        <section class="objetos-seccion" id="objetos">
+
+            <h2 class="visualmente-oculto">Objetos reportados</h2>
+
+            <aside class="categorias">
+                <h2>Categoría</h2>
+                <ul>
+                    <li><a href="#" class="categoria-activa">Todos</a></li>
+                    <li><a href="#">Electrónicos</a></li>
+                    <li><a href="#">Documentos</a></li>
+                    <li><a href="#">Ropa</a></li>
+                    <li><a href="#">Accesorios</a></li>
+                    <li><a href="#">Otros</a></li>
+                </ul>
+            </aside>
+
+            <div class="muro">
+
+                <!-- PUBLICACIÓN 1: Objeto PERDIDO -->
+                <article class="publicacion">
+                    <header class="publicacion-autor">
+                        <svg class="icono-autor" aria-hidden="true"><use href="#icono-usuario"></use></svg>
+                        <div>
+                            <p class="publicacion-usuario">@carlitos_mtz02</p>
+                            <p class="publicacion-tiempo">Publicado hace 2 h</p>
+                        </div>
+                    </header>
+
+                    <div class="publicacion-foto">
+                        <span class="etiqueta-estado etiqueta-estado--perdida">Perdida</span>
+                        <img
+                            src="imagenes/llavero_juancarlosbodoque.jpg"
+                            alt="Llavero de Juan Carlos Bodoque"
+                            class="publicacion-imagen"
+                        >
+                    </div>
+
+                    <div class="publicacion-cuerpo">
+                        <h3>Llavero de Juan Carlos Bodoque</h3>
+                        <p class="publicacion-datos"><strong>Perdido:</strong> 19 de abril | Edificio P213</p>
+                        <p class="publicacion-descripcion">Se perdió en una banca de hasta atrás del salón.</p>
+                        <button type="button">Ver detalles</button>
+                    </div>
+                </article>
+
+                <!-- PUBLICACIÓN 2: Objeto ENCONTRADO -->
+                <article class="publicacion">
+                    <header class="publicacion-autor">
+                        <svg class="icono-autor" aria-hidden="true"><use href="#icono-usuario"></use></svg>
+                        <div>
+                            <p class="publicacion-usuario">@eltacos</p>
+                            <p class="publicacion-tiempo">Publicado 17 de abril</p>
+                        </div>
+                    </header>
+
+                    <div class="publicacion-foto">
+                        <span class="etiqueta-estado etiqueta-estado--encontrada">Encontrada</span>
+                        <img
+                            src="imagenes/sueter_elmo.jpg"
+                            alt="Suéter de Elmo color azul"
+                            class="publicacion-imagen"
+                        >
+                    </div>
+
+                    <div class="publicacion-cuerpo">
+                        <h3>Suéter de Elmo color azul</h3>
+                        <p class="publicacion-datos"><strong>Encontrado:</strong> 18 de abril | Tlahuizcalpan Lab. Ing. de Software</p>
+                        <p class="publicacion-descripcion">Encontrado en una silla en el piso superior.</p>
+                        <button type="button">Reclamar objeto</button>
+                    </div>
+                </article>
+
+                <!-- PUBLICACIÓN 3: Objeto RECUPERADO -->
+                <article class="publicacion">
+                    <header class="publicacion-autor">
+                        <svg class="icono-autor" aria-hidden="true"><use href="#icono-usuario"></use></svg>
+                        <div>
+                            <p class="publicacion-usuario">@mariana_diaz</p>
+                            <p class="publicacion-tiempo">Publicado 30 de marzo</p>
+                        </div>
+                    </header>
+
+                    <div class="publicacion-foto">
+                        <span class="etiqueta-estado etiqueta-estado--recuperada">Recuperada</span>
+                        <img
+                            src="imagenes/libro_oscarwilde.jpg"
+                            alt="Libro de Oscar Wilde"
+                            class="publicacion-imagen"
+                        >
+                    </div>
+
+                    <div class="publicacion-cuerpo">
+                        <h3>Libro de Oscar Wilde (Retrato de Dorian Gray)</h3>
+                        <p class="publicacion-datos"><strong>Recuperado:</strong> 31 de marzo | Cafetería de la Facultad</p>
+                        <p class="publicacion-descripcion">Reportado como encontrado y ya fue reclamado por su dueño.</p>
+                        <button type="button">Ver detalles</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+
+        <!-- FORMULARIO PARA PUBLICAR UN OBJETO -->
+        <section class="reportar-seccion" id="reportar">
+            <div class="reportar-titulo">
+                <svg class="mascota" aria-hidden="true"><use href="#mascota"></use></svg>
+                <div>
+                    <h2>Publica un objeto</h2>
+                    <p>Cuéntale a la Facultad qué pasó para que vuelva con quien lo busca C:</p>
+                </div>
+            </div>
+
+            <form class="formulario-reporte">
+
+                <fieldset class="tipo-reporte">
+                    <legend>¿Qué pasó con el objeto?</legend>
+
+                    <label>
+                        <input type="radio" name="tipo" value="perdido" checked>
+                        Se me perdió
+                    </label>
+
+                    <label>
+                        <input type="radio" name="tipo" value="encontrado">
+                        Lo encontré
+                    </label>
+                </fieldset>
+
+                <div class="campo">
+                    <label for="nombre-objeto">¿Qué objeto es?</label>
+                    <input
+                        type="text"
+                        id="nombre-objeto"
+                        name="nombre-objeto"
+                        placeholder="Ej. Audífonos negros con orejas de gato"
+                        required
+                    >
+                </div>
+
+                <div class="campo">
+                    <label for="categoria">Categoría</label>
+                    <select id="categoria" name="categoria" required>
+                        <option value="" selected disabled>Elige una categoría</option>
+                        <option value="electronicos">Electrónicos</option>
+                        <option value="documentos">Documentos</option>
+                        <option value="ropa">Ropa</option>
+                        <option value="accesorios">Accesorios</option>
+                        <option value="otros">Otros</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for="ubicacion">¿Dónde fue?</label>
+                    <input
+                        type="text"
+                        id="ubicacion"
+                        name="ubicacion"
+                        placeholder="Ej. Salón del edificio O102"
+                        required
+                    >
+                </div>
+
+                <div class="campo">
+                    <label for="fecha">¿Cuándo fue?</label>
+                    <input type="date" id="fecha" name="fecha" required>
+                </div>
+
+                <div class="campo">
+                    <label for="descripcion">Cuéntanos cómo es</label>
+                    <textarea
+                        id="descripcion"
+                        name="descripcion"
+                        rows="4"
+                        placeholder="Ej. Es de color negro y tiene una pegatina de Steve de Minecraft"
+                    ></textarea>
+                </div>
+
+                <div class="campo">
+                    <label for="foto">Sube una foto</label>
+                    <input type="file" id="foto" name="foto" accept="image/*">
+                </div>
+
+                <div class="campo">
+                    <label for="correo">Correo de contacto</label>
+                    <input
+                        type="email"
+                        id="correo"
+                        name="correo"
+                        placeholder="tu.nombre@ciencias.unam.mx"
+                        required
+                    >
+                </div>
+
+                <label class="campo-checkbox">
+                    <input type="checkbox" name="confirmacion" required>
+                    Entiendo que mi publicación será visible para toda la comunidad de la Facultad.
+                </label>
+
+                <div class="formulario-acciones">
+                    <button type="submit" class="boton-publicar">Publicar en el muro</button>
+                    <button type="reset" class="boton-limpiar">Empezar de nuevo</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="pie-pagina">
+        <svg class="mascota mascota--chica" aria-hidden="true"><use href="#mascota"></use></svg>
+        <p>&copy; 2026 Objetos Perdidos FC - Facultad de Ciencias, UNAM</p>
+        <p class="pie-pagina-guino">hecho con ♡</p>
+    </footer>
+
+</body>
+</html>

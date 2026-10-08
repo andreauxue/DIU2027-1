@@ -1,0 +1,30 @@
+OBJETIVO DE LA CONSULTA
+El objetivo principal fue utilizar la IA como un tutor interactivo y asesor para analizar el avance progresivo de mi código y la vista de mi página. Principalmente para obtener explicaciones sobre la estructura semántica de HTML, el comportamiento de las propiedades CSS, y entender la causa de algunos errores al maquetar. Además, busqué orientación para validar que el proyecto cumpliera con los requisitos de la rúbrica y considerará factores HCI, tales como usabilidad, consistencia, diseño responsivo, etc.
+
+PROMPT UTILIZADO
+"Estoy cursando una clase de Diseño de Interfaces de Usuario. Es mi primera práctica del curso y aún estoy aprendiendo HTML y CSS desde las bases, así que necesito que actúes como un asesor y me expliques el porqué de cada decisión, no me des código terminado.
+
+CONTEXTO DEL PROYECTO:
+Diseñar una página estática para una red social universitaria de objetos perdidos.
+
+LO QUE NECESITO VALIDAR:
+Una página en HTML y CSS con: encabezado, sección principal, buscador, al menos 3 objetos con estados visualmente distinguibles, imágenes locales, información por objeto, formulario, botones y pie de página.
+Debo aplicar variables CSS, flexbox, grid, object-fit, :hover, :focus, position, @media, transition y @keyframes.
+
+CÓMO QUIERO QUE ME AYUDES:
+- Ayúdame a analizar la estructura y qué etiquetas HTML semánticas usar.
+- Explícame las propiedades de HTML o CSS que desconozca.
+- Te pasaré bloques de mi código donde tengo errores; ayúdame a entender por qué fallan sin darme el código resuelto.
+- Evalúa si mi interfaz cubre los factores básicos de HCI vistos en clase [*Le mostré una captura de una dispositiva dónde venía esa información*].
+- Revisa conmigo paso a paso que cumplí cada requisito de la rúbrica."
+
+RESULTADO GENERADO
+La IA me proporcionó un desglose de las etiquetas utilizadas, me explicó la causa técnica de los errores en los fragmentos de código que le compartí (pj. el desbordamiento de cajas), validó los puntos de la rúbrica, y evaluó el proyecto bajo la lente de los factores de HCI.
+
+MODIFICACIONES REALIZADAS
+En cuanto al código (HTML y CSS), no copié ni pegué código resuelto por la IA. Lo que hice fue pasarle bloques de código donde tenía errores que no lograba identificar, y a partir de sus explicaciones teóricas sobre por qué fallaban ciertas propiedades, fui yo quien hizo las modificaciones y correcciones directamente en mis archivos.
+También trabajé con su ayuda para rebotar ideas y armar la estructura de mi documentación.
+
+ANÁLISIS CRÍTICO
+Limitar a la IA para que actuara sólo como asesor fue de gran ayuda. Pues protegió la autoría de mi diseño.
+Utilizarla para entender errores técnicos me ayudó a no frustrarme y aprender la lógica detrás de CSS en lugar de solo adivinar. En conclusión, la IA fue una excelente herramienta de estudio, depuración y validación, siempre manteniendo el control sobre mis decisiones.

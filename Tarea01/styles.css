@@ -1,0 +1,557 @@
+/* OBJETOS PERDIDOS FC
+ 
+   Orden del archivo:
+   1. Variables
+   2. Reset y base
+   3. Encabezado
+   4. Buscador
+   5. Categorías y muro
+   6. Publicaciones
+   7. Formulario
+   8. Pie de página
+   9. Mascota y animación
+   10. Responsivo (@media)
+   (Las fuentes se cargan con <link> en el index.html) */
+ 
+ 
+/* 1. VARIABLES */
+:root {
+    /* Colores */
+    --color-fondo: #E6E6FA;
+    --color-blanco: #FFFFFF;
+    --color-texto: #2D004C;
+    --color-rosa: #E874A3;
+    --color-dorado: #FFD700;
+    --color-recuperada: #A8D5BA;
+
+    /* Tipografía */
+    --fuente-titulo: 'Fredoka', sans-serif;
+    --fuente-texto: 'Poppins', sans-serif;
+
+    /* Espaciado */
+    --espacio-sm: 0.5rem;
+    --espacio-md: 1rem;
+    --espacio-lg: 2rem;
+
+    --radio-borde: 16px;
+}
+
+/* 2. RESET Y BASE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fuente-texto);
+    line-height: 1.5;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+}
+
+/* El bloque de dibujos reutilizables no ocupa espacio */
+.sprite-svg {
+    display: none;
+}
+
+/* Para texto que solo leen los lectores de pantalla */
+.visualmente-oculto {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+/* 3. ENCABEZADO */
+.encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--espacio-md) var(--espacio-lg);
+    background-color: var(--color-blanco);
+    border-bottom: 3px solid var(--color-rosa);
+}
+
+.encabezado-marca-enlace {
+    text-decoration: none;
+}
+
+.encabezado-marca h1 {
+    font-family: var(--fuente-titulo);
+    font-size: 1.75rem;
+    color: var(--color-texto);
+}
+
+.eslogan {
+    font-size: 0.85rem;
+}
+
+.encabezado-derecha {
+    display: flex;
+    align-items: center;
+    gap: var(--espacio-lg);
+}
+
+.encabezado-nav {
+    display: flex;
+    gap: var(--espacio-lg);
+}
+
+.encabezado-nav a {
+    text-decoration: none;
+    color: var(--color-texto);
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.encabezado-nav a:hover {
+    color: var(--color-rosa);
+}
+
+.encabezado-iconos {
+    display: flex;
+    gap: var(--espacio-md);
+}
+
+.icono {
+    color: var(--color-rosa);
+    transition: color 0.2s;
+}
+
+.icono svg {
+    width: 24px;
+    height: 24px;
+    display: block;
+}
+
+.icono:hover {
+    color: var(--color-texto);
+}
+
+/* 4. BUSCADOR Y SEPARADOR */
+.buscador-seccion {
+    display: flex;
+    justify-content: center;
+    padding: var(--espacio-lg);
+}
+
+.buscador {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+}
+
+.buscador input {
+    width: 100%;
+    padding: 0.9rem 3.2rem 0.9rem 1.5rem;
+    border: 2px solid var(--color-texto);
+    border-radius: 999px;
+    font-family: var(--fuente-texto);
+    font-size: 1rem;
+    color: var(--color-texto);
+}
+
+.buscador input:focus {
+    outline: 3px solid var(--color-rosa);
+}
+
+.buscador button {
+    position: absolute;
+    right: 6px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 36px;
+    height: 36px;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--color-texto);
+    color: var(--color-blanco);
+    cursor: pointer;
+}
+
+.buscador button svg {
+    width: 18px;
+    height: 18px;
+}
+
+.separador-decorativo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--espacio-md);
+    max-width: 1200px;
+    margin: 0 auto var(--espacio-lg);
+    padding: 0 var(--espacio-lg);
+}
+
+.separador-decorativo svg {
+    width: 32px;
+    height: 32px;
+}
+
+.separador-linea {
+    flex-grow: 1;
+    height: 2px;
+    background-color: var(--color-rosa);
+}
+
+/* 5. CATEGORÍAS Y MURO */
+/* Dos columnas: categorías (220px fijos) y el muro (el resto del espacio) */
+.objetos-seccion {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: var(--espacio-lg);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--espacio-lg) var(--espacio-lg);
+}
+
+.categorias,
+.publicacion,
+.formulario-reporte {
+    background-color: var(--color-blanco);
+    border: 2px solid var(--color-texto);
+    border-radius: var(--radio-borde);
+}
+
+.categorias {
+    padding: var(--espacio-md);
+    height: fit-content;
+}
+
+.categorias h2 {
+    font-family: var(--fuente-titulo);
+    margin-bottom: var(--espacio-sm);
+}
+
+.categorias ul {
+    list-style: none;
+}
+
+.categorias li {
+    margin-bottom: 0.4rem;
+}
+
+.categorias a {
+    display: block;
+    padding: 0.5rem 0.8rem;
+    border-radius: 999px;
+    text-decoration: none;
+    color: var(--color-texto);
+    font-size: 0.9rem;
+    transition: background-color 0.2s;
+}
+
+.categorias a:hover {
+    background-color: var(--color-fondo);
+}
+
+.categoria-activa {
+    background-color: var(--color-rosa);
+    color: var(--color-blanco);
+}
+
+.muro {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: var(--espacio-lg);
+}
+
+/* 6. PUBLICACIONES */
+/* Cada publicación contiene autor, foto y cuerpo */
+.publicacion {
+    overflow: hidden;
+    transition: transform 0.2s;
+}
+
+.publicacion:hover {
+    transform: translateY(-4px);
+}
+
+.publicacion-autor {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: var(--espacio-sm) var(--espacio-md);
+}
+
+.icono-autor {
+    width: 28px;
+    height: 28px;
+    color: var(--color-rosa);
+}
+
+.publicacion-usuario {
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.publicacion-tiempo {
+    font-size: 0.75rem;
+    color: #777;
+}
+
+.publicacion-foto {
+    position: relative;
+}
+
+.publicacion-imagen {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+}
+
+.etiqueta-estado {
+    position: absolute;
+    top: 0.8rem;
+    left: 0.8rem;
+    padding: 0.3rem 0.9rem;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--color-blanco);
+}
+
+.etiqueta-estado--perdida {
+    background-color: #E05B7D;
+}
+
+.etiqueta-estado--encontrada {
+    background-color: var(--color-dorado);
+    color: var(--color-texto);
+}
+
+.etiqueta-estado--recuperada {
+    background-color: var(--color-recuperada);
+    color: var(--color-texto);
+}
+
+.publicacion-cuerpo {
+    padding: var(--espacio-md);
+}
+
+.publicacion-cuerpo h3 {
+    font-family: var(--fuente-titulo);
+    margin-bottom: 0.4rem;
+}
+
+.publicacion-datos {
+    font-size: 0.85rem;
+    margin-bottom: 0.4rem;
+}
+
+.publicacion-descripcion {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: var(--espacio-md);
+}
+
+.publicacion-cuerpo button {
+    width: 100%;
+    padding: 0.7rem;
+    border: none;
+    border-radius: 999px;
+    background-color: var(--color-rosa);
+    color: var(--color-blanco);
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.publicacion-cuerpo button:hover {
+    background-color: var(--color-texto);
+}
+
+.publicacion-cuerpo button:focus {
+    outline: 3px solid var(--color-dorado);
+}
+
+/* 7. FORMULARIO */
+.reportar-seccion {
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 0 var(--espacio-lg) var(--espacio-lg);
+}
+
+.reportar-titulo {
+    display: flex;
+    align-items: center;
+    gap: var(--espacio-md);
+    margin-bottom: var(--espacio-md);
+}
+
+.mascota {
+    width: 48px;
+    height: 48px;
+}
+
+.reportar-titulo h2 {
+    font-family: var(--fuente-titulo);
+    font-size: 1.5rem;
+}
+
+.formulario-reporte {
+    padding: var(--espacio-lg);
+}
+
+.tipo-reporte {
+    border: 1px solid var(--color-fondo);
+    border-radius: var(--radio-borde);
+    padding: var(--espacio-md);
+    margin-bottom: var(--espacio-lg);
+}
+
+.tipo-reporte label {
+    margin-right: var(--espacio-lg);
+}
+
+.campo {
+    margin-bottom: var(--espacio-md);
+}
+
+.campo label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+    font-size: 0.9rem;
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+    width: 100%;
+    padding: 0.7rem 1rem;
+    border: 1px solid var(--color-fondo);
+    border-radius: 10px;
+    font-family: var(--fuente-texto);
+    font-size: 0.95rem;
+    color: var(--color-texto);
+}
+
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+    outline: 2px solid var(--color-rosa);
+}
+
+.campo-checkbox {
+    display: block;
+    font-size: 0.9rem;
+    margin-bottom: var(--espacio-lg);
+}
+
+.formulario-acciones {
+    display: flex;
+    gap: var(--espacio-md);
+}
+
+.formulario-acciones button {
+    flex: 1;
+    padding: 0.8rem;
+    border-radius: 999px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.boton-publicar {
+    border: none;
+    background-color: var(--color-rosa);
+    color: var(--color-blanco);
+}
+
+.boton-publicar:hover {
+    background-color: var(--color-texto);
+}
+
+.boton-limpiar {
+    border: 2px solid var(--color-texto);
+    background-color: transparent;
+    color: var(--color-texto);
+}
+
+.boton-limpiar:hover {
+    background-color: var(--color-fondo);
+}
+
+/* 8. PIE DE PÁGINA */
+.pie-pagina {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--espacio-sm);
+    padding: var(--espacio-lg);
+    text-align: center;
+    font-size: 0.85rem;
+}
+
+.mascota--chica {
+    width: 28px;
+    height: 28px;
+}
+
+.pie-pagina-guino {
+    font-family: var(--fuente-titulo);
+}
+
+/* 9. MASCOTA Y ANIMACIÓN */
+/* La florecita con carita se mece como un péndulo */
+.mascota {
+    width: 72px;
+    height: 72px;
+    flex-shrink: 0;
+    transform-origin: bottom center;
+    animation: balanceo 3s ease-in-out infinite;
+}
+
+.mascota--chica {
+    width: 48px;
+    height: 48px;
+}
+
+/* Se inclina a la izquierda y en 50% a la derecha, y vuelve a empezar */
+@keyframes balanceo {
+    0%, 100% {
+        transform: rotate(-8deg);
+    }
+    50% {
+        transform: rotate(8deg);
+    }
+}
+
+/* Si la persona pidió menos movimiento en su sistema, la mascota se queda quieta */
+@media (prefers-reduced-motion: reduce) {
+    .mascota {
+        animation: none;
+    }
+}
+
+/* 10. RESPONSIVO (@media) */
+@media (max-width: 900px) {
+    .objetos-seccion {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .encabezado {
+        flex-direction: column;
+        gap: var(--espacio-sm);
+    }
+
+    .encabezado-derecha {
+        flex-direction: column;
+        gap: var(--espacio-sm);
+    }
+
+    .muro {
+        grid-template-columns: 1fr;
+    }
+
+    .formulario-acciones {
+        flex-direction: column;
+    }
+}

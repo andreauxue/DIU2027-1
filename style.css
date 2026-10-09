@@ -1,0 +1,247 @@
+/* ========================================================================== VARIABLES DE COLOR ========================================================================== */
+:root {
+    --bg-color: #0a0414;          /* Fondo oscuro violáceo */
+    --main-purple: #bf00ff;       /* Púrpura neón principal */
+    --cyan-accent: #00f3ff;       /* Cian eléctrico para interacción */
+    --magenta-alert: #ff007f;     /* Magenta para alertas y detalles */
+    --dim-purple: #52307c;        /* Violeta apagado */
+    
+    /* Efectos de resplandor (sombra de texto o cajas) */
+    --glow-purple: 0 0 8px rgba(191, 0, 255, 0.6);
+    --glow-cyan: 0 0 8px rgba(0, 243, 255, 0.6);
+}
+
+/* ========================================================================== Limpiar margenes del navegador ========================================================================== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--main-purple); /* El color de texto por defecto será morado */
+    font-family: 'VT323', monospace; 
+    font-size: 1.7rem;
+    line-height: 1.5;
+    padding: 2rem;
+    text-shadow: var(--glow-purple); /* Resplandor en las letras */
+    max-width: 900px; /* Evitar que la página sea demasiado ancha en pantallas grandes */
+    margin: 0 auto; /* Centrar el contenido en la pantalla */
+    position: relative;
+}
+
+/* ========================================================================== EFECTO DE MONITOR CRT ========================================================================== */
+.crt-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    /* Crea líneas horizontales y un efecto de esquinas oscuras (viñeta) */
+    background: linear-gradient(
+        rgba(10, 4, 20, 0) 50%, 
+        rgba(0, 0, 0, 0.35) 50%
+    ), radial-gradient(circle, rgba(0,0,0,0) 50%, rgba(5, 0, 15, 0.7) 100%);
+    background-size: 100% 4px, 100% 100%;
+    pointer-events: none; /* Evita que esta capa bloquee los clics del usuario */
+    z-index: 9999; /* Asegura que esté por encima de todo */
+}
+
+/* ========================================================================== ANIMACIÓN DEL CURSOR Conectamos con tu <span class="cursor">_</span> en el título. ========================================================================== */
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+.cursor {
+    color: var(--cyan-accent);
+    animation: blink 1s step-end infinite; /* Hace que parpadee infinitamente */
+}
+
+/* ========================================================================== ENCABEZADOS (h1, h2) ========================================================================== */
+h1, h2 {
+    font-weight: normal;
+    text-transform: uppercase;
+    color: var(--main-purple);
+    border-bottom: 1px dashed var(--dim-purple); /* Una línea punteada debajo */
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+    
+}
+
+h1 {
+    color: var(--cyan-accent); /* El título principal resalta en cian */
+}
+
+/* ========================================================================== NAVEGACIÓN (MENÚ) Adaptamos el estilo a tu estructura <ul> y <li> ========================================================================== */
+.menu-enlace {
+    color: var(--cyan-accent);
+    text-decoration: none;
+    text-shadow: var(--glow-cyan);
+    transition: all 0.2s ease; /* Requisito: Transition */
+}
+
+.menu-enlace:hover { /* Requisito: :hover */
+    background-color: var(--cyan-accent);
+    color: var(--bg-color);
+    text-shadow: none;
+}
+
+/* ========================================================================== CUADRÍCULA DE OBJETOS (Requisito: Grid) ========================================================================== */
+
+section {
+    margin-top: 4rem;
+}
+
+.grid-objetos {
+    display: grid; /* Requisito: Grid */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+
+/* ========================================================================== TARJETAS Y SUS COMPONENTES ========================================================================== */
+.tarjeta-registro {
+    border: 1px solid var(--main-purple); /* Requisito: Bordes */
+    padding: 1.5rem;
+    background: rgba(10, 4, 20, 0.7);
+    box-shadow: inset 0 0 15px rgba(191, 0, 255, 0.15);
+}
+
+.tarjeta-titulo {
+    color: var(--magenta-alert);
+    margin-bottom: 1rem;
+    border-bottom: 1px dashed var(--dim-purple); /* Requisito: Bordes */
+    display: inline-block;
+}
+
+.estatus-perdido { color: var(--magenta-alert); text-shadow: 0 0 5px var(--magenta-alert); }
+.estatus-encontrado { color: #00ff00; text-shadow: 0 0 5px #00ff00; }
+
+.tarjeta-imagen {
+    width: 100%;
+    height: 200px;
+    object-fit: contain; /* Requisito: object-fit */
+    border: 1px solid var(--main-purple); /* Requisito: Bordes */
+    filter: grayscale(100%) sepia(100%) hue-rotate(240deg) brightness(1.1);
+    margin-bottom: 1rem;
+}
+
+/* ========================================================================== FORMULARIOS (Inputs, Etiquetas y Cajas agrupadas) ========================================================================== */
+form { margin-top: 1rem; }
+
+.etiqueta-terminal {
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 0.3rem;
+    color: var(--cyan-accent);
+}
+
+.input-terminal {
+    background-color: transparent;
+    border: 1px solid var(--dim-purple); /* Requisito: Bordes */
+    color: var(--cyan-accent);
+    font-family: 'VT323', monospace;
+    font-size: 1.1rem;
+    padding: 0.5rem; /* Requisito: Padding */
+    width: 100%;
+    text-shadow: var(--glow-cyan);
+    outline: none;
+    margin-bottom: 1rem;
+}
+
+.input-terminal:focus { /* Requisito: :focus */
+    border-color: var(--cyan-accent);
+    box-shadow: 0 0 10px rgba(0, 243, 255, 0.3);
+}
+
+.caja-agrupada {
+    border: 1px solid var(--main-purple); /* Requisito: Bordes */
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.leyenda-terminal {
+    color: var(--main-purple);
+    padding: 0 0.5rem;
+}
+
+/* ========================================================================== BOTONES ========================================================================== */
+
+.boton-terminal {
+    background-color: transparent;
+    color: var(--magenta-alert);
+    border: 1px solid var(--magenta-alert); /* Requisito: Bordes */
+    font-family: 'VT323', monospace;
+    font-size: 1.2rem;
+    padding: 0.5rem 1.5rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.2s; /* Requisito: Transition */
+}
+
+.boton-terminal:hover { /* Requisito: :hover */
+    background-color: var(--magenta-alert);
+    color: #ffffff;
+    box-shadow: 0 0 15px rgba(255, 0, 127, 0.8);
+}
+
+/* ========================================================================== PREGUNTAS FRECUENTES (tipo acordeón) ========================================================================== */
+
+.acordeon-terminal {
+    border: 1px solid var(--dim-purple); /* Requisito: Bordes */
+    padding: 1rem; /* Requisito: Padding */
+    margin-bottom: 1rem;
+    background: rgba(191,0,255,0.02);
+}
+
+.acordeon-titulo {
+    cursor: pointer;
+    color: var(--cyan-accent);
+    outline: none;
+}
+
+/* ========================================================================== PIE DE PÁGINA Y EXTRAS ========================================================================== */
+
+footer {
+    margin-top: 4rem;
+    text-align: center;
+    color: var(--dim-purple);
+}
+
+.linea-divisoria {
+    border: none;
+    border-top: 1px dashed var(--dim-purple); /* Requisito: Bordes */
+    margin: 2rem 0; /* Requisito: Margin */
+}
+
+
+.enlace-footer {
+    color: var(--dim-purple);
+    transition: color 0.2s;
+}
+
+.enlace-footer:hover {
+    color: var(--cyan-accent);
+}
+
+/* ========================================================================== DISEÑO CASO CELULARES ========================================================================== */
+
+@media (max-width: 600px) { 
+    body {
+        padding: 1rem;
+        font-size: 1rem;
+    }
+    
+    .menu-lista {
+        flex-direction: column; 
+        text-align: center;
+    }
+    
+    .grid-objetos {
+        grid-template-columns: 1fr; /* 1 sola columna en pantallas pequeñas */
+    }
+}
+

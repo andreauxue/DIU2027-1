@@ -1,0 +1,71 @@
+1. ¿Qué referencias elegiste y qué te gustó de ellas?
+
+
+
+Respuesta:
+
+- Mis referencias fueron dos películas: Matrix y Hackers, dos películas de los 90's. También me inspiré en interfaces que aparecen en videojuegos como: Metal gear solid o Fallout.
+
+
+
+2. Menciona tres cosas de tus referencias que intentaste construir utilizando CSS.
+
+
+
+Respuesta:
+
+1. Simule los monitores CRT que se utilizaban en los 90's y finales de los 00's.
+
+2. También quise simular a una terminal de computadora.
+
+3. El estilo Synthwave o Cyberpunk.
+
+
+
+3. ¿Qué parte de la página te costó más?
+
+
+
+Respuesta:
+
+- Acomodar los cuadros de la sección "Últimos Registros", me costo mucho trabajo tratar de visualizar como es que quedaría con el simple código.
+
+
+
+4. ¿Qué parte de tu página te gustó más?
+
+
+
+Respuesta:
+
+- El color me gustó bastante como es que se ve en mi página. También me gustó el efecto a monitor CRT, siento que estoy en un videojuego.
+
+
+
+5. ¿Qué cambió entre tu boceto y el resultado final?
+
+
+
+Respuesta:
+
+- Creo que no mucho, pero sí tuve que agregar unos botones que no considere al realizar el diseño del boceto.
+
+
+
+6. ¿Utilizaste IA? Si la utilizaste, ¿para qué?
+
+
+
+Respuesta:
+
+- Le tuve que me pedir que me explicara cómo es que funcionan los "selectores de CSS" porque también fue algo que me costo trabajo entender. Tambien tuve que preguntarle cómo es que se puede hacer más grande la letra en la página.
+
+
+
+7. ¿Tuviste que modificar o corregir alguna respuesta proporcionada por IA?
+
+
+
+Respuesta:
+
+- Modifique el tamaño de la letra y cuando entendí mejor la idea de los selectores también tuve que modificar algunas etiquetas para poder utilizar selectores.

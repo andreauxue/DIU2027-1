@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objetos perdidos CU</title>
+
+    <!--Conectar este documento con el archivo CSS--> 
+    <link rel="stylesheet" href="style.css">
+
+    <!--Importé la fuente VT323 desde Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!--Se agregó para darle un estilo de monitor CRT-->
+    <div class="crt-overlay"></div>
+
+    <header>
+        <h1>ROOT@UNAM:~# Sistema de objetos perdidos de Ciudad Universitaria <span class="cursor">_</span></h1>
+
+        <nav>
+
+            <!--Una lista desordenada aplicada a cada uno de sus elementos-->
+            <ul class="menu-lista">
+
+                <li><a href="#buscar" class="menu-enlace">[ Buscar Objeto ]</a></li>
+
+                <li><a href="#ultimos-registros" class="menu-enlace">[ Últimos Registros ]</a></li>
+
+                <li><a href="#reportar" class="menu-enlace">[ Levantar Reporte ]</a></li>
+
+                <li><a href="#info-sistema" class="menu-enlace">[ Manual de Usuario ]</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- ================================ Primera sección: Buscador ================================-->
+        <section id="buscar">
+
+            <h2> >  Búsqueda de objetos registrados </h2>
+
+            <p>Consulta la base de datos de objetos reportados por la comunidad universitaria.</p>
+
+            <div class="zona-input">
+
+                <label class="etiqueta-terminal"> Buscar Objeto</label>
+                
+                <input type="text" class="input-terminal" placeholder="Ej. mochila, calculadora, termo...">
+
+                <button type="submit" class="boton-terminal"> > Ejecutar Búsqueda </button>
+            </div>
+        </section>
+
+        <!-- ================================ Segunda sección: Últimos registros ================================-->
+
+         <!-- SECCIÓN 2: últimos registros -->
+        <section id="ultimos-registros">
+
+            <h2> > Últimos registros </h2>
+            
+            <div class="grid-objetos">
+
+                <!-- Objeto 1 (Extraviado) -->
+                <article class="tarjeta-registro">
+
+                    <!--Primera imagen anexada-->
+                    <figure>
+                        <img src="imagenes/audifonos-negros.jpg" class="tarjeta-imagen" alt="Audífonos negros con blanco" width="300" onerror="this.onerror=null; this.src='https://placehold.co/300x200/0a0414/bf00ff?text=IMG_AUDIFONOS.JPG';">
+                    </figure>
+
+
+                    <div class="tarjeta-titulo"> > REGISTRO 001 </div>
+                    
+                    <p><strong>Objeto:</strong> Audífonos</p>
+                    <p><strong>Estatus:</strong> <span class="estatus-perdido">EXTRAVIADO</span></p>
+                    <p><strong>Encontrado/Perdido en:</strong>Las Islas</p>
+                    <p><strong>Características:</strong> Tiene una estampa de conejito en la parte de abajo.</p>
+                    
+                    <!--Botón que simula ver más detalles del objeto-->
+                    <button type="submit" class="boton-terminal"> [ VER DETALLES ] </button>
+
+                </article>
+
+                <!-- Objeto 2 (Encontrado) -->
+                <article class="tarjeta-registro found">
+
+                    <!--Primera imagen anexada-->
+                    <figure>
+                        <img src="imagenes/cartera-piel.jpg" class="tarjeta-imagen" alt="Cartera de tela" width="300" onerror="this.onerror=null; this.src='https://placehold.co/300x200/0a0414/bf00ff?text=IMG_CARTERA.JPG';">
+                    </figure>
+
+                    <div class="tarjeta-titulo"> > REGISTRO 002 </div>
+
+                    <p><strong>Objeto:</strong> Cartera</p>
+                    <p><strong>Estatus:</strong> <span class="estatus-encontrado">ENCONTRADO</span></p>
+                    <p><strong>Encontrado/Perdido en:</strong> Biblioteca Central</p>
+                    <p><strong>Características:</strong> Tiene todas las credenciales y dinero intacto.</p>
+                    
+                    <!--Botón que simula ver más detalles del objeto-->
+                    <button type="submit" class="boton-terminal">[ VER DETALLES ]</button>
+
+                </article>
+
+                <!-- Objeto 3 (Extraviado) -->
+                <article class="tarjeta-registro">
+
+                    <!--Primera imagen anexada-->
+                    <figure>
+                        <img src="imagenes/termo.jpg" class="tarjeta-imagen" alt="Termo color verde" width="300" onerror="this.onerror=null; this.src='https://placehold.co/300x200/0a0414/bf00ff?text=IMG_TERMO.JPG';">
+                    </figure>
+
+                    <div class="tarjeta-titulo"> > REGISTRO 003 </div>
+
+                    <p><strong>Objeto:</strong> Termo</p>
+                    <p><strong>Estatus:</strong> <span class="estatus-perdido">EXTRAVIADO</span></p>
+                    <p><strong>Encontrado/Perdido en:</strong> Campos de practica</p>
+                    <p><strong>Características:</strong> Tiene un golpe de lado izquierdo.</p>
+
+                    <!--Botón que simula ver más detalles del objeto-->
+                    <button type="button" class="boton-terminal">[ VER DETALLES ]</button>
+
+                </article>
+            </div>
+            
+            <!--Botón de "ver más"-->
+            <div style="margin-top: 2rem; text-align: center;">
+                <button type="button" class="boton-terminal"> > Cargar más registros </button>
+            </div>
+        </section>
+
+        <!-- ================================ Tercera sección: Subir reporte ================================-->
+         <section id="reportar">
+
+            <h2>> Crear nuevo reporte</h2>
+
+            <form>
+                <!--Tipo de reporte: encontrado o perdido-->
+                <fieldset class="caja-agrupada">
+                    <legend class="leyenda-terminal">TIPO:</legend>
+                    <label class="etiqueta-terminal"><input type="radio" name="tipo" value="encontrado"> Encontré un objeto</label>
+                    <label class="etiqueta-terminal"><input type="radio" name="tipo" value="perdido"> Perdí un objeto</label>
+                </fieldset>
+                
+                <div>
+                    <label class="etiqueta-terminal">Objeto:</label>
+                    <input type="text" class="input-terminal" placeholder="Ej. mochila, calculadora, termo...">
+                </div>
+                
+                <div>
+                    <div>
+                        <label class="etiqueta-terminal">Lugar donde se encontró/perdió el objeto:</label>
+                        <input type="text" class="input-terminal" placeholder="Ej. Biblioteca central, Facultad de ciencias, Estadio Olímpico...">
+                    </div>
+
+                    <div>
+                        <label class="etiqueta-terminal">Fecha :</label>
+                        <input type="date" class="input-terminal">
+                    </div>
+                </div>
+                
+                <div >
+                    <label class="etiqueta-terminal">Descripción particular del objeto:</label>
+                    <textarea rows="5" class="input-terminal"></textarea>
+                </div>
+
+                <!-- NUEVO: Campo para subir evidencia -->
+                <div>
+                    <label class="etiqueta-terminal">Subir objeto</label>
+                    <div>
+                        <button type="button" class="boton-terminal">[ Cargar Evidencia ]</button>
+                        <span>Ningún archivo detectado...</span>
+                    </div>
+                </div>
+                
+                <button type="submit" class="boton-terminal">[ Subir al Sistema ]</button>
+            </form>
+        </section>
+
+        <section id="info-sistema">
+           <h2>> Manual de usuario (FAQ)</h2>
+
+            <details class="acordeon-terminal">
+                <summary>> 001: ¿Cómo reclamo un objeto que es mío?</summary>
+                <p>Acude a las coordenadas indicadas en el registro con tu credencial UNAM vigente y una prueba de propiedad (como la contraseña de tu celular o describiendo un detalle no visible en la foto).</p>
+            </details>
+
+            <details class="acordeon-terminal">
+                <summary>> 002: ¿Cuánto tiempo guardan los objetos?</summary>
+                <p>El protocolo dicta un resguardo de 30 días hábiles en las oficinas centrales de la facultad correspondiente. Después de eso, se donan o destruyen según su naturaleza.</p>
+            </details>
+
+            <details class="acordeon-terminal">
+                <summary>> 003: Encontré una credencial, ¿qué hago?</summary>
+                <p>Para identificaciones oficiales, por seguridad no subas foto de los datos personales. Registra el nombre y entrégala directamente en Servicios Escolares.</p>
+            </details> 
+        </section>
+
+        <footer>
+            <hr class="linea-divisoria">
+            <p>Diseño de Interfaces de Usuario</p>
+            <address>
+                Facultad de Ciencias<br>
+            </address>
+            <p>
+                <a href="https://www.unam.mx" target="_blank" class="enlace-footer">Universidad Nacional Autónoma de México</a>
+            </p>
+        </footer>
+
+    </main>
+</body>

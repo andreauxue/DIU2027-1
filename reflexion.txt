@@ -1,0 +1,31 @@
+1. ¿Qué referencias elegiste y qué te gustó de ellas?
+    Principalmente toda la interfaz de la consola Wii, que cuenta con un estilo tipo Frutiger Aero.
+    Me gusta la serenidad que transmite al verse liso y futurista, con luces azules, colores suaves y objetos redondos, con mucha ligereza en los elementos.
+
+2. Menciona tres cosas de tus referencias que intentaste construir utilizando CSS.
+    Si bien se usaron muchas imágenes descargadas para botones directamente tomados de la consola Wii (https://github.com/Alan-bur/WM4K) (algunas se tuvieron que editar), principalmente se intentó realizar lo siguiente:
+        - Otros botones cuadrados con esquinas muy redondeadas
+        - Bordes azules y aumentos exagerados en los botones al pasar el cursor
+        - Todos los recuadros con esquinas suaves.
+
+3. ¿Qué parte de la página te costó más?
+    El carrusel de publicaciones, pues no solo se tuvieron que agregar muchos elementos, sino también poder hacer que los botones movieran los recuadros. 
+    Otra parte fue el popup para crear una publicación por todas las opciones que hay para ingresar.
+    En general toda la parte de CSS fue muy pesada pues se necesita definir cada elemento distinto de la página y cuidar todas las dimensiones para que nada choque.
+
+4. ¿Qué parte de tu página te gustó más?
+    El popup para publicar cosas.
+
+5. ¿Qué cambió entre tu boceto y el resultado final?
+    Considerando que el boceto en realidad fue un diseño más detallado, sólo cambiaron tamaños y distancias. 
+
+6. ¿Utilizaste IA? Si la utilizaste, ¿para qué?
+    Sí, para lo siguiente:
+        - Poder mover el carrusel de publicaciones sin javascript.
+        - Opciones desplegables del popup para crear publicaciones.
+        - Ajustar, posicionar y corregir algunos tamaños y distancias que se me dificultaran.
+        - Ser responsive.
+
+7. ¿Tuviste que modificar o corregir alguna respuesta proporcionada por IA?
+    Sí, pues en ocasiones debía afinar muchos valores y propiedades y quitar cosas innecesarias.
+

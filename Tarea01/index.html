@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="es">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>FCiencias Objetos Perdidos</title>
+  </head>
+
+  <body>
+    <!-- ----------------------
+         ENCABEZADO Y BARRA DE NAVEGACIÓN
+         ---------------------- -->
+    <header>
+      <a href="./index.html" class="btn-circular" data-button="home" aria-label="Inicio">
+        <img src="./resources/sym/sym_home.png" alt="">
+      </a>
+
+      <div class="searchbar">
+        <input
+          class="searchbar-input"
+          type="search"
+          aria-label="Buscar"
+          placeholder="Buscar..."
+        >
+        <button class="btn-searchbar" data-button="search" type="button" aria-label="Buscar">
+          <img src="./resources/sym/sym_search.png" alt="">
+        </button>
+      </div>
+
+      <button class="btn-cuadrado" data-button="config" type="button" aria-label="Configuración">
+        <img src="./resources/btn/btn_frame.png" data-part="btn_frame" alt="">
+        <img src="./resources/sym/sym_config.png" data-part="sym_config" alt="">
+      </button>
+
+      <button class="btn-cuadrado" data-button="user" type="button" aria-label="Usuario">
+        <img src="./resources/btn/btn_user.png" alt="">
+      </button>
+    </header>
+
+    <!-- ----------------------
+         CONTENIDO PRINCIPAL
+         ---------------------- -->
+    <main>
+      <!-- Título de la página -->
+      <h1 class="titulo-pagina">OBJETOS PERDIDOS</h1>
+
+      <!-- Carrusel de publicaciones -->
+      <section class="carrusel" aria-label="Objetos Perdidos">
+        <!-- Selectores de página -->
+        <input class="carrusel-selector" type="radio" name="posicion-carrusel" id="posicion-1" checked aria-label="Publicación 1">
+        <input class="carrusel-selector" type="radio" name="posicion-carrusel" id="posicion-2" aria-label="Publicación 2">
+        <input class="carrusel-selector" type="radio" name="posicion-carrusel" id="posicion-3" aria-label="Publicación 3">
+        <input class="carrusel-selector" type="radio" name="posicion-carrusel" id="posicion-4" aria-label="Publicación 4">
+        <input class="carrusel-selector" type="radio" name="posicion-carrusel" id="posicion-5" aria-label="Publicación 5">
+        <input class="carrusel-selector" type="radio" name="posicion-carrusel" id="posicion-6" aria-label="Publicación 6">
+        <input class="carrusel-selector" type="radio" name="posicion-carrusel" id="posicion-7" aria-label="Publicación 7">
+        <input class="carrusel-selector" type="radio" name="posicion-carrusel" id="posicion-8" aria-label="Publicación 8">
+        <input class="carrusel-selector" type="radio" name="posicion-carrusel" id="posicion-9" aria-label="Publicación 9">
+        <input class="carrusel-selector" type="radio" name="posicion-carrusel" id="posicion-10" aria-label="Publicación 10">
+
+        <!-- Tarjetas de publicaciones -->
+        <div class="carrusel-ventana">
+          <div class="carrusel-lista">
+            <article class="publicacion">
+              <div class="publicador">
+                <img class="imagen-publicador" src="./resources/btn/btn_user.png" alt="">
+                <div class="datos-publicador">
+                  <p class="nombre-publicador">Usuario</p>
+                  <p class="facultad-publicador">Facultad</p>
+                </div>
+              </div>
+              <img class="imagen-objeto" src="./objects/peluche1.jpg" alt="Peluche">
+              <h2 class="titulo-objeto">Perrito de peluche</h2>
+              <div class="detalles-caja">
+                <p class="fecha-publicacion">25/09/2026</p>
+                <p class="descripcion">¿Perdiste un perrito de peluche camino al metro CU? Lo encontramos. Enviame mensaje si es tuyo.</p>
+              </div>
+              <div class="estado-caja" data-estado="ENCONTRADO">ENCONTRADO</div>
+            </article>
+
+            <article class="publicacion">
+              <div class="publicador">
+                <img class="imagen-publicador" src="./resources/btn/btn_user.png" alt="">
+                <div class="datos-publicador">
+                  <p class="nombre-publicador">Usuario</p>
+                  <p class="facultad-publicador">Facultad</p>
+                </div>
+              </div>
+              <img class="imagen-objeto" src="./objects/paraguas1.jpg" alt="Paraguas">
+              <h2 class="titulo-objeto">Paraguas</h2>
+              <div class="detalles-caja">
+                <p class="fecha-publicacion">10/09/2026</p>
+                <p class="descripcion">Hola encontramos tu paraguas dime en que salon lo perdiste o en que edifico y te lo devuelvo 🙂</p>
+              </div>
+              <div class="estado-caja" data-estado="ENCONTRADO">ENCONTRADO</div>
+            </article>
+
+            <article class="publicacion">
+              <div class="publicador">
+                <img class="imagen-publicador" src="./resources/btn/btn_user.png" alt="">
+                <div class="datos-publicador">
+                  <p class="nombre-publicador">Usuario</p>
+                  <p class="facultad-publicador">Facultad</p>
+                </div>
+              </div>
+              <img class="imagen-objeto" src="./objects/pluma1.jpg" alt="Pluma">
+              <h2 class="titulo-objeto">Samsung Pen</h2>
+              <div class="detalles-caja">
+                <p class="fecha-publicacion">30/09/2026</p>
+                <p class="descripcion">Chicos perdi mi s pen por las mesitas de colores del darwin, es negro con la punta blanca y esta bn desgastada :c pls si la encontraron mandenme dm </p>
+              </div>
+              <div class="estado-caja" data-estado="PERDIDO">PERDIDO</div>
+            </article>
+
+            <article class="publicacion">
+              <div class="publicador">
+                <img class="imagen-publicador" src="./resources/btn/btn_user.png" alt="">
+                <div class="datos-publicador">
+                  <p class="nombre-publicador">Usuario</p>
+                  <p class="facultad-publicador">Facultad</p>
+                </div>
+              </div>
+              <img class="imagen-objeto" src="./objects/reloj1.jpg" alt="Reloj">
+              <h2 class="titulo-objeto">Reloj</h2>
+              <div class="detalles-caja">
+                <p class="fecha-publicacion">22/09/2026</p>
+                <p class="descripcion">Holaa, alguien de casualidad vio este reloj en la facultad? Lo perdí pero no recuerdo en qué momento ya no lo tenía.</p>
+              </div>
+              <div class="estado-caja" data-estado="PERDIDO">PERDIDO</div>
+            </article>
+
+            <article class="publicacion">
+              <div class="publicador">
+                <img class="imagen-publicador" src="./resources/btn/btn_user.png" alt="">
+                <div class="datos-publicador">
+                  <p class="nombre-publicador">Usuario</p>
+                  <p class="facultad-publicador">Facultad</p>
+                </div>
+              </div>
+              <img class="imagen-objeto" src="./objects/tarjetaMetro1.jpg" alt="Tarjeta del Metro">
+              <h2 class="titulo-objeto">Tarjeta del Metro</h2>
+              <div class="detalles-caja">
+                <p class="fecha-publicacion">04/09/2026</p>
+                <p class="descripcion">Encontré una tarjeta del metro en el caminito entre el Instituto de Física y la D.G.B. 📍
+Si me dices qué estampita trae te la devuelvo ✨</p>
+              </div>
+              <div class="estado-caja" data-estado="ENCONTRADO">ENCONTRADO</div>
+            </article>
+
+            <article class="publicacion">
+              <div class="publicador">
+                <img class="imagen-publicador" src="./resources/btn/btn_user.png" alt="">
+                <div class="datos-publicador">
+                  <p class="nombre-publicador">Usuario</p>
+                  <p class="facultad-publicador">Facultad</p>
+                </div>
+              </div>
+              <img class="imagen-objeto" src="./objects/anillo1.jpg" alt="Anillo">
+              <h2 class="titulo-objeto">Anillo</h2>
+              <div class="detalles-caja">
+                <p class="fecha-publicacion">24/08/2026</p>
+                <p class="descripcion">Hola. El día de hoy perdí un anillo que es muy importante para mí y tiene un gran valor sentimental y familiar.
+Estimo que pude haberlo perdido entre las 3:30 y las 5:00 de la tarde, aunque no descarto que haya sido antes y no me haya dado cuenta.
+Hoy estuve en
+Anexo de la Facultad de Ingeniería
+Facultad de Ciencias
+Carrito de café de Arquitectura
+Creo que pude haberlo perdido principalmente en el trayecto entre el Anexo de Ingeniería y el carrito de café de Arquitectura
+El anillo tiene para mí muchísimo más valor sentimental que económico y recuperarlo significa mucho. Si alguien lo encontró o tiene cualquier información, agradecería muchísimo que me contactara.
+Ofrezco recompensa por su devolución.
+También agradecería mucho que compartieran esta publicación o dejaran un comentario para ayudar a que llegue a más personas.
+Muchas gracias por cualquier ayuda.</p>
+              </div>
+              <div class="estado-caja" data-estado="PERDIDO">PERDIDO</div>
+            </article>
+
+            <article class="publicacion">
+              <div class="publicador">
+                <img class="imagen-publicador" src="./resources/btn/btn_user.png" alt="">
+                <div class="datos-publicador">
+                  <p class="nombre-publicador">Usuario</p>
+                  <p class="facultad-publicador">Facultad</p>
+                </div>
+              </div>
+              <img class="imagen-objeto" src="./objects/lentes1.jpg" alt="Lentes">
+              <h2 class="titulo-objeto">Lentes</h2>
+              <div class="detalles-caja">
+                <p class="fecha-publicacion">19/08/2026</p>
+                <p class="descripcion">Si perdiste tus lentes en el baño de biología, planta baja; pasa con la jefa de la biblioteca,ellas los encontró</p>
+              </div>
+              <div class="estado-caja" data-estado="ENCONTRADO">ENCONTRADO</div>
+            </article>
+
+            <article class="publicacion">
+              <div class="publicador">
+                <img class="imagen-publicador" src="./resources/btn/btn_user.png" alt="">
+                <div class="datos-publicador">
+                  <p class="nombre-publicador">Usuario</p>
+                  <p class="facultad-publicador">Facultad</p>
+                </div>
+              </div>
+              <img class="imagen-objeto" src="./objects/termo1.jpg" alt="Termo">
+              <h2 class="titulo-objeto">Termo</h2>
+              <div class="detalles-caja">
+                <p class="fecha-publicacion">18/09/2026</p>
+                <p class="descripcion">Hola amigos perdí este termo ayer entre los edificios O y P y quisiera pedirles de corazón su ayuda para recuperarlo.
+Tiene un valor sentimental enorme para mí porque fue un regalo que me hicieron después de que falleció mi gatito. Está personalizado con su imagen, la fecha y su nombre, y desde que me lo regalaron se convirtió en una forma muy bonita de llevar conmigo su recuerdo. 🐱🤍
+Por eso significa muchísimo para mí poder recuperarlo.
+Si alguien lo encontró, lo vio o sabe algo de él, por favor mándenme mensaje. Estaría enormemente agradecida de poder tenerlo de vuelta. 🤍🐾
+Gracias de corazón.</p>
+              </div>
+              <div class="estado-caja" data-estado="RECUPERADO">RECUPERADO</div>
+            </article>
+
+            <article class="publicacion">
+              <div class="publicador">
+                <img class="imagen-publicador" src="./resources/btn/btn_user.png" alt="">
+                <div class="datos-publicador">
+                  <p class="nombre-publicador">Usuario</p>
+                  <p class="facultad-publicador">Facultad</p>
+                </div>
+              </div>
+              <img class="imagen-objeto" src="./objects/mochila1.jpg" alt="Mochila">
+              <h2 class="titulo-objeto">Mochila</h2>
+              <div class="detalles-caja">
+                <p class="fecha-publicacion">01/09/2026</p>
+                <p class="descripcion">Tiraste tu mochila en los baños de vatos del tlahuiz, una lavada y pa Miguel si no</p>
+              </div>
+              <div class="estado-caja" data-estado="RECUPERADO">RECUPERADO</div>
+            </article>
+
+            <article class="publicacion">
+              <div class="publicador">
+                <img class="imagen-publicador" src="./resources/btn/btn_user.png" alt="">
+                <div class="datos-publicador">
+                  <p class="nombre-publicador">Usuario</p>
+                  <p class="facultad-publicador">Facultad</p>
+                </div>
+              </div>
+              <img class="imagen-objeto" src="./objects/botella1.jpg" alt="Botella">
+              <h2 class="titulo-objeto">BOTELLA DE AGUA</h2>
+              <div class="detalles-caja">
+                <p class="fecha-publicacion">06/10/2026</p>
+                <p class="descripcion">Emergencia pop, ayudaa, perdí mi botella de aguaaa
+Si alguien la vió o la recogió por favor avíseme 😿😿
+Fue hoy aprox a las 12-12:40, no recuerdo si la dejé en el P102 o en las banquitas que están afuera 😭
+Porfa ayuda yo quiero mucho a mi botellita</p>
+              </div>
+              <div class="estado-caja" data-estado="PERDIDO">PERDIDO</div>
+            </article>
+          </div>
+        </div>
+
+        <!-- Controles de navegación del carrusel -->
+        <div class="carrusel-controles" aria-label="Navegación del carrusel">
+          <div class="controles-pagina controles-pagina-1">
+            <span class="btn-carrusel btn-carrusel-deshabilitado" aria-hidden="true"><img src="./resources/btn/btn_left.png" alt=""></span>
+            <label class="btn-carrusel" for="posicion-2" aria-label="Ver publicaciones siguientes"><img src="./resources/btn/btn_right.png" alt=""></label>
+          </div>
+          <div class="controles-pagina controles-pagina-2">
+            <label class="btn-carrusel" for="posicion-1" aria-label="Ver publicaciones anteriores"><img src="./resources/btn/btn_left.png" alt=""></label>
+            <label class="btn-carrusel" for="posicion-3" aria-label="Ver publicaciones siguientes"><img src="./resources/btn/btn_right.png" alt=""></label>
+          </div>
+          <div class="controles-pagina controles-pagina-3">
+            <label class="btn-carrusel" for="posicion-2" aria-label="Ver publicaciones anteriores"><img src="./resources/btn/btn_left.png" alt=""></label>
+            <label class="btn-carrusel" for="posicion-4" aria-label="Ver publicaciones siguientes"><img src="./resources/btn/btn_right.png" alt=""></label>
+          </div>
+          <div class="controles-pagina controles-pagina-4">
+            <label class="btn-carrusel" for="posicion-3" aria-label="Ver publicaciones anteriores"><img src="./resources/btn/btn_left.png" alt=""></label>
+            <label class="btn-carrusel" for="posicion-5" aria-label="Ver publicaciones siguientes"><img src="./resources/btn/btn_right.png" alt=""></label>
+          </div>
+          <div class="controles-pagina controles-pagina-5">
+            <label class="btn-carrusel" for="posicion-4" aria-label="Ver publicaciones anteriores"><img src="./resources/btn/btn_left.png" alt=""></label>
+            <label class="btn-carrusel" for="posicion-6" aria-label="Ver publicaciones siguientes"><img src="./resources/btn/btn_right.png" alt=""></label>
+          </div>
+          <div class="controles-pagina controles-pagina-6">
+            <label class="btn-carrusel" for="posicion-5" aria-label="Ver publicaciones anteriores"><img src="./resources/btn/btn_left.png" alt=""></label>
+            <label class="btn-carrusel" for="posicion-7" aria-label="Ver publicaciones siguientes"><img src="./resources/btn/btn_right.png" alt=""></label>
+          </div>
+          <div class="controles-pagina controles-pagina-7">
+            <label class="btn-carrusel" for="posicion-6" aria-label="Ver publicaciones anteriores"><img src="./resources/btn/btn_left.png" alt=""></label>
+            <label class="btn-carrusel" for="posicion-8" aria-label="Ver publicaciones siguientes"><img src="./resources/btn/btn_right.png" alt=""></label>
+          </div>
+          <div class="controles-pagina controles-pagina-8">
+            <label class="btn-carrusel" for="posicion-7" aria-label="Ver publicaciones anteriores"><img src="./resources/btn/btn_left.png" alt=""></label>
+            <span class="btn-carrusel btn-carrusel-deshabilitado navegacion-escritorio" aria-hidden="true"><img src="./resources/btn/btn_right.png" alt=""></span>
+            <label class="btn-carrusel navegacion-tablet-movil" for="posicion-9" aria-label="Ver publicaciones siguientes"><img src="./resources/btn/btn_right.png" alt=""></label>
+          </div>
+          <div class="controles-pagina controles-pagina-9">
+            <label class="btn-carrusel" for="posicion-8" aria-label="Ver publicaciones anteriores"><img src="./resources/btn/btn_left.png" alt=""></label>
+            <span class="btn-carrusel btn-carrusel-deshabilitado navegacion-tablet" aria-hidden="true"><img src="./resources/btn/btn_right.png" alt=""></span>
+            <label class="btn-carrusel navegacion-movil" for="posicion-10" aria-label="Ver publicaciones siguientes"><img src="./resources/btn/btn_right.png" alt=""></label>
+          </div>
+          <div class="controles-pagina controles-pagina-10">
+            <label class="btn-carrusel" for="posicion-9" aria-label="Ver publicaciones anteriores"><img src="./resources/btn/btn_left.png" alt=""></label>
+            <span class="btn-carrusel btn-carrusel-deshabilitado" aria-hidden="true"><img src="./resources/btn/btn_right.png" alt=""></span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ----------------------
+         ACCIONES FLOTANTES
+         ---------------------- -->
+    <aside class="acciones-flotantes" aria-label="Acciones rápidas">
+      <!-- Acceso a publicaciones -->
+      <button class="btn-circular" type="button" aria-label="Libro">
+        <img src="./resources/sym/sym_book.png" alt="">
+      </button>
+
+      <!-- Botón y formulario para crear una publicación -->
+      <details class="escribir-contenedor">
+        <summary class="btn-circular" aria-label="Escribir">
+          <img src="./resources/sym/sym_write.png" alt="">
+        </summary>
+        <form class="escribir-popup">
+          <!-- Cerrar el formulario -->
+          <button class="popup-cerrar" type="button" aria-label="Cerrar">
+            <img src="./resources/sym/sym_x.png" alt="">
+          </button>
+
+          <!-- Datos de la publicación -->
+          <div class="escribir-campo">
+            <label for="nombre-objeto">NOMBRE DE OBJETO</label>
+            <input id="nombre-objeto" name="nombre-objeto" type="text" required>
+          </div>
+          <div class="escribir-campo">
+            <label for="fecha-objeto">FECHA</label>
+            <input id="fecha-objeto" name="fecha" type="date" required>
+          </div>
+          <div class="escribir-campo">
+            <label for="estado-objeto">ESTADO</label>
+            <select id="estado-objeto" name="estado" required>
+              <option value="" selected disabled>Selecciona un estado</option>
+              <option value="RECUPERADO">RECUPERADO</option>
+              <option value="ENCONTRADO">ENCONTRADO</option>
+              <option value="PERDIDO">PERDIDO</option>
+            </select>
+          </div>
+          <div class="escribir-campo">
+            <label for="descripcion-objeto">DESCRIPCIÓN</label>
+            <textarea id="descripcion-objeto" name="descripcion" rows="3" required></textarea>
+          </div>
+          <div class="escribir-campo">
+            <span class="etiqueta-foto">FOTO</span>
+            <button class="popup-agregar-foto" type="button">
+              <img src="./resources/sym/sym_camera.png" alt="">
+              AGREGAR FOTO
+            </button>
+          </div>
+          <button class="popup-publicar" type="submit">PUBLICAR</button>
+        </form>
+      </details>
+
+      <!-- Chat -->
+      <button class="boton-mensajes" type="button" aria-label="Mensajes">
+        <img class="icono-mensajes" src="./resources/btn/sym_messages.png" alt="">
+        <span class="contador-mensajes" aria-label="Contador de mensajes">
+          <img src="./resources/sym/sym_counter.png" alt="">
+          <span>#</span>
+        </span>
+      </button>
+    </aside>
+
+    <!-- ----------------------
+         PIE DE PÁGINA
+         ---------------------- -->
+    <footer class="barra-pie">
+      <p>unam</p>
+    </footer>
+
+  </body>
+</html>

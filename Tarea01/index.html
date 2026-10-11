@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡¿Es tuyo?! - Portal de Objetos Perdidos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="encabezado">
+        <nav class="navegacion">
+            <div class="logotipo">
+                <span class="icono-logotipo">🔍</span>
+                <span class="texto-logotipo">Objetos Perdidos</span>
+            </div>
+            <div class="menu-navegacion">
+                <a href="#objetos" class="boton-navegacion">Ver Objetos</a>
+                <a href="#reportar" class="boton-navegacion boton-destacado">Reportar Objeto</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="seccion-hero">
+        <div class="decoracion-nube nube-izquierda">☁️</div>
+        <div class="contenido-hero">
+            <h1 class="titulo-principal">¡¿Es tuyo?!</h1>
+            <p class="subtitulo-principal">Plataforma para la localización y reporte de objetos extraviados</p>
+        </div>
+        <div class="decoracion-nube nube-derecha">☁️</div>
+    </section>
+
+    <main class="contenedor-principal">
+
+        <section id="objetos" class="seccion-objetos">
+            <h2 class="titulo-seccion">✦ Objetos Registrados ✦</h2>
+            <article class="tarjeta-objeto">
+                <div class="contenedor-imagen">
+                    <img src="imagenes/imaginal_disk.jpeg" alt="Imaginal Disk - Magdalena Bay" class="imagen-objeto">
+                    <span class="etiqueta-estado estado-perdido">PERDIDO</span>
+                </div>
+                <div class="contenido-tarjeta">
+                    <h3 class="nombre-objeto">Imaginal Disk - Magdalena Bay</h3>
+                    <p class="dato-objeto"><strong>Lugar:</strong> Los Ángeles, California, EE. UU.</p>
+                    <p class="dato-objeto"><strong>Fecha:</strong> 23/08/2024</p>
+                    <p class="descripcion-objeto">Álbum de synth-pop futurista y pop psicodélico grabado en formato
+                        físico de disco acrílico y vinilo.</p>
+                </div>
+            </article>
+
+            <article class="tarjeta-objeto">
+                <div class="contenedor-imagen">
+                    <img src="imagenes/ants_from_up_there.jpeg" alt="Ants From Up There - BCNR" class="imagen-objeto">
+                    <span class="etiqueta-estado estado-encontrado">ENCONTRADO</span>
+                </div>
+                <div class="contenido-tarjeta">
+                    <h3 class="nombre-objeto">Ants From Up There - BCNR</h3>
+                    <p class="dato-objeto"><strong>Lugar:</strong> Cambridge, Reino Unido</p>
+                    <p class="dato-objeto"><strong>Fecha:</strong> 04/02/2022</p>
+                    <p class="descripcion-objeto">Disco de post-rock e indie orquestal en estuche con ilustración de un
+                        avión envuelto en plástico.</p>
+                </div>
+            </article>
+
+            <article class="tarjeta-objeto">
+                <div class="contenedor-imagen">
+                    <img src="imagenes/forever_howlong.jpeg" alt="Forever Howlong - BCNR" class="imagen-objeto">
+                    <span class="etiqueta-estado estado-perdido">PERDIDO</span>
+                </div>
+                <div class="contenido-tarjeta">
+                    <h3 class="nombre-objeto">Forever Howlong - BCNR</h3>
+                    <p class="dato-objeto"><strong>Lugar:</strong> Londres, Reino Unido</p>
+                    <p class="dato-objeto"><strong>Fecha:</strong> 04/04/2025</p>
+                    <p class="descripcion-objeto">Álbum de rock experimental y pop barroco editado por Ninja Tune con
+                        arreglos acústicos y violines.</p>
+                </div>
+            </article>
+
+            <article class="tarjeta-objeto">
+                <div class="contenedor-imagen">
+                    <img src="imagenes/twin_fantasy.jpeg" alt="Twin Fantasy - Car Seat Headrest" class="imagen-objeto">
+                    <span class="etiqueta-estado estado-encontrado">ENCONTRADO</span>
+                </div>
+                <div class="contenido-tarjeta">
+                    <h3 class="nombre-objeto">Twin Fantasy - Car Seat Headrest</h3>
+                    <p class="dato-objeto"><strong>Lugar:</strong> Seattle, Washington, EE. UU.</p>
+                    <p class="dato-objeto"><strong>Fecha:</strong> 16/02/2018</p>
+                    <p class="descripcion-objeto">Álbum de indie rock conceptual con la clásica portada en trazo simple
+                        de dos figuras abrazadas.</p>
+                </div>
+            </article>
+            <div class="grilla-objetos">
+            </div>
+        </section>
+        <section id="reportar" class="seccion-formulario">
+            <div class="contenedor-formulario">
+                <h2 class="titulo-formulario">Reporta tu objeto perdido</h2>
+                <p class="subtitulo-formulario">Completa la información requerida para agregar la publicación al
+                    registro.</p>
+
+                <form class="formulario-objeto">
+
+                    <div class="campo-formulario">
+                        <label for="nombre-objeto" class="etiqueta-campo">Nombre del Objeto:</label>
+                        <input type="text" id="nombre-objeto" name="nombre" class="entrada-campo"
+                            placeholder="Ej. Álbum Imaginal Disk, llaves, cartera..." required>
+                    </div>
+
+                    <div class="campo-formulario">
+                        <label for="estado-objeto" class="etiqueta-campo">Estado:</label>
+                        <select id="estado-objeto" name="estado" class="seleccion-campo" required>
+                            <option value="PERDIDO">PERDIDO</option>
+                            <option value="ENCONTRADO">ENCONTRADO</option>
+                        </select>
+                    </div>
+
+                    <div class="campo-formulario">
+                        <label for="fecha-objeto" class="etiqueta-campo">Fecha:</label>
+                        <input type="date" id="fecha-objeto" name="fecha" class="entrada-campo" required>
+                    </div>
+
+                    <div class="campo-formulario">
+                        <label for="lugar-objeto" class="etiqueta-campo">Último Lugar Visto:</label>
+                        <input type="text" id="lugar-objeto" name="lugar" class="entrada-campo"
+                            placeholder="Ej. Entrada principal, pasillo norte..." required>
+                    </div>
+
+                    <div class="campo-formulario">
+                        <label for="descripcion-objeto" class="etiqueta-campo">Descripción:</label>
+                        <textarea id="descripcion-objeto" name="descripcion" class="area-campo" rows="4"
+                            placeholder="Describe detalles físicos, características o distintivos del objeto..."
+                            required></textarea>
+                    </div>
+
+                    <div class="campo-formulario">
+                        <label for="imagen-objeto" class="etiqueta-campo">URL de la Imagen:</label>
+                        <input type="url" id="imagen-objeto" name="imagen" class="entrada-campo"
+                            placeholder="https://ejemplo.com/imagen.jpg">
+                    </div>
+
+                    <button type="submit" class="boton-enviar">Registrar Objeto ✦</button>
+
+                </form>
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="pie-pagina">
+        <p class="texto-pie">✦ Registro Central de Objetos Perdidos &copy; 2026 ✦ Todos los derechos reservados ✦</p>
+    </footer>
+
+</body>
+
+</html>

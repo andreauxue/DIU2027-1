@@ -1,0 +1,22 @@
+¿Qué referencias elegiste y que te gustó de ellas?
+Me traté de basar en una temática hibrida entré "Dreamcore" y "Y2K", en lo particular me agrada mucho el concepto de los espacios liminales, demasaido grandes y con contraste entre extraño y normal. 
+Para la temática Y2K hay duo musicial que me ha estado gustando mucho: Magdalena Bay, y la temática de su ultimo albúm: "Imaginal Disk" me recuerda demasiado a toda esta estética, sobretodo en su video Image. 
+
+Menciona 3 cosas de tus referencias que intentaste construir utilizando CSS
+Creo que sobre todo trate de construir el fondo (background) como la imagen que es solo pasto y el cielo azul / blanco, más que elementos particulares traté de que el ambiente de la página fuera lo más liminal posible. 
+
+¿Qué parte de la página te costó más?
+Diría que poner el formulario, más que nada por lo tedioso.
+
+¿Qué parte de tu página te gustó más?
+Definitivamente el fondo
+
+¿Qué cambió en tu boceto y el resultado final?
+En mi boceto tenía la idea de hacer un carrusel de imagenes, pero me di cuenta de que iba a ser medio complicado usando solo html y css
+
+¿Utilizaste IA? Si la utilizaste, ¿para qué? 
+Si, más que nada para resolver dudas y que me diera ejemplos de lo que quería hacer, ya después yo los adaptaba 
+
+Tuviste que modificar o corregir alguna propuesta proporcionada por la IA 
+Si, a veces era culpa mía porque no era tan claro con el prompt y tenía que ser bastante especifico con cómo quería las cosas acomodadas. 
+

@@ -1,0 +1,22 @@
+1. ¿Qué referencias elegiste y qué te gustó de ellas?
+Elegí referencias del estilo Neobrutalismo Web (Neo-Brutalism) e interfaces técnicas retro. Me gustó el uso de bordes negros sólidos, sombras desplazadas sin difuminar, tipografía monoespaciada y colores de alto contraste para distinguir alertas rápidamente.
+
+2. Menciona tres cosas de tus referencias que intentaste construir utilizando CSS.
+- Sombras sólidas desplazadas con box-shadow: 5px 5px 0px #121212 que crecen al pasar el cursor (:hover).
+- Etiquetas de estado flotantes en la esquina de las imágenes usando position: relative y position: absolute.
+- Un indicador luminoso en el encabezado con @keyframes que parpadea continuamente.
+
+3. ¿Qué parte de la página te costó más?
+Ajustar las fotografías de diferentes tamaños para que todas las tarjetas midieran lo mismo sin deformarse, lo cual resolví con una altura fija y object-fit: cover.
+
+4. ¿Qué parte de tu página te gustó más?
+El efecto de los botones, tarjetas e inputs al usar :hover y :focus, donde se desplazan unos píxeles simulando botones físicos.
+
+5. ¿Qué cambió entre tu boceto y el resultado final?
+En el boceto el estado del objeto iba como texto normal debajo del título; en la versión final lo puse como una etiqueta flotante sobre la esquina superior derecha de cada foto para que resaltara más.
+
+6. ¿Utilizaste IA? Si la utilizaste, ¿para qué?
+Sí, para estructurar la maquetación base en HTML5, revisar la sintaxis de @keyframes y definir los puntos de quiebre (@media) para pantallas pequeñas.
+
+7. ¿Tuviste que modificar o corregir alguna respuesta proporcionada por IA?
+Sí, ajusté los nombres y rutas de mis imágenes locales y revisé que la estructura de carpetas cumpliera con lo solicitado en la entrega.

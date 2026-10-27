@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objetos Perdidos — Facultad de Ciencias</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="encabezado">
+        <div class="contenedor nav-contenedor">
+            <div class="logo">
+                <span class="punto-alerta"></span>
+                <h1>LOC_UNAM // OBJETOS PERDIDOS</h1>
+            </div>
+            <nav class="navegacion">
+                <a href="#inicio" class="nav-link">Inicio</a>
+                <a href="#buscador" class="nav-link">Consultar</a>
+                <a href="#objetos" class="nav-link">Registros</a>
+                <a href="#reportar" class="nav-link btn-destacado">Reportar Objeto</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="inicio" class="contenedor">
+        <section id="buscador" class="hero-buscador">
+            <h2>¿Perdiste o encontraste algo en el campus?</h2>
+            <p>Sistema comunitario de rastreo y recuperación de pertenencias.</p>
+            <form class="form-busqueda" action="#objetos" method="get">
+                <input type="search" placeholder="Buscar por objeto, edificio (ej. Tlahuizcalpan, Amoxcalli)..." required>
+                <button type="submit" class="btn-primario">BUSCAR REGISTRO</button>
+            </form>
+        </section>
+
+        <section id="objetos" class="seccion-objetos">
+            <div class="cabecera-seccion">
+                <h2>Reportes Recientes</h2>
+                <div class="leyenda-estados">
+                    <span class="badge estado-perdido">PERDIDA</span>
+                    <span class="badge estado-encontrado">ENCONTRADA</span>
+                    <span class="badge estado-recuperado">RECUPERADO</span>
+                </div>
+            </div>
+
+            <div class="grid-objetos">
+                <article class="tarjeta-objeto">
+                    <div class="contenedor-img">
+                        <img src="imagenes/mochila.jpg" alt="Mochila negra de lona">
+                        <span class="badge-flotante estado-perdido">PERDIDA</span>
+                    </div>
+                    <div class="info-objeto">
+                        <h3>Mochila Negra</h3>
+                        <p class="meta-info"><strong>Lugar:</strong> Jardín Central / Prometeo</p>
+                        <p class="meta-info"><strong>Fecha:</strong> 21 de Octubre, 14:30 hrs</p>
+                        <p class="descripcion">Mochila negra de lona con pines metálicos en la bolsa frontal. Contiene cuadernos de cuadrícula y estuche negro.</p>
+                        <button type="button" class="btn-accion">Tengo información</button>
+                    </div>
+                </article>
+
+                <article class="tarjeta-objeto">
+                    <div class="contenedor-img">
+                        <img src="imagenes/calculadora.jpg" alt="Calculadora científica gris">
+                        <span class="badge-flotante estado-encontrado">ENCONTRADA</span>
+                    </div>
+                    <div class="info-objeto">
+                        <h3>Calculadora Científica</h3>
+                        <p class="meta-info"><strong>Lugar:</strong> Laboratorios del Tlahuizcalpan</p>
+                        <p class="meta-info"><strong>Fecha:</strong> 23 de Octubre, 11:00 hrs</p>
+                        <p class="descripcion">Calculadora Casio fx-991EX con tapa deslizable gris. Tiene una etiqueta con iniciales en la parte trasera.</p>
+                        <button type="button" class="btn-accion">Reclamar objeto</button>
+                    </div>
+                </article>
+
+                <article class="tarjeta-objeto">
+                    <div class="contenedor-img">
+                        <img src="imagenes/termo.jpg" alt="Termo metálico azul">
+                        <span class="badge-flotante estado-recuperado">RECUPERADO</span>
+                    </div>
+                    <div class="info-objeto">
+                        <h3>Termo Metálico</h3>
+                        <p class="meta-info"><strong>Lugar:</strong> Biblioteca Amoxcalli</p>
+                        <p class="meta-info"><strong>Fecha:</strong> 19 de Octubre, 17:15 hrs</p>
+                        <p class="descripcion">Termo de acero inoxidable color azul marino de 750ml con calcomanías de distribuciones de Linux. Entregado a su dueño.</p>
+                        <button type="button" class="btn-accion" disabled>Caso Cerrado</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="reportar" class="seccion-formulario">
+            <h2>Registrar un Objeto</h2>
+            <p>Completa los datos para publicar un nuevo reporte en el tablero.</p>
+            
+            <form class="form-reporte" action="#" method="post">
+                <div class="grupo-form">
+                    <label for="nombre-objeto">Nombre del objeto</label>
+                    <input type="text" id="nombre-objeto" name="objeto" placeholder="Ej. Credencial, Llaves, Audífonos..." required>
+                </div>
+
+                <div class="grupo-form">
+                    <label for="estado-objeto">Situación actual</label>
+                    <select id="estado-objeto" name="estado" required>
+                        <option value="perdido">PERDIDO (Busco mi objeto)</option>
+                        <option value="encontrado">ENCONTRADO (Lo tengo en resguardo)</option>
+                    </select>
+                </div>
+
+                <div class="grupo-form">
+                    <label for="lugar-objeto">Lugar donde se vio por última vez</label>
+                    <input type="text" id="lugar-objeto" name="lugar" placeholder="Ej. Salón O-121, Estacionamiento..." required>
+                </div>
+
+                <div class="grupo-form">
+                    <label for="fecha-objeto">Fecha aproximada</label>
+                    <input type="date" id="fecha-objeto" name="fecha" required>
+                </div>
+
+                <div class="grupo-form fila-completa">
+                    <label for="desc-objeto">Descripción detallada y contacto</label>
+                    <textarea id="desc-objeto" name="descripcion" rows="4" placeholder="Describe señas particulares y deja un correo o usuario de Telegram para contactarte..." required></textarea>
+                </div>
+
+                <div class="fila-completa">
+                    <button type="submit" class="btn-primario btn-ancho">PUBLICAR REPORTE</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="pie-pagina">
+        <div class="contenedor">
+            <p>Laboratorio de Diseño de Interfaces de Usuario (2027-1) — Proyecto Objetos Perdidos</p>
+            <p>Desarrollado con HTML5 y CSS3 bajo estética Neobrutalista.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

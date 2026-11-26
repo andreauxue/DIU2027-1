@@ -179,3 +179,40 @@ h1 {
     border-radius: 16px;
     box-shadow: var(--neumorfismo-hundido);
 }
+
+/* Buscador (Buscar.html) */
+/* Barra estilo navegador con efecto hundido */
+.search-bar {
+    display: flex;
+    align-items: center;
+    max-width: 550px;
+    margin: 0 auto 2.5rem;
+    padding: 0.8rem 1.4rem;
+    border-radius: 30px;
+    background-color: var(--color-base);
+    box-shadow: var(--neumorfismo-hundido);
+}
+
+/* Icono de lupa a la izquierda del buscador */
+.search-icon {
+    margin-right: 0.8rem;
+    font-size: 1.1rem;
+    color: var(--color-principal);
+}
+
+/* Cuadro de texto transparente dentro de la barra de búsqueda */
+.search-bar input[type="text"] {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1rem;
+    color: var(--color-profundidad);
+}
+
+/* Estilo del texto guía (placeholder) del buscador */
+.search-bar input[type="text"]::placeholder {
+    color: var(--color-principal);
+    opacity: 0.7;
+}

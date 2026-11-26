@@ -1,0 +1,39 @@
+/* Variables de paleta y neumorfismo */
+/* Colores principales y sombras calculadas sobre #B8DBFE */
+:root {
+    --color-principal: #0380FC;
+    --color-suave-1: #5DADFD;
+    --color-profundidad: #013B74;
+    --color-suave-2: #8BC4FE;
+    --color-base: #B8DBFE;
+
+    --sombra-oscura: #94b6d8;
+    --sombra-clara: #dcffff;
+
+    --neumorfismo-elevado: 8px 8px 16px var(--sombra-oscura),
+    -8px -8px 16px var(--sombra-clara);
+    --neumorfismo-suave: 5px 5px 10px var(--sombra-oscura),
+    -5px -5px 10px var(--sombra-clara);
+    --neumorfismo-hundido: inset 5px 5px 10px var(--sombra-oscura),
+    inset -5px -5px 10px var(--sombra-clara);
+}
+
+/* Estilos generales */
+/* Reinicio de márgenes y bordes internos en todos los elementos */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Configuración base de tipografía, colores y estructura vertical de la página */
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: var(--color-base);
+    color: var(--color-profundidad);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+

@@ -216,3 +216,105 @@ h1 {
     color: var(--color-principal);
     opacity: 0.7;
 }
+
+/* Formulario de reporte (Reportar.html) */
+/* Contenedor elevado que agrupa los campos del reporte */
+.reportar form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 2.5rem;
+    border-radius: 28px;
+    background-color: var(--color-base);
+    box-shadow: var(--neumorfismo-elevado);
+    text-align: left;
+}
+
+/* Etiquetas de texto sobre cada campo del formulario */
+.reportar label {
+    font-weight: 700;
+    font-size: 0.95rem;
+    color: var(--color-profundidad);
+}
+
+/* Botón personalizado con relieve suave para subir imagen */
+.boton-subir {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: 20px;
+    background-color: var(--color-base);
+    box-shadow: var(--neumorfismo-suave);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+/* Cambio de color del texto al pasar el cursor sobre el botón de subida */
+.boton-subir:hover {
+    color: var(--color-principal);
+}
+
+/* Efecto hundido al presionar el botón de subir imagen */
+.boton-subir:active {
+    box-shadow: var(--neumorfismo-hundido);
+}
+
+/* Silueta circular dentro del botón para subir imagen */
+.boton-subir .placeholder-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+/* Campos de texto hundidos (Nombre y Descripción) */
+.reportar input[type="text"] {
+    width: 100%;
+    margin-top: 0.5rem;
+    padding: 0.9rem 1.2rem;
+    border: none;
+    outline: none;
+    border-radius: 16px;
+    background-color: var(--color-base);
+    box-shadow: var(--neumorfismo-hundido);
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1rem;
+    color: var(--color-profundidad);
+}
+
+/* Contorno suave al seleccionar o escribir dentro de un campo de texto */
+.reportar input[type="text"]:focus {
+    box-shadow: var(--neumorfismo-hundido), 0 0 0 2px var(--color-suave-1);
+}
+
+/* Botón principal de envío (Reportar) con color de acento */
+.reportar input[type="submit"] {
+    display: block;
+    width: 100%;
+    margin-top: 1rem;
+    padding: 0.95rem;
+    border: none;
+    border-radius: 18px;
+    background-color: var(--color-principal);
+    color: #ffffff;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.05rem;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: var(--neumorfismo-suave);
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+/* Aclarado del botón Reportar al pasar el cursor */
+.reportar input[type="submit"]:hover {
+    background-color: var(--color-suave-1);
+}
+
+/* Ligera reducción de escala al hacer clic en el botón Reportar */
+.reportar input[type="submit"]:active {
+    transform: scale(0.98);
+}
+
+

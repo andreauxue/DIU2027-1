@@ -57,3 +57,31 @@ body {
     text-decoration: none;
     letter-spacing: 0.5px;
 }
+
+/* Contenedor flex que separa los enlaces de navegación */
+.nav-menu {
+    display: flex;
+    gap: 1.2rem;
+}
+
+/* Botones de navegación con relieve suave */
+.nav-link {
+    text-decoration: none;
+    color: var(--color-profundidad);
+    font-weight: 600;
+    padding: 0.6rem 1.2rem;
+    border-radius: 12px;
+    background-color: var(--color-base);
+    box-shadow: var(--neumorfismo-suave);
+    transition: all 0.2s ease;
+}
+
+/* Cambio de color del enlace al pasar el cursor */
+.nav-link:hover {
+    color: var(--color-principal);
+}
+
+/* Efecto hundido en el botón al hacer clic */
+.nav-link:active {
+    box-shadow: var(--neumorfismo-hundido);
+}

@@ -317,4 +317,32 @@ h1 {
     transform: scale(0.98);
 }
 
+/* Footer */
+/* Barra inferior elevada con los enlaces de contacto y apoyo */
+.footer {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1.5rem;
+    margin: 0 5% 1.2rem;
+    border-radius: 20px;
+    background-color: var(--color-base);
+    box-shadow: var(--neumorfismo-elevado);
+}
 
+/* Enlaces del pie de página (Correo, Teléfono, Ayuda) */
+.footer a {
+    text-decoration: none;
+    color: var(--color-profundidad);
+    font-weight: 600;
+    font-size: 0.95rem;
+    padding: 0.4rem 0.9rem;
+    border-radius: 10px;
+    transition: all 0.2s ease;
+}
+
+/* Relieve suave y cambio de color al pasar el cursor en los enlaces del footer */
+.footer a:hover {
+    color: var(--color-principal);
+    box-shadow: var(--neumorfismo-suave);
+}

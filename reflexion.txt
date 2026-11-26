@@ -1,0 +1,35 @@
+Pregunta 1
+
+Me base en el estilo de diseño de UI: Neumorfismo, me gustó la interacción sencilla a través de un solo color que defines profunidad, transparencia y calma, al plantearlo en un sitio para objetos perdidos, considero que sería ideal para mantener en calma a los usuarios y bueno, como está contemplado dicha corriente de diseño, para móviles, me atreví a intentar que funcione para un entorno de escritorio.
+
+Pregunta 2
+
+El reto fue realizar el sombreado para darle una profundidad a la interfaz, en particular jugar con el tono adecuado para lograr un equilibrio en la vista y no pierda de vista lo que el usuario busca en el sitio.
+
+Pregunta 3
+
+Darle estilo al sitio con CSS, el acomodo fue sencillo, el reto fue en asignarle los colores y comportamientos durante la navegación a través de Neumorfismo, por otro lado, el ajuste del tamaño de las imagenes, recordando lo que se había visto en la sesión, consulté la documentación en CSS para apoyarme respecto a las dimensiones de width y height, probando ejemplos de simulación que me apoyaron a reforzar los conceptos y aterrizar el problema con mayor claridad
+
+Pregunta 4
+
+El buscar un estilo ideal para el propósito del sitio, si un usuario preocupado por encontrar o reportar un objeto que haya perdido, una interfaz relajada, amena y sencilla, que va profundizando como la información, una navegación natural, indicar el estado de un objeto y la información que realmente es de su interés, la imagen como apoyo visual para reconocer, de igual forma cuando el usuario desee levantar un reporte, con los datos relevantes para empezar la divulgación en el sitio, con colores amenos, como se usa un mismo color, la idea es relajar la vista, a través de una correcta organización de información y de pasos concretos.
+
+Pregunta 5
+
+Al mantener consistencia en lo que se busca plasmar en el sitio, las referencias fueron un excelente apoyo para definir como sería la construcción de la página, fiel al prototipo, el hecho de tener una propuesta, sustentarla, probarla y escalar a una versión mínima que cumple los requerimientos solicitados, tras un análisis riguroso sobre el contexto de uso que tendrán los usuarios, al desarrollar el sitio, se tiene claro que la propuesta tuvo diferencias mínimas, por los lienzos (jejeje), pero la idea se preserva.
+
+Pregunta 6
+
+En realidad fue nula, mi investigación se apoyo de sitios oficiales para profundizar conceptos de CSS y de proyectos realizados con anterioridad, que se enlistan a continuación:
+
+BCine - Sitio web con temática de cine para ver películas de género: Ciencia Ficción, Fantasía y Drama
+
+https://github.com/WraithLion/BCine
+
+3C - Compra tu Comida con Comodidad - Software para conectar a usuarios, restaurantes y repartidores a través de una plataforma web un entorno para visualizar menús y productos, hacer pedidos, realizar pagos, asignación de repartidores
+
+https://github.com/WraithLion/3C-Compra-tu-Comida-con-Comodidad
+
+Pregunta 7
+
+En realidad, me dí cuenta hace un año, en una materia llamada Riesgo Tecnológico, el enfoque fue sobre el uso de IA, de mi parte tengo una posición un poco a favor de realizar trabajo por méritos propios, ya que durante una investigación, estuve atorado, al recurrir a dicha herramienta, me dí cuenta que la dificultad fue en que no revisaba bien la información, tras omisión de aspectos que terminaron planteando que hay que tener leer con mayor cuidado y comprender lo que se está trabajando, por ende, mi uso desde ese entonces ha sido mayormente nula, salvo las actividades señalen específicamente utilizar la IA bajo fines académicos.

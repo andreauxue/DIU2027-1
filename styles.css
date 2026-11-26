@@ -36,4 +36,24 @@ body {
     flex-direction: column;
 }
 
+/* Header */
+/* Barra superior compartida con sombra elevada y bordes redondeados */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 5%;
+    margin: 1.2rem 5% 0;
+    border-radius: 20px;
+    background-color: var(--color-base);
+    box-shadow: var(--neumorfismo-elevado);
+}
 
+/* Nombre CienciasBusca en el encabezado */
+.brand {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-profundidad);
+    text-decoration: none;
+    letter-spacing: 0.5px;
+}

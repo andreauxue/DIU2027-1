@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Objetos Perdidos</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+  <header>
+    <nav class="contenedor menu">
+      <a class="enlace-inicio" href="#inicio">
+        <img src="iconos/casa.png" alt="Icono de casa">
+        Inicio
+      </a>
+
+      <form class="buscador" action="#objetos">
+        <input type="text" name="buscar" placeholder="Buscar un objeto">
+        <button type="submit">
+          <img src="iconos/lupa.png" alt="Buscar">
+        </button>
+      </form>
+
+      <a class="boton boton-rosa" href="#reportar">Reportar</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="inicio" id="inicio">
+      <div class="contenedor">
+        <h1>Objetos<br>Perdidos</h1>
+        <p>Busca tu objeto, revisa su estado o reporta uno para ayudar a devolverlo.</p>
+      </div>
+    </section>
+
+    <section class="objetos" id="objetos">
+      <div class="contenedor">
+        <h2>Objetos recientes</h2>
+        <p class="subtitulo">Estos son los últimos objetos que se han reportado.</p>
+
+        <div class="galeria">
+
+          <div class="tarjeta perdido">
+            <div class="imagen">
+              <img src="imagenes/mochila.png" alt="Mochila negra">
+              <span class="estado">Perdido</span>
+            </div>
+            <h3>Mochila negra</h3>
+            <div class="datos">
+              <p><span>Tipo</span>Mochila</p>
+              <p><span>Color</span>Negro con rojo</p>
+              <p><span>Marca</span>JanSport</p>
+              <p><span>Fecha</span>6 oct 2026</p>
+              <p class="lugar"><span>Lugar</span>Biblioteca Central, 2do piso</p>
+            </div>
+            <p class="descripcion">Trae una laptop gris, un cuaderno de cálculo y un llavero de cassette.</p>
+            <a class="boton boton-chico" href="#reportar">Lo encontré</a>
+          </div>
+
+          <div class="tarjeta encontrado">
+            <div class="imagen">
+              <img src="imagenes/calculadora.png" alt="Calculadora científica gris">
+              <span class="estado">Encontrado</span>
+            </div>
+            <h3>Calculadora científica</h3>
+            <div class="datos">
+              <p><span>Tipo</span>Electrónico</p>
+              <p><span>Color</span>Gris</p>
+              <p><span>Marca</span>Casio</p>
+              <p><span>Fecha</span>5 oct 2026</p>
+              <p class="lugar"><span>Lugar</span>Ingeniería, salón A-204</p>
+            </div>
+            <p class="descripcion">Tiene una calcomanía de estrella en la tapa. Se puede recoger en servicios escolares.</p>
+            <a class="boton boton-chico" href="#reportar">Es mío</a>
+          </div>
+
+          <div class="tarjeta recuperado">
+            <div class="imagen">
+              <img src="imagenes/termo.png" alt="Termo azul">
+              <span class="estado">Recuperado</span>
+            </div>
+            <h3>Termo azul</h3>
+            <div class="datos">
+              <p><span>Tipo</span>Termo</p>
+              <p><span>Color</span>Azul</p>
+              <p><span>Marca</span>Stanley</p>
+              <p><span>Fecha</span>3 oct 2026</p>
+              <p class="lugar"><span>Lugar</span>Gimnasio, gradas norte</p>
+            </div>
+            <p class="descripcion">Está abollado de abajo y tiene el nombre Vale grabado. Ya se entregó.</p>
+            <p class="cerrado">Caso cerrado</p>
+          </div>
+
+          <div class="tarjeta perdido">
+            <div class="imagen">
+              <img src="imagenes/audifonos.png" alt="Audífonos blancos">
+              <span class="estado">Perdido</span>
+            </div>
+            <h3>Audífonos</h3>
+            <div class="datos">
+              <p><span>Tipo</span>Electrónico</p>
+              <p><span>Color</span>Blanco</p>
+              <p><span>Marca</span>Sony</p>
+              <p><span>Fecha</span>2 oct 2026</p>
+              <p class="lugar"><span>Lugar</span>Cafetería central</p>
+            </div>
+            <p class="descripcion">El estuche tiene una raya en la esquina. Se quedaron en una mesa junto a la ventana.</p>
+            <a class="boton boton-chico" href="#reportar">Lo encontré</a>
+          </div>
+
+          <div class="tarjeta encontrado">
+            <div class="imagen">
+              <img src="imagenes/llaves.png" alt="Llaves con llavero morado">
+              <span class="estado">Encontrado</span>
+            </div>
+            <h3>Llaves</h3>
+            <div class="datos">
+              <p><span>Tipo</span>Llaves</p>
+              <p><span>Color</span>Plateado</p>
+              <p><span>Marca</span>Sin marca</p>
+              <p><span>Fecha</span>30 sep 2026</p>
+              <p class="lugar"><span>Lugar</span>Estacionamiento 3</p>
+            </div>
+            <p class="descripcion">Son tres llaves y un control de portón. Para entregarlas hay que describir el llavero.</p>
+            <a class="boton boton-chico" href="#reportar">Es mío</a>
+          </div>
+
+          <div class="tarjeta recuperado">
+            <div class="imagen">
+              <img src="imagenes/credencial.png" alt="Credencial de estudiante">
+              <span class="estado">Recuperado</span>
+            </div>
+            <h3>Credencial</h3>
+            <div class="datos">
+              <p><span>Tipo</span>Documento</p>
+              <p><span>Color</span>Blanco y azul</p>
+              <p><span>Marca</span>No aplica</p>
+              <p><span>Fecha</span>27 sep 2026</p>
+              <p class="lugar"><span>Lugar</span>Explanada de Rectoría</p>
+            </div>
+            <p class="descripcion">Tiene un porta gafete con cordón morado. Se entregó el 29 de septiembre.</p>
+            <p class="cerrado">Caso cerrado</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="aviso">
+      <div class="contenedor">
+        <div class="caja-aviso">
+          <div>
+            <h2>¿Perdiste o encontraste algo?</h2>
+            <p>Llena el formulario y lo agregamos a la lista.</p>
+          </div>
+          <div class="botones">
+            <a class="boton boton-rosa" href="#reportar">Perdí algo</a>
+            <a class="boton" href="#reportar">Encontré algo</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="reportar" id="reportar">
+      <div class="contenedor">
+        <div class="ventana">
+          <h2 class="ventana-titulo">reportar_objeto.exe</h2>
+
+          <form class="formulario" action="#reportar">
+            <fieldset class="tipo-reporte">
+              <legend>¿Qué quieres reportar?</legend>
+              <label><input type="radio" name="reporte" value="perdido" checked> Perdí un objeto</label>
+              <label><input type="radio" name="reporte" value="encontrado"> Encontré un objeto</label>
+            </fieldset>
+
+            <div class="campos">
+              <div class="campo completo">
+                <label for="nombre">Nombre del objeto</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ej. Mochila negra" required>
+              </div>
+
+              <div class="campo">
+                <label for="tipo">Tipo de objeto</label>
+                <select id="tipo" name="tipo">
+                  <option>Mochila o bolsa</option>
+                  <option>Electrónico</option>
+                  <option>Documento</option>
+                  <option>Termo o botella</option>
+                  <option>Llaves</option>
+                  <option>Otro</option>
+                </select>
+              </div>
+
+              <div class="campo">
+                <label for="color">Color</label>
+                <input type="text" id="color" name="color" placeholder="Ej. Azul">
+              </div>
+
+              <div class="campo">
+                <label for="marca">Marca</label>
+                <input type="text" id="marca" name="marca" placeholder="Opcional">
+              </div>
+
+              <div class="campo">
+                <label for="fecha">Fecha</label>
+                <input type="date" id="fecha" name="fecha" required>
+              </div>
+
+              <div class="campo completo">
+                <label for="lugar">Lugar</label>
+                <input type="text" id="lugar" name="lugar" placeholder="Ej. Biblioteca, 2do piso" required>
+              </div>
+
+              <div class="campo completo">
+                <label for="descripcion">Descripción</label>
+                <textarea id="descripcion" name="descripcion" rows="3" placeholder="Algo que ayude a reconocerlo"></textarea>
+              </div>
+
+              <div class="campo">
+                <label for="foto">Foto</label>
+                <input type="file" id="foto" name="foto">
+              </div>
+
+              <div class="campo">
+                <label for="correo">Tu correo</label>
+                <input type="email" id="correo" name="correo" placeholder="nombre@correo.com" required>
+              </div>
+            </div>
+
+            <div class="botones">
+              <button class="boton boton-rosa" type="reset">Borrar</button>
+              <button class="boton" type="submit">Enviar reporte</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="contenedor pie">
+      <div>
+        <p class="logo-pie">PERDIDOS</p>
+        <p>Antes de publicar, revisa estas condiciones.</p>
+        <p class="enlaces-pie">
+          <a class="elegido" href="#reportar">Entendido, reportar</a>
+          <a href="#inicio">Volver al inicio</a>
+          <span class="cursor"></span>
+        </p>
+      </div>
+
+      <div class="condiciones">
+        <h3>Condiciones</h3>
+        <ul>
+          <li><strong>Revisión:</strong> todas las publicaciones se revisan antes de aparecer.</li>
+          <li><strong>Responsabilidad:</strong> lo que se publica es responsabilidad de quien lo sube.</li>
+          <li><strong>Datos personales:</strong> tú decides si compartes tus datos.</li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="creditos">© 2026 Objetos Perdidos - Diseño de Interfaces de Usuario</p>
+  </footer>
+
+</body>
+</html>

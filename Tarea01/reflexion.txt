@@ -1,0 +1,25 @@
+¿Qué referencias elegiste y qué te gustó de ellas?
+Elegí referencias que tienen que ver con el estilo retro y las interfaces de texto, consolas o videojuegos antiguos. Me gustaron porque este tipo de interfaces tienen elementos y diseños que se me hacen muy interesantes y dan ganas de interactuar con todo, pero de una manera simple y sin saturar visualmente. Además, me recuerdan a las pantallas de misiones o tareas.
+
+Menciona tres cosas de tus referencias que intentaste construir utilizando CSS.
+Los botones con estilo de videojuegos, el estilo de las interfaces de texto de Omarchy para mostrar información y las ventanas con marcos para representar secciones como el formulario.
+
+¿Qué parte de la página te costó más?
+Definitivamente las tarjetas, porque son los elementos con más componentes (estado, imagen, información, descripción, etc.). Organizarlos fue complejo y añadirles estilo fue tardado.
+
+¿Qué parte de tu página te gustó más?
+El formulario y los botones; siento que transmiten esa sensación de interactividad y el estilo retro que buscaba.
+
+¿Qué cambió entre tu boceto y el resultado final?
+ - Agregué una frase debajo del título para complementarlo.
+ - Agregué un mensaje con un estilo llamativo antes del formulario para animar a las personas a reportar.
+ - En la segunda fila de tarjetas cambié los estados para que también apareciera un objeto recuperado.
+ - Le di al formulario estilo de ventana (reportar_objeto.exe) y reacomodé los campos.
+ - En el pie de página cambié la lista de secciones por el nombre de la página y enlaces con un cursor que parpadea, y detallé y complementé los términos y condiciones.
+ - Agregué todos los estilos para lograr el aspecto retro.
+
+¿Utilizaste IA? Si la utilizaste, ¿para qué?
+Sí, le pedí que me explicara varios elementos y propiedades, y que me diera ideas de qué podía hacer con ellos y cómo combinarlos. Cuando no lograba el aspecto que quería, le consultaba cómo conseguirlo. También le pedí que revisara mi trabajo en busca de errores o malas prácticas y que me ayudara a corregirlos. Finalmente, me ayudó a generar las imágenes de los objetos.
+
+¿Tuviste que modificar o corregir alguna respuesta proporcionada por IA?
+Sí, en general me arrojaba código muy general que me servía como ejemplo o base para desarrollar el mío. Después lo iba modificando y lo revisaba de nuevo con su ayuda hasta llegar al resultado deseado.
